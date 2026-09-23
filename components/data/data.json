@@ -1,0 +1,462 @@
+{
+    "common": {
+        "Topbar": {
+            "address": "120 M G Road, Bengaluru, Karnataka 560001",
+            "phone": "+91 98765 43210",
+            "email": "support@autofix.com",
+            "social_title": "Follow Us",
+            "socials": [
+                {
+                    "icon": "FaFacebook",
+                    "href": "https://www.facebook.com"
+                },
+                {
+                    "icon": "FaInstagram",
+                    "href": "https://www.instagram.com"
+                },
+                {
+                    "icon": "FaLinkedin",
+                    "href": "https://www.linkedin.com"
+                },
+                {
+                    "icon": "FaYoutube",
+                    "href": "https://www.youtube.com"
+                }
+            ],
+            "working_hours": "Mon - Sat: 9:00 AM - 7:00 PM"
+        },
+        "Header": {
+            "logo_text1": "Auto",
+            "logo_text2": "Fix",
+            "logo_desc": "Car Repair Service",
+            "links": [
+                {
+                    "name": "Home",
+                    "href": "#",
+                    "active": true
+                },
+                {
+                    "name": "About Us",
+                    "href": "#",
+                    "active": false
+                },
+                {
+                    "name": "Services",
+                    "href": "#",
+                    "active": false
+                },
+                {
+                    "name": "Car Brands",
+                    "href": "#",
+                    "active": false
+                },
+                {
+                    "name": "Pricing",
+                    "href": "#",
+                    "active": false
+                },
+                {
+                    "name": "Gallery",
+                    "href": "#",
+                    "active": false
+                },
+                {
+                    "name": "Blog",
+                    "href": "#",
+                    "active": false
+                },
+                {
+                    "name": "Contact",
+                    "href": "#",
+                    "active": false
+                }
+            ],
+            "button_text": "Book A Service"
+        },
+        "Footer": {
+            "about": {
+                "desc": "At AutoFix, we are committed to keeping your vehicle safe, reliable, and running smoothly. Quality service, expert care, and your complete satisfaction are always our priority.",
+                "socials": [
+                    {
+                        "icon": "FaFacebook",
+                        "href": "https://www.facebook.com"
+                    },
+                    {
+                        "icon": "FaInstagram",
+                        "href": "https://www.instagram.com"
+                    },
+                    {
+                        "icon": "FaLinkedin",
+                        "href": "https://www.linkedin.com"
+                    },
+                    {
+                        "icon": "FaYoutube",
+                        "href": "https://www.youtube.com"
+                    }
+                ]
+            },
+            "quick_links": [
+                {
+                    "name": "Home",
+                    "href": "#"
+                },
+                {
+                    "name": "About Us",
+                    "href": "#"
+                },
+                {
+                    "name": "Our Services",
+                    "href": "#"
+                },
+                {
+                    "name": "Car Brands",
+                    "href": "#"
+                },
+                {
+                    "name": "Pricing",
+                    "href": "#"
+                },
+                {
+                    "name": "Gallery",
+                    "href": "#"
+                },
+                {
+                    "name": "Blog",
+                    "href": "#"
+                },
+                {
+                    "name": "Contact Us",
+                    "href": "#"
+                }
+            ],
+            "services": [
+                {
+                    "name": "Engine Repair",
+                    "href": "#"
+                },
+                {
+                    "name": "Oil Change & Filters",
+                    "href": "#"
+                },
+                {
+                    "name": "Brake Service",
+                    "href": "#"
+                },
+                {
+                    "name": "A/C & Heating Repair",
+                    "href": "#"
+                },
+                {
+                    "name": "Tire & Wheel Services",
+                    "href": "#"
+                },
+                {
+                    "name": "Battery Replacement",
+                    "href": "#"
+                },
+                {
+                    "name": "Diagnostics & Inspection",
+                    "href": "#"
+                },
+                {
+                    "name": "General Car Repair",
+                    "href": "#"
+                }
+            ],
+            "contact": {
+                "address_line1": "120 M G Road, Bengaluru,",
+                "address_line2": "Karnataka 560001",
+                "phone": "+91 98765 43210",
+                "email": "support@autofix.com",
+                "working_hours": [
+                    "Mon - Sat: 9:00 AM - 7:00 PM",
+                    "Sunday: Closed"
+                ]
+            },
+            "copyright": "Copyright © 2026. All rights reserved. Powered by Lestow",
+            "bottom_links": [
+                {
+                    "name": "Terms & Conditions",
+                    "href": "#"
+                },
+                {
+                    "name": "Privacy Policy",
+                    "href": "#"
+                },
+                {
+                    "name": "Support",
+                    "href": "#"
+                }
+            ]
+        },
+        "seo": {
+            "siteName": "AutoFix",
+            "siteUrl": "https://www.autofix.com",
+            "defaultTitle": "AutoFix | Trusted Car Repair Service",
+            "defaultDescription": "From routine maintenance to complex repairs, we keep your car running at its best.",
+            "keywords": "AutoFix, car repair, online booking, service, maintenance",
+            "ogImage": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2000&auto=format&fit=crop",
+            "locale": "en_US"
+        }
+    },
+    "categories": {
+        "AutoRepair": {
+            "templateComponents": {
+                "template-1": {
+                    "pages": {
+                        "home": {
+                            "breadcrumb": {
+                                "title": "Home",
+                                "paths": [
+                                    {
+                                        "label": "Home",
+                                        "href": "/"
+                                    }
+                                ],
+                                "bgImage": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2000&auto=format&fit=crop"
+                            },
+                            "components": [
+                                {
+                                    "key": "HeroSection",
+                                    "component": "HeroSection"
+                                },
+                                {
+                                    "key": "AboutSection",
+                                    "component": "AboutSection"
+                                },
+                                {
+                                    "key": "ServicesSection",
+                                    "component": "ServicesSection"
+                                },
+                                {
+                                    "key": "StatisticsSection",
+                                    "component": "StatisticsSection"
+                                },
+                                {
+                                    "key": "BlogSection",
+                                    "component": "BlogSection"
+                                }
+                            ],
+                            "seo": {
+                                "title": "AutoFix - Car Repair Service",
+                                "description": "Trusted Care for Every Drive",
+                                "keywords": "AutoFix, car repair, auto service, mechanic",
+                                "canonical": "/"
+                            }
+                        }
+                    },
+                    "sections": {
+                        "hero": {
+                            "bg_image": "/img/banner/1.png",
+                            "tags": [
+                                "Professional",
+                                "Reliable",
+                                "Affordable"
+                            ],
+                            "title_line1": "Trusted Care",
+                            "title_line2": "for",
+                            "title_highlight": "Every Drive",
+                            "description": "From routine maintenance to complex repairs, we keep your car running at its best.",
+                            "button_text": "Book A Service",
+                            "features": [
+                                {
+                                    "icon": "Wrench",
+                                    "text1": "Expert",
+                                    "text2": "Technicians"
+                                },
+                                {
+                                    "icon": "Settings",
+                                    "text1": "Genuine",
+                                    "text2": "Parts"
+                                },
+                                {
+                                    "icon": "CheckCircle2",
+                                    "text1": "Affordable",
+                                    "text2": "Pricing"
+                                },
+                                {
+                                    "icon": "Clock",
+                                    "text1": "Quick",
+                                    "text2": "Turnaround"
+                                }
+                            ],
+                            "stats": [
+                                {
+                                    "icon": "User",
+                                    "number": "10K+",
+                                    "text": "Happy Customers"
+                                },
+                                {
+                                    "icon": "Clock",
+                                    "number": "5+",
+                                    "text": "Years Experience"
+                                },
+                                {
+                                    "icon": "CheckCircle2",
+                                    "number": "All Major",
+                                    "text": "Car Brands"
+                                }
+                            ]
+                        },
+                        "about": {
+                            "image1": "/img/about/1.png",
+                            "image2": "/img/about/2.png",
+                            "experience": {
+                                "icon": "Wrench",
+                                "years": "58+",
+                                "text1": "Years of",
+                                "text2": "Experience"
+                            },
+                            "subtitle": "About Us",
+                            "title_line1": "Reliable Car Repairs",
+                            "title_line2": "with",
+                            "title_highlight": "AutoFix",
+                            "description": "At AutoFix, we are committed to keeping you on the road with safe, reliable, and high-performance vehicles. Our skilled technicians use advanced tools and genuine parts to deliver quality repairs and maintenance you can trust.",
+                            "stats": [
+                                {
+                                    "value": "98%",
+                                    "text1": "Customer",
+                                    "text2": "Satisfaction"
+                                },
+                                {
+                                    "value": "50+",
+                                    "text1": "Expert",
+                                    "text2": "Technicians"
+                                }
+                            ],
+                            "points": [
+                                "Genuine Parts & Quality Service",
+                                "Affordable & Transparent Pricing",
+                                "Complete Car Diagnostics",
+                                "Fast Turnaround Time"
+                            ],
+                            "ceo": {
+                                "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150&auto=format&fit=crop",
+                                "name": "David Miller",
+                                "role": "Founder & CEO"
+                            },
+                            "button_text": "ABOUT MORE"
+                        },
+                        "services": {
+                            "subtitle": "Latest Service",
+                            "title_line1": "Reliable Services for",
+                            "title_highlight": "Every Car",
+                            "description": "From routine maintenance to advanced repairs, AutoFix provides complete car care solutions to keep your vehicle running at its best.",
+                            "list": [
+                                {
+                                    "id": "01",
+                                    "title": "General Car Repair",
+                                    "desc": "Complete car repair solutions for all makes and models. We keep your car running smoothly.",
+                                    "icon": "Wrench",
+                                    "img": "/img/service/1.png"
+                                },
+                                {
+                                    "id": "02",
+                                    "title": "Brake Service",
+                                    "desc": "Ensure your safety with our professional brake inspection, repair and replacement services.",
+                                    "icon": "CheckCircle2",
+                                    "img": "/img/service/2.png"
+                                },
+                                {
+                                    "id": "03",
+                                    "title": "Engine Diagnostics",
+                                    "desc": "Advanced diagnostics to quickly identify and fix engine issues for better performance.",
+                                    "icon": "Activity",
+                                    "img": "/img/service/3.png"
+                                },
+                                {
+                                    "id": "04",
+                                    "title": "Oil Change Service",
+                                    "desc": "Keep your engine healthy with high-quality oil change and filter replacement.",
+                                    "icon": "Settings",
+                                    "img": "/img/service/4.png"
+                                },
+                                {
+                                    "id": "05",
+                                    "title": "Tire & Wheel Service",
+                                    "desc": "Complete tire rotation, balancing, alignment and replacement for a smooth and safe ride.",
+                                    "icon": "Wrench",
+                                    "img": "/img/service/1.png"
+                                }
+                            ]
+                        },
+                        "statistics": {
+                            "bg_image": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2000&auto=format&fit=crop",
+                            "side_image": "https://images.unsplash.com/photo-1504222490345-c075b6008014?q=80&w=800&auto=format&fit=crop",
+                            "subtitle": "// Statistics",
+                            "title_line1": "Learn more About",
+                            "title_line2": "Our Success",
+                            "list": [
+                                {
+                                    "icon": "FileText",
+                                    "value": "260+",
+                                    "label": "Total Project"
+                                },
+                                {
+                                    "icon": "Wrench",
+                                    "value": "399%",
+                                    "label": "Transparency"
+                                },
+                                {
+                                    "icon": "CheckCircle2",
+                                    "value": "456+",
+                                    "label": "Project Done"
+                                },
+                                {
+                                    "icon": "Activity",
+                                    "value": "125+",
+                                    "label": "Got Awards"
+                                }
+                            ]
+                        },
+                        "blog": {
+                            "subtitle": "Our Blog",
+                            "title_line1": "Latest News &",
+                            "title_highlight": "Car Care Tips",
+                            "description": "Stay informed with expert advice, maintenance tips, and the latest updates from AutoFix.",
+                            "list": [
+                                {
+                                    "id": 1,
+                                    "title": "Expert Advice To Keep Your Car Running Smoothly",
+                                    "desc": "Discover essential car maintenance tips to improve performance, increase lifespan, and avoid costly repairs.",
+                                    "date": "25",
+                                    "month": "Mar 2026",
+                                    "author": "Kavin Sharma",
+                                    "dateFull": "Mar 25, 2026",
+                                    "tag": "Maintenance Tips",
+                                    "img": "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=600&auto=format&fit=crop",
+                                    "authorImg": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop"
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "Your Complete Tire Maintenance Guide",
+                                    "desc": "Learn how to check, rotate, and maintain your tires for better safety, fuel efficiency, and a smoother driving experience.",
+                                    "date": "18",
+                                    "month": "Aug 2026",
+                                    "author": "Priya Mishra",
+                                    "dateFull": "Aug 18, 2026",
+                                    "tag": "Car Care Guide",
+                                    "img": "https://images.unsplash.com/photo-1578844251758-2f71da64c96f?q=80&w=600&auto=format&fit=crop",
+                                    "authorImg": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop"
+                                },
+                                {
+                                    "id": 3,
+                                    "title": "Latest Trends In Car Repair & Diagnostics",
+                                    "desc": "Explore the newest technologies and trends in car repair services that are making vehicles smarter, safer, and more reliable.",
+                                    "date": "16",
+                                    "month": "Feb 2026",
+                                    "author": "Amit Verma",
+                                    "dateFull": "Feb 16, 2026",
+                                    "tag": "Repair Insights",
+                                    "img": "https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?q=80&w=600&auto=format&fit=crop",
+                                    "authorImg": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop"
+                                }
+                            ],
+                            "button_text": "View All Blog"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
