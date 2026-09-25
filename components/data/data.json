@@ -32,13 +32,32 @@
             "links": [
                 {
                     "name": "Home",
-                    "href": "#",
+                    "href": "/",
                     "active": true
                 },
                 {
                     "name": "About Us",
-                    "href": "#",
-                    "active": false
+                    "href": "/about",
+                    "active": false,
+                    "hasDropdown": true,
+                    "dropdownLinks": [
+                        {
+                            "name": "About Us",
+                            "href": "/about"
+                        },
+                        {
+                            "name": "Why Choose Us",
+                            "href": "/why-choose-us"
+                        },
+                        {
+                            "name": "Mission & Vision",
+                            "href": "/mission-vision"
+                        },
+                        {
+                            "name": "Our Teams",
+                            "href": "/our-team"
+                        }
+                    ]
                 },
                 {
                     "name": "Services",
@@ -98,11 +117,11 @@
             "quick_links": [
                 {
                     "name": "Home",
-                    "href": "#"
+                    "href": "/"
                 },
                 {
                     "name": "About Us",
-                    "href": "#"
+                    "href": "/about"
                 },
                 {
                     "name": "Our Services",
@@ -242,6 +261,130 @@
                                 "description": "Trusted Care for Every Drive",
                                 "keywords": "AutoFix, car repair, auto service, mechanic",
                                 "canonical": "/"
+                            }
+                        },
+                        "about": {
+                            "breadcrumb": {
+                                "title": "About Us",
+                                "paths": [
+                                    {
+                                        "label": "Home",
+                                        "href": "/"
+                                    },
+                                    {
+                                        "label": "About Us"
+                                    }
+                                ],
+                                "bgImage": "/img/banner/breadcrumb.png"
+                            },
+                            "components": [
+                                {
+                                    "key": "AboutSection",
+                                    "component": "AboutSection"
+                                },
+                                {
+                                    "key": "StatisticsSection",
+                                    "component": "StatisticsSection"
+                                },
+                                {
+                                    "key": "OurProcessSection",
+                                    "component": "OurProcessSection"
+                                },
+                                {
+                                    "key": "WhyChooseUsSection",
+                                    "component": "WhyChooseUsSection"
+                                }
+                            ],
+                            "seo": {
+                                "title": "About Us - AutoFix",
+                                "description": "Learn more about our trusted car repair services.",
+                                "canonical": "/about"
+                            }
+                        },
+                        "missionVision": {
+                            "breadcrumb": {
+                                "title": "Mission & Vision",
+                                "paths": [
+                                    {
+                                        "label": "Home",
+                                        "href": "/"
+                                    },
+                                    {
+                                        "label": "Mission & Vision"
+                                    }
+                                ],
+                                "bgImage": "/img/banner/breadcrumb.png"
+                            },
+                            "components": [
+                                {
+                                    "key": "MissionSection",
+                                    "component": "MissionSection"
+                                },
+                                {
+                                    "key": "VisionSection",
+                                    "component": "VisionSection"
+                                }
+                            ],
+                            "seo": {
+                                "title": "Mission & Vision - AutoFix",
+                                "description": "Learn about our mission and vision for auto repair.",
+                                "canonical": "/mission-vision"
+                            }
+                        },
+                        "whyChooseUs": {
+                            "breadcrumb": {
+                                "title": "Why Choose Us",
+                                "paths": [
+                                    {
+                                        "label": "Home",
+                                        "href": "/"
+                                    },
+                                    {
+                                        "label": "Why Choose Us"
+                                    }
+                                ],
+                                "bgImage": "/img/banner/breadcrumb.png"
+                            },
+                            "components": [
+                                {
+                                    "key": "WhyChooseUsSection",
+                                    "component": "WhyChooseUsSection"
+                                },
+                                {
+                                    "key": "StatisticsSection",
+                                    "component": "StatisticsSection"
+                                }
+                            ],
+                            "seo": {
+                                "title": "Why Choose Us - AutoFix",
+                                "description": "Find out why thousands of car owners trust AutoFix for their repair needs.",
+                                "canonical": "/why-choose-us"
+                            }
+                        },
+                        "ourTeam": {
+                            "breadcrumb": {
+                                "title": "Our Teams",
+                                "paths": [
+                                    {
+                                        "label": "Home",
+                                        "href": "/"
+                                    },
+                                    {
+                                        "label": "Our Teams"
+                                    }
+                                ],
+                                "bgImage": "/img/banner/breadcrumb.png"
+                            },
+                            "components": [
+                                {
+                                    "key": "OurTeamSection",
+                                    "component": "OurTeamSection"
+                                }
+                            ],
+                            "seo": {
+                                "title": "Our Teams - AutoFix",
+                                "description": "Meet our expert team of mechanics and service advisors.",
+                                "canonical": "/our-team"
                             }
                         }
                     },
@@ -453,6 +596,389 @@
                                 }
                             ],
                             "button_text": "View All Blog"
+                        },
+                        "process": {
+                            "bg_image": "/our-process-section-bg.png",
+                            "subtitle": "OUR PROCESS",
+                            "title_line1": "From Booking to a",
+                            "title_highlight": "Better Drive",
+                            "description": "A simple, transparent, and reliable process to keep your car in top condition.",
+                            "steps": [
+                                {
+                                    "id": "step1",
+                                    "number": "01",
+                                    "title_line1": "Book an",
+                                    "title_line2": "Appointment",
+                                    "desc": "Get in touch with us through call, website, or visit our service center to schedule your service.",
+                                    "icon": "Calendar",
+                                    "image": "/img/about/i1.png"
+                                },
+                                {
+                                    "id": "step2",
+                                    "number": "02",
+                                    "title_line1": "Inspection &",
+                                    "title_line2": "Diagnosis",
+                                    "desc": "Our expert performs a complete checkup and diagnosis the issue using advanced tools.",
+                                    "icon": "Search",
+                                    "image": "/img/about/i2.png"
+                                },
+                                {
+                                    "id": "step3",
+                                    "number": "03",
+                                    "title_line1": "Repair &",
+                                    "title_line2": "Service",
+                                    "desc": "We repair with genuine parts and follow manufacturer standards to ensure the best performance.",
+                                    "icon": "Wrench",
+                                    "image": "/img/about/i3.png"
+                                },
+                                {
+                                    "id": "step4",
+                                    "number": "04",
+                                    "title_line1": "Quality",
+                                    "title_line2": "Check",
+                                    "desc": "After service, our team runs a detailed quality check to ensure your car is in perfect condition.",
+                                    "icon": "CheckCircle2",
+                                    "image": "/img/about/i4.png"
+                                },
+                                {
+                                    "id": "step5",
+                                    "number": "05",
+                                    "title_line1": "Drive with",
+                                    "title_line2": "Confidence",
+                                    "desc": "Get back on the road with a safe, smoother, and better-performing car.",
+                                    "icon": "Car",
+                                    "image": "/img/about/i5.png"
+                                }
+                            ],
+                            "call_to_action": {
+                                "phone": "+91 98765 43210",
+                                "button_text": "Book A Service",
+                                "call_text": "Call Us Now"
+                            },
+                            "bottom_features": [
+                                {
+                                    "icon": "Users",
+                                    "text": "EXPERT TECHNICIANS"
+                                },
+                                {
+                                    "icon": "Shield",
+                                    "text": "GENUINE PARTS"
+                                },
+                                {
+                                    "icon": "Headphones",
+                                    "text": "CUSTOMER FOCUSED"
+                                },
+                                {
+                                    "icon": "ThumbsUp",
+                                    "text": "100% SATISFACTION"
+                                }
+                            ]
+                        },
+                        "whyChooseUs": {
+                            "subtitle": "WHY CHOOSE US",
+                            "title_line1": "Because Your Car Deserves",
+                            "title_highlight": "the Best",
+                            "description": "At AutoFix, we go beyond just repairs — we deliver reliable solutions, expert care, and a better driving experience. Here's why thousands of car owners trust us.",
+                            "features": [
+                                {
+                                    "id": "f1",
+                                    "icon": "Award",
+                                    "title": "Expert Technicians",
+                                    "desc": "Certified and experienced professionals."
+                                },
+                                {
+                                    "id": "f2",
+                                    "icon": "CheckCircle",
+                                    "title": "High-Quality Parts",
+                                    "desc": "We use genuine and high-grade parts."
+                                },
+                                {
+                                    "id": "f3",
+                                    "icon": "Percent",
+                                    "title": "Affordable Pricing",
+                                    "desc": "Premium service at competitive rates."
+                                },
+                                {
+                                    "id": "f4",
+                                    "icon": "Clock",
+                                    "title": "On-Time Service",
+                                    "desc": "We value your time and ensure quick turnaround."
+                                },
+                                {
+                                    "id": "f5",
+                                    "icon": "Users",
+                                    "title": "Customer Satisfaction",
+                                    "desc": "Thousands of happy customers trust us."
+                                },
+                                {
+                                    "id": "f6",
+                                    "icon": "Headphones",
+                                    "title": "24/7 Support",
+                                    "desc": "We're always here to help you."
+                                }
+                            ],
+                            "button_text": "Read More",
+                            "phone": "+91 98765 43210",
+                            "call_text": "Call Us Now",
+                            "before_image": "/img/about/demage.png",
+                            "after_image": "/img/about/after.png",
+                            "badge": {
+                                "text1": "Drive Better",
+                                "text2": "With",
+                                "text3": "AutoFix",
+                                "years": "10+"
+                            }
+                        },
+                        "mission": {
+                            "subtitle": "OUR MISSION",
+                            "title_highlight": "Our Mission",
+                            "title_line1": "is to Keep You Moving",
+                            "description": "Our mission is to provide reliable, transparent, and high-quality car service and repair solutions that ensure safety, performance, and peace of mind for every customer. We are committed to building long-term relationships through trust, expertise, and exceptional service.",
+                            "features": [
+                                {
+                                    "icon": "ShieldCheck",
+                                    "title": "Reliable Service",
+                                    "desc": "You can trust"
+                                },
+                                {
+                                    "icon": "Users",
+                                    "title": "Customer First",
+                                    "desc": "Always"
+                                },
+                                {
+                                    "icon": "Award",
+                                    "title": "Quality Always",
+                                    "desc": "In everything we do"
+                                }
+                            ],
+                            "image": "/img/about/mission.png",
+                            "badge_icon": "Target",
+                            "badge_text1": "Quality Service",
+                            "badge_text2": "Stronger Journeys"
+                        },
+                        "vision": {
+                            "subtitle": "OUR VISION",
+                            "title_highlight": "Our Vision",
+                            "title_line1": "for a Better Tomorrow",
+                            "description": "Our vision is to become the most trusted and preferred car service provider, recognized for innovation, customer satisfaction, and contribution to safer and smoother journeys. We aim to set new standards in the automotive service industry through continuous improvement and a passion for excellence.",
+                            "features": [
+                                {
+                                    "icon": "TrendingUp",
+                                    "title": "Industry Leader",
+                                    "desc": "Through innovation"
+                                },
+                                {
+                                    "icon": "Shield",
+                                    "title": "Safer Roads",
+                                    "desc": "For future generations"
+                                },
+                                {
+                                    "icon": "Leaf",
+                                    "title": "Sustainable Mobility",
+                                    "desc": "A greener tomorrow"
+                                }
+                            ],
+                            "image": "/img/about/vision.png"
+                        },
+                        "ourTeam": {
+                            "subtitle": "OUR TEAM",
+                            "title_line1": "Meet Our",
+                            "title_highlight": "Experts",
+                            "description": "Skilled. Experienced. Dedicated. Our team works hard to keep your vehicle running smoothly and safely.",
+                            "members": [
+                                {
+                                    "id": "t1_0",
+                                    "image": "/img/team/1.png",
+                                    "name": "Rohit Sharma",
+                                    "role": "Service Manager"
+                                },
+                                {
+                                    "id": "t2_0",
+                                    "image": "/img/team/2.png",
+                                    "name": "Amit Kumar",
+                                    "role": "Senior Mechanic"
+                                },
+                                {
+                                    "id": "t3_0",
+                                    "image": "/img/team/3.png",
+                                    "name": "Priya Singh",
+                                    "role": "Service Advisor"
+                                },
+                                {
+                                    "id": "t4_0",
+                                    "image": "/img/team/4.png",
+                                    "name": "Vikram Patel",
+                                    "role": "AC Specialist"
+                                },
+                                {
+                                    "id": "t5_0",
+                                    "image": "/img/team/5.png",
+                                    "name": "Neeraj Verma",
+                                    "role": "Diagnostic Technician"
+                                },
+                                {
+                                    "id": "t6_0",
+                                    "image": "/img/team/6.png",
+                                    "name": "Sandeep Yadav",
+                                    "role": "Tire & Wheel Specialist"
+                                },
+                                {
+                                    "id": "t7_0",
+                                    "image": "/img/team/7.png",
+                                    "name": "Manish Gupta",
+                                    "role": "Denting & Painting Expert"
+                                },
+                                {
+                                    "id": "t8_0",
+                                    "image": "/img/team/8.png",
+                                    "name": "Kavya Mehta",
+                                    "role": "Customer Support"
+                                },
+                                {
+                                    "id": "t1_1",
+                                    "image": "/img/team/1.png",
+                                    "name": "Rohit Sharma",
+                                    "role": "Service Manager"
+                                },
+                                {
+                                    "id": "t2_1",
+                                    "image": "/img/team/2.png",
+                                    "name": "Amit Kumar",
+                                    "role": "Senior Mechanic"
+                                },
+                                {
+                                    "id": "t3_1",
+                                    "image": "/img/team/3.png",
+                                    "name": "Priya Singh",
+                                    "role": "Service Advisor"
+                                },
+                                {
+                                    "id": "t4_1",
+                                    "image": "/img/team/4.png",
+                                    "name": "Vikram Patel",
+                                    "role": "AC Specialist"
+                                },
+                                {
+                                    "id": "t5_1",
+                                    "image": "/img/team/5.png",
+                                    "name": "Neeraj Verma",
+                                    "role": "Diagnostic Technician"
+                                },
+                                {
+                                    "id": "t6_1",
+                                    "image": "/img/team/6.png",
+                                    "name": "Sandeep Yadav",
+                                    "role": "Tire & Wheel Specialist"
+                                },
+                                {
+                                    "id": "t7_1",
+                                    "image": "/img/team/7.png",
+                                    "name": "Manish Gupta",
+                                    "role": "Denting & Painting Expert"
+                                },
+                                {
+                                    "id": "t8_1",
+                                    "image": "/img/team/8.png",
+                                    "name": "Kavya Mehta",
+                                    "role": "Customer Support"
+                                },
+                                {
+                                    "id": "t1_2",
+                                    "image": "/img/team/1.png",
+                                    "name": "Rohit Sharma",
+                                    "role": "Service Manager"
+                                },
+                                {
+                                    "id": "t2_2",
+                                    "image": "/img/team/2.png",
+                                    "name": "Amit Kumar",
+                                    "role": "Senior Mechanic"
+                                },
+                                {
+                                    "id": "t3_2",
+                                    "image": "/img/team/3.png",
+                                    "name": "Priya Singh",
+                                    "role": "Service Advisor"
+                                },
+                                {
+                                    "id": "t4_2",
+                                    "image": "/img/team/4.png",
+                                    "name": "Vikram Patel",
+                                    "role": "AC Specialist"
+                                },
+                                {
+                                    "id": "t5_2",
+                                    "image": "/img/team/5.png",
+                                    "name": "Neeraj Verma",
+                                    "role": "Diagnostic Technician"
+                                },
+                                {
+                                    "id": "t6_2",
+                                    "image": "/img/team/6.png",
+                                    "name": "Sandeep Yadav",
+                                    "role": "Tire & Wheel Specialist"
+                                },
+                                {
+                                    "id": "t7_2",
+                                    "image": "/img/team/7.png",
+                                    "name": "Manish Gupta",
+                                    "role": "Denting & Painting Expert"
+                                },
+                                {
+                                    "id": "t8_2",
+                                    "image": "/img/team/8.png",
+                                    "name": "Kavya Mehta",
+                                    "role": "Customer Support"
+                                },
+                                {
+                                    "id": "t1_3",
+                                    "image": "/img/team/1.png",
+                                    "name": "Rohit Sharma",
+                                    "role": "Service Manager"
+                                },
+                                {
+                                    "id": "t2_3",
+                                    "image": "/img/team/2.png",
+                                    "name": "Amit Kumar",
+                                    "role": "Senior Mechanic"
+                                },
+                                {
+                                    "id": "t3_3",
+                                    "image": "/img/team/3.png",
+                                    "name": "Priya Singh",
+                                    "role": "Service Advisor"
+                                },
+                                {
+                                    "id": "t4_3",
+                                    "image": "/img/team/4.png",
+                                    "name": "Vikram Patel",
+                                    "role": "AC Specialist"
+                                },
+                                {
+                                    "id": "t5_3",
+                                    "image": "/img/team/5.png",
+                                    "name": "Neeraj Verma",
+                                    "role": "Diagnostic Technician"
+                                },
+                                {
+                                    "id": "t6_3",
+                                    "image": "/img/team/6.png",
+                                    "name": "Sandeep Yadav",
+                                    "role": "Tire & Wheel Specialist"
+                                },
+                                {
+                                    "id": "t7_3",
+                                    "image": "/img/team/7.png",
+                                    "name": "Manish Gupta",
+                                    "role": "Denting & Painting Expert"
+                                },
+                                {
+                                    "id": "t8_3",
+                                    "image": "/img/team/8.png",
+                                    "name": "Kavya Mehta",
+                                    "role": "Customer Support"
+                                }
+                            ]
                         }
                     }
                 }

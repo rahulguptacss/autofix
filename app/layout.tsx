@@ -6,6 +6,7 @@ import Header from "@/components/section/Header/page";
 import Footer from "@/components/section/Footer/page";
 import rawData from "@/components/data/data.json";
 import { SiteData } from "@/components/type";
+import BackToTop from "@/components/ui/BackToTop";
 
 const siteData = rawData as SiteData;
 
@@ -33,6 +34,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer data={siteData.common.Footer} />
+        <BackToTop />
       </body>
     </html>
   );

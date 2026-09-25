@@ -109,6 +109,60 @@ export interface BlogData {
   button_text?: string;
 }
 
+export interface ProcessStep {
+  id: string;
+  number: string;
+  title_line1: string;
+  title_line2: string;
+  desc: string;
+  icon: string;
+  image: string;
+}
+
+export interface ProcessData {
+  subtitle: string;
+  title_line1: string;
+  title_highlight: string;
+  description: string;
+  bg_image?: string;
+  steps: ProcessStep[];
+  call_to_action: {
+    phone: string;
+    button_text: string;
+    call_text?: string;
+  };
+  bottom_features: {
+    icon: string;
+    text: string;
+  }[];
+}
+
+export interface WhyChooseUsFeature {
+  id: string;
+  icon: string;
+  title: string;
+  desc: string;
+}
+
+export interface WhyChooseUsData {
+  subtitle: string;
+  title_line1: string;
+  title_highlight: string;
+  description: string;
+  features: WhyChooseUsFeature[];
+  button_text: string;
+  phone: string;
+  call_text?: string;
+  before_image: string;
+  after_image: string;
+  badge: {
+    text1: string;
+    text2: string;
+    text3: string;
+    years: string;
+  };
+}
+
 export interface SocialLink {
   icon: string;
   href: string;
@@ -128,6 +182,7 @@ export interface NavLink {
   href: string;
   active?: boolean;
   hasDropdown?: boolean;
+  dropdownLinks?: { name: string; href: string }[];
 }
 
 export interface HeaderData {
@@ -201,11 +256,20 @@ export interface TemplateSections {
   services: ServicesData;
   statistics: StatisticsData;
   blog: BlogData;
+  process: ProcessData;
+  whyChooseUs: WhyChooseUsData;
+  mission: MissionData;
+  vision: VisionData;
+  ourTeam: OurTeamData;
 }
 
 export interface Template1 {
   pages: {
     home: PageData;
+    about?: PageData;
+    missionVision?: PageData;
+    whyChooseUs?: PageData;
+    ourTeam?: PageData;
   };
   sections: TemplateSections;
 }
@@ -224,4 +288,52 @@ export interface SiteData {
       }
     }
   };
+}
+
+export interface MissionFeature {
+  icon: string;
+  title: string;
+  desc: string;
+}
+
+export interface MissionData {
+  subtitle: string;
+  title_highlight: string;
+  title_line1: string;
+  description: string;
+  features: MissionFeature[];
+  image: string;
+  badge_icon: string;
+  badge_text1: string;
+  badge_text2: string;
+}
+
+export interface VisionFeature {
+  icon: string;
+  title: string;
+  desc: string;
+}
+
+export interface VisionData {
+  subtitle: string;
+  title_highlight: string;
+  title_line1: string;
+  description: string;
+  features: VisionFeature[];
+  image: string;
+}
+
+export interface OurTeamMember {
+  id: string;
+  image: string;
+  name: string;
+  role: string;
+}
+
+export interface OurTeamData {
+  subtitle: string;
+  title_line1: string;
+  title_highlight: string;
+  description: string;
+  members: OurTeamMember[];
 }

@@ -94,7 +94,7 @@ const StatIcon = ({ name }: { name: string }) => {
 
 export default function StatisticsSection({ data }: { data: StatisticsData }) {
   return (
-    <section className="relative bg-[#0b1629] overflow-hidden">
+    <section className="relative bg-[#0b1629] overflow-hidden py-12 lg:py-16">
 
       {/* Full-bleed dark background image */}
       <div className="absolute inset-0 z-0">
@@ -112,7 +112,7 @@ export default function StatisticsSection({ data }: { data: StatisticsData }) {
 
         {/* Top Section: Title Left + Raised Image Right */}
         <div className="container mx-auto px-4 md:px-8">
-          <div className="flex flex-col items-center text-center pt-12 lg:pt-16 pb-4">
+          <div className="flex flex-col items-center text-center pb-4">
 
             {/* Subtitle + Title */}
             <motion.div
@@ -139,7 +139,7 @@ export default function StatisticsSection({ data }: { data: StatisticsData }) {
 
         {/* Bottom Stats Row - full width, slightly darker strip */}
         <div className="border-t border-white/10 mt-4">
-          <div className="container mx-auto px-4 md:px-8 py-10 lg:py-12">
+          <div className="container mx-auto px-4 md:px-8 pt-10 lg:pt-12">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 md:gap-12 max-w-7xl mx-auto px-2 md:px-0">
               {data.list.map((stat, idx) => (
                 <AnimatedStat key={idx} stat={stat} idx={idx} />
