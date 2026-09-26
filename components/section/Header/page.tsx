@@ -56,7 +56,7 @@ export default function Header({ data }: { data: HeaderData }) {
         {/* Action Button */}
         <div className="flex items-center">
           <Link 
-            href="#" 
+            href="/book-service" 
             className="bg-[#e62020] hover:bg-red-700 flex items-center justify-center py-2 px-3 md:py-[14px] md:px-5 text-white font-semibold transition-colors skew-x-[-22deg] shadow-md"
           >
             <div className="skew-x-[22deg] flex items-center">
@@ -90,13 +90,6 @@ export default function Header({ data }: { data: HeaderData }) {
               {data.links.map((link) => (
                 <MobileNavItem key={link.name} link={link} pathname={pathname || ''} setIsMobileMenuOpen={setIsMobileMenuOpen} />
               ))}
-              <Link 
-                href="#" 
-                className="bg-[#e62020] flex items-center justify-center py-3 px-5 text-white font-semibold rounded-md mt-4 shadow-sm"
-              >
-                <FaCar size={20} className="mr-2" />
-                <span>{data.button_text}</span>
-              </Link>
             </div>
           </motion.div>
         )}

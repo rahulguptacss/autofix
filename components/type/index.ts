@@ -87,6 +87,13 @@ export interface StatisticsData {
   list: StatisticItem[];
 }
 
+export interface BlogDetailsSectionData {
+  title?: string;
+  paragraph: string;
+  image?: string;
+  imagePosition?: 'left' | 'right';
+}
+
 export interface BlogItem {
   id: number;
   title: string;
@@ -98,9 +105,16 @@ export interface BlogItem {
   tag: string;
   img: string;
   authorImg: string;
+  intro?: string;
+  contentSections?: BlogDetailsSectionData[];
+  quote?: {
+    text: string;
+    author: string;
+  };
 }
 
 export interface BlogData {
+  breadcrumb?: BreadcrumbData;
   subtitle: string;
   title_line1: string;
   title_highlight: string;
@@ -250,7 +264,251 @@ export interface PageData {
   seo: SEOData;
 }
 
+export interface ServiceBenefit {
+  icon: string;
+  title: string;
+}
+
+export interface ServiceOverview {
+  title: string;
+  description: string;
+}
+
+export interface ServiceIncludedBadge {
+  text1: string;
+  text2: string;
+}
+
+export interface ServiceIncluded {
+  title: string;
+  list: string[];
+  image: string;
+  badge: ServiceIncludedBadge;
+}
+
+export interface ServiceSidebar {
+  servicesTitle: string;
+  helpTitle: string;
+  phone: string;
+  hours: string;
+  buttonText: string;
+}
+
+export interface ServiceDetailsData {
+  breadcrumb: BreadcrumbData;
+  mainImage: string;
+  subtitle: string;
+  title1: string;
+  title2: string;
+  quote: string;
+  description: string;
+  benefits: ServiceBenefit[];
+  overview: ServiceOverview;
+  included: ServiceIncluded;
+  sidebar: ServiceSidebar;
+}
+
+export interface ContactInfo {
+  address: string;
+  phone: string;
+  email: string;
+  working_hours: string;
+}
+
+export interface ContactData {
+  subtitle: string;
+  title_highlight: string;
+  title_line1: string;
+  description: string;
+  contact_info: ContactInfo;
+}
+
+export interface TeamDetailsSkill {
+  name: string;
+  percentage: number;
+}
+
+export interface TeamDetailsData {
+  sidebar: {
+    title: string;
+    contactTitle: string;
+    phone: string;
+    email: string;
+  };
+  aboutTitle: string;
+  skillsTitle: string;
+  skills: TeamDetailsSkill[];
+}
+
+export interface BlogDetailsData {
+  breadcrumb?: BreadcrumbData;
+  sidebar: {
+    searchTitle: string;
+    categoriesTitle: string;
+    categories: string[];
+    recentPostsTitle: string;
+    tagsTitle: string;
+    tags: string[];
+    assistanceBox?: {
+      bgImage: string;
+      title: string;
+      desc: string;
+      callText: string;
+      phone: string;
+      buttonText: string;
+      buttonLink: string;
+    };
+  };
+}
+
+export interface BrandItem {
+  name: string;
+  logo: string;
+}
+
+export interface BrandsData {
+  subtitle: string;
+  title_line1: string;
+  title_highlight: string;
+  description: string;
+  searchPlaceholder: string;
+  searchButtonText: string;
+  brandsList: BrandItem[];
+}
+
+export interface PricingItem {
+  image: string;
+  iconName: string;
+  title: string;
+  description: string;
+  price: string;
+}
+
+export interface PricingData {
+  subtitle: string;
+  title_line1: string;
+  title_highlight: string;
+  description: string;
+  starting_at_text?: string;
+  onwards_text?: string;
+  pricingList: PricingItem[];
+}
+
+export interface FormFieldOption {
+  value: string;
+  label: string;
+}
+
+export interface FormField {
+  name: string;
+  label: string;
+  type?: string;
+  placeholder?: string;
+  icon: string;
+  required?: boolean;
+  optionalText?: string;
+  options?: FormFieldOption[];
+  fullWidth?: boolean;
+}
+
+export interface BookServiceFormStep {
+  number: string;
+  title: string;
+  desc: string;
+  fields: FormField[];
+}
+
+export interface BookServiceSidebarFeature {
+  icon: string;
+  title: string;
+  desc: string;
+}
+
+export interface BookServiceData {
+  subtitle: string;
+  title_line1: string;
+  title_highlight: string;
+  title_line2: string;
+  description: string;
+  form: {
+    step1: BookServiceFormStep;
+    step2: BookServiceFormStep;
+    step3: BookServiceFormStep;
+    submitText: string;
+    securityText: string;
+  };
+  sidebar: {
+    imageCard: {
+      image: string;
+      text1: string;
+      text2: string;
+    };
+    features: {
+      title: string;
+      list: BookServiceSidebarFeature[];
+    };
+    contactBox: {
+      bgImage: string;
+      phoneTitle: string;
+      phoneSub: string;
+      phone: string;
+      emailTitle: string;
+      email: string;
+      signature: string;
+    };
+  };
+}
+
+export interface GalleryPhoto {
+  image: string;
+  title: string;
+}
+
+export interface GalleryVideo {
+  image: string;
+  videoUrl: string;
+  duration: string;
+  title: string;
+  desc: string;
+}
+
+export interface GalleryData {
+  breadcrumb: BreadcrumbData;
+  subtitle: string;
+  title_line1: string;
+  title_highlight: string;
+  description: string;
+  photoTabLabel: string;
+  videoTabLabel: string;
+  photosTitle: string;
+  videosTitle: string;
+  photos: GalleryPhoto[];
+  videos: GalleryVideo[];
+}
+
+export interface TestimonialItem {
+  id: string;
+  carImage: string;
+  avatar: string;
+  rating: number;
+  quote: string;
+  author: string;
+  location: string;
+  carModel: string;
+}
+
+export interface TestimonialData {
+  breadcrumb: BreadcrumbData;
+  subtitle: string;
+  title_line1: string;
+  title_highlight: string;
+  description: string;
+  items: TestimonialItem[];
+}
+
 export interface TemplateSections {
+  bookService: BookServiceData;
+  serviceDetails: ServiceDetailsData;
   hero: HeroData;
   about: AboutData;
   services: ServicesData;
@@ -261,15 +519,35 @@ export interface TemplateSections {
   mission: MissionData;
   vision: VisionData;
   ourTeam: OurTeamData;
+  contact: ContactData;
+  teamDetails: TeamDetailsData;
+  blogDetails: BlogDetailsData;
+  brands: BrandsData;
+  pricing: PricingData;
+  gallery: GalleryData;
+  testimonials: TestimonialData;
+  faq?: FaqData;
 }
 
 export interface Template1 {
   pages: {
     home: PageData;
+    bookService?: PageData;
     about?: PageData;
     missionVision?: PageData;
     whyChooseUs?: PageData;
     ourTeam?: PageData;
+    teamDetails?: PageData;
+    services?: PageData;
+    serviceDetails?: PageData;
+    blog?: PageData;
+    blogDetails?: PageData;
+    contact?: PageData;
+    brands?: PageData;
+    pricing?: PageData;
+    testimonials?: PageData;
+    gallery?: PageData;
+    sitemap?: SitemapData;
   };
   sections: TemplateSections;
 }
@@ -336,4 +614,61 @@ export interface OurTeamData {
   title_highlight: string;
   description: string;
   members: OurTeamMember[];
+}
+
+
+export interface FaqItem {
+  id: number;
+  question: string;
+  answer: string;
+}
+
+export interface FaqData {
+  breadcrumb?: BreadcrumbData;
+  sidebar: {
+    title: string;
+    description: string;
+    contacts: {
+      icon: string;
+      title: string;
+      detail: string;
+      subDetail: string;
+    }[];
+    extraHelp: {
+      title: string;
+      description: string;
+      buttonText: string;
+      buttonLink: string;
+    };
+    bottomImage: string;
+  };
+  content: {
+    tagline: string;
+    titleBlue: string;
+    titleRed: string;
+    rightText: string;
+    list: FaqItem[];
+  };
+}
+
+export interface SitemapLink {
+  label: string;
+  url: string;
+}
+
+export interface SitemapSection {
+  icon: string;
+  title: string;
+  links: SitemapLink[];
+}
+
+export interface SitemapData {
+  breadcrumb: BreadcrumbData;
+  content: {
+    tagline: string;
+    title: string;
+    titleRed: string;
+    description: string;
+    sections: SitemapSection[];
+  };
 }

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from "next/image";
+import Link from 'next/link';
 import { Share2, ChevronLeft, ChevronRight } from 'lucide-react';
 import { OurTeamData } from '@/components/type';
 import { motion } from 'framer-motion';
@@ -74,25 +75,27 @@ export default function OurTeamSection({ data }: { data: OurTeamData }) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 * idx, duration: 0.5 }}
-              className="bg-white rounded-[10px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.03)] group"
+              className="bg-white rounded-[10px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.03)] group relative"
             >
-              <div className="relative aspect-square w-full bg-[#e8edf2] overflow-hidden">
-                <Image 
-                  src={member.image} 
-                  alt={member.name}
-                  fill
-                  className="object-cover object-top transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-5 relative border-t-2 border-transparent group-hover:border-[#e62020] transition-colors duration-300">
-                <h4 className="text-[17px] font-extrabold text-[#101b29] mb-1">{member.name}</h4>
-                <p className="text-[#697386] text-[13px] font-medium">{member.role}</p>
-                
-                {/* Share Button (overlapping) */}
-                <button className="absolute -top-[18px] right-5 h-[36px] w-[36px] bg-[#e62020] text-white flex items-center justify-center rounded-[6px] shadow-lg hover:bg-red-700 transition-colors z-10 opacity-0 transform translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 duration-300">
-                  <Share2 size={16} />
-                </button>
-              </div>
+              <Link href={`/team-details/${member.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
+                <div className="relative aspect-square w-full bg-[#e8edf2] overflow-hidden">
+                  <Image 
+                    src={member.image} 
+                    alt={member.name}
+                    fill
+                    className="object-cover object-top transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+                <div className="p-5 relative border-t-2 border-transparent group-hover:border-[#e62020] transition-colors duration-300">
+                  <h4 className="text-[17px] font-extrabold text-[#101b29] mb-1">{member.name}</h4>
+                  <p className="text-[#697386] text-[13px] font-medium">{member.role}</p>
+                </div>
+              </Link>
+              
+              {/* Share Button (overlapping) */}
+              <button className="absolute bottom-[60px] right-5 h-[36px] w-[36px] bg-[#e62020] text-white flex items-center justify-center rounded-[6px] shadow-lg hover:bg-red-700 transition-colors z-10 opacity-0 transform translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 duration-300">
+                <Share2 size={16} />
+              </button>
             </motion.div>
           ))}
         </div>

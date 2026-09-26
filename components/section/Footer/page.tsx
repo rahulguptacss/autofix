@@ -174,9 +174,9 @@ export default function Footer({ data }: { data: FooterData }) {
               </span>
             ))}
           </p>
-          <div className="flex space-x-6">
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 md:gap-x-6 md:gap-y-0">
             {data.bottom_links.map((link, idx) => (
-              <Link key={idx} href={link.href} className="hover:text-white transition-colors">
+              <Link key={idx} href={link.href} className="hover:text-white transition-colors text-center">
                 {link.name}
               </Link>
             ))}

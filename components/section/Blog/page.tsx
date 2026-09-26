@@ -50,7 +50,7 @@ export default function BlogSection({ data }: { data: BlogData }) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 lg:gap-4 mb-12">
-          {data.list.map(blog => (
+          {data.list.slice(0, 3).map(blog => (
             <div key={blog.id} className="bg-white rounded-3xl p-4 sm:p-5 shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.18)] transition-all duration-300 group border border-gray-50">
                
                <div className="relative mb-8">
@@ -92,7 +92,7 @@ export default function BlogSection({ data }: { data: BlogData }) {
                       </div>
                     </div>
                     
-                    <Link href="#" className="group/link text-[#0b121d] hover:text-[#e62020] transition-colors font-extrabold flex flex-col text-[15px]">
+                    <Link href={`/blog-details/${blog.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '')}`} className="group/link text-[#0b121d] hover:text-[#e62020] transition-colors font-extrabold flex flex-col text-[15px]">
                       <div className="flex items-center">
                         Read More <ArrowRight size={18} className="ml-1 text-[#e62020] group-hover/link:translate-x-1 transition-transform" strokeWidth={2.5} />
                       </div>

@@ -1,988 +1,2671 @@
 {
-    "common": {
-        "Topbar": {
-            "address": "120 M G Road, Bengaluru, Karnataka 560001",
-            "phone": "+91 98765 43210",
-            "email": "support@autofix.com",
-            "social_title": "Follow Us",
-            "socials": [
-                {
-                    "icon": "FaFacebook",
-                    "href": "https://www.facebook.com"
-                },
-                {
-                    "icon": "FaInstagram",
-                    "href": "https://www.instagram.com"
-                },
-                {
-                    "icon": "FaLinkedin",
-                    "href": "https://www.linkedin.com"
-                },
-                {
-                    "icon": "FaYoutube",
-                    "href": "https://www.youtube.com"
-                }
-            ],
-            "working_hours": "Mon - Sat: 9:00 AM - 7:00 PM"
+  "common": {
+    "Topbar": {
+      "address": "120 M G Road, Bengaluru, Karnataka 560001",
+      "phone": "+1 0000000000",
+      "email": "info@xyz.com",
+      "social_title": "Follow Us",
+      "socials": [
+        {
+          "icon": "FaFacebook",
+          "href": "https://www.facebook.com"
         },
-        "Header": {
-            "logo_text1": "Auto",
-            "logo_text2": "Fix",
-            "logo_desc": "Car Repair Service",
-            "links": [
-                {
-                    "name": "Home",
-                    "href": "/",
-                    "active": true
-                },
-                {
-                    "name": "About Us",
-                    "href": "/about",
-                    "active": false,
-                    "hasDropdown": true,
-                    "dropdownLinks": [
-                        {
-                            "name": "About Us",
-                            "href": "/about"
-                        },
-                        {
-                            "name": "Why Choose Us",
-                            "href": "/why-choose-us"
-                        },
-                        {
-                            "name": "Mission & Vision",
-                            "href": "/mission-vision"
-                        },
-                        {
-                            "name": "Our Teams",
-                            "href": "/our-team"
-                        }
-                    ]
-                },
-                {
-                    "name": "Services",
-                    "href": "#",
-                    "active": false
-                },
-                {
-                    "name": "Car Brands",
-                    "href": "#",
-                    "active": false
-                },
-                {
-                    "name": "Pricing",
-                    "href": "#",
-                    "active": false
-                },
-                {
-                    "name": "Gallery",
-                    "href": "#",
-                    "active": false
-                },
-                {
-                    "name": "Blog",
-                    "href": "#",
-                    "active": false
-                },
-                {
-                    "name": "Contact",
-                    "href": "#",
-                    "active": false
-                }
-            ],
-            "button_text": "Book A Service"
+        {
+          "icon": "FaInstagram",
+          "href": "https://www.instagram.com"
         },
-        "Footer": {
-            "about": {
-                "desc": "At AutoFix, we are committed to keeping your vehicle safe, reliable, and running smoothly. Quality service, expert care, and your complete satisfaction are always our priority.",
-                "socials": [
-                    {
-                        "icon": "FaFacebook",
-                        "href": "https://www.facebook.com"
-                    },
-                    {
-                        "icon": "FaInstagram",
-                        "href": "https://www.instagram.com"
-                    },
-                    {
-                        "icon": "FaLinkedin",
-                        "href": "https://www.linkedin.com"
-                    },
-                    {
-                        "icon": "FaYoutube",
-                        "href": "https://www.youtube.com"
-                    }
-                ]
-            },
-            "quick_links": [
-                {
-                    "name": "Home",
-                    "href": "/"
-                },
-                {
-                    "name": "About Us",
-                    "href": "/about"
-                },
-                {
-                    "name": "Our Services",
-                    "href": "#"
-                },
-                {
-                    "name": "Car Brands",
-                    "href": "#"
-                },
-                {
-                    "name": "Pricing",
-                    "href": "#"
-                },
-                {
-                    "name": "Gallery",
-                    "href": "#"
-                },
-                {
-                    "name": "Blog",
-                    "href": "#"
-                },
-                {
-                    "name": "Contact Us",
-                    "href": "#"
-                }
-            ],
-            "services": [
-                {
-                    "name": "Engine Repair",
-                    "href": "#"
-                },
-                {
-                    "name": "Oil Change & Filters",
-                    "href": "#"
-                },
-                {
-                    "name": "Brake Service",
-                    "href": "#"
-                },
-                {
-                    "name": "A/C & Heating Repair",
-                    "href": "#"
-                },
-                {
-                    "name": "Tire & Wheel Services",
-                    "href": "#"
-                },
-                {
-                    "name": "Battery Replacement",
-                    "href": "#"
-                },
-                {
-                    "name": "Diagnostics & Inspection",
-                    "href": "#"
-                },
-                {
-                    "name": "General Car Repair",
-                    "href": "#"
-                }
-            ],
-            "contact": {
-                "address_line1": "120 M G Road, Bengaluru,",
-                "address_line2": "Karnataka 560001",
-                "phone": "+91 98765 43210",
-                "email": "support@autofix.com",
-                "working_hours": [
-                    "Mon - Sat: 9:00 AM - 7:00 PM",
-                    "Sunday: Closed"
-                ]
-            },
-            "copyright": "Copyright © 2026. All rights reserved. Powered by Lestow",
-            "bottom_links": [
-                {
-                    "name": "Terms & Conditions",
-                    "href": "#"
-                },
-                {
-                    "name": "Privacy Policy",
-                    "href": "#"
-                },
-                {
-                    "name": "Support",
-                    "href": "#"
-                }
-            ]
+        {
+          "icon": "FaLinkedin",
+          "href": "https://www.linkedin.com"
         },
-        "seo": {
-            "siteName": "AutoFix",
-            "siteUrl": "https://www.autofix.com",
-            "defaultTitle": "AutoFix | Trusted Car Repair Service",
-            "defaultDescription": "From routine maintenance to complex repairs, we keep your car running at its best.",
-            "keywords": "AutoFix, car repair, online booking, service, maintenance",
-            "ogImage": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2000&auto=format&fit=crop",
-            "locale": "en_US"
+        {
+          "icon": "FaYoutube",
+          "href": "https://www.youtube.com"
         }
+      ],
+      "working_hours": "Mon - Sat: 9:00 AM - 7:00 PM"
     },
-    "categories": {
-        "AutoRepair": {
-            "templateComponents": {
-                "template-1": {
-                    "pages": {
-                        "home": {
-                            "breadcrumb": {
-                                "title": "Home",
-                                "paths": [
-                                    {
-                                        "label": "Home",
-                                        "href": "/"
-                                    }
-                                ],
-                                "bgImage": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2000&auto=format&fit=crop"
-                            },
-                            "components": [
-                                {
-                                    "key": "HeroSection",
-                                    "component": "HeroSection"
-                                },
-                                {
-                                    "key": "AboutSection",
-                                    "component": "AboutSection"
-                                },
-                                {
-                                    "key": "ServicesSection",
-                                    "component": "ServicesSection"
-                                },
-                                {
-                                    "key": "StatisticsSection",
-                                    "component": "StatisticsSection"
-                                },
-                                {
-                                    "key": "BlogSection",
-                                    "component": "BlogSection"
-                                }
-                            ],
-                            "seo": {
-                                "title": "AutoFix - Car Repair Service",
-                                "description": "Trusted Care for Every Drive",
-                                "keywords": "AutoFix, car repair, auto service, mechanic",
-                                "canonical": "/"
-                            }
-                        },
-                        "about": {
-                            "breadcrumb": {
-                                "title": "About Us",
-                                "paths": [
-                                    {
-                                        "label": "Home",
-                                        "href": "/"
-                                    },
-                                    {
-                                        "label": "About Us"
-                                    }
-                                ],
-                                "bgImage": "/img/banner/breadcrumb.png"
-                            },
-                            "components": [
-                                {
-                                    "key": "AboutSection",
-                                    "component": "AboutSection"
-                                },
-                                {
-                                    "key": "StatisticsSection",
-                                    "component": "StatisticsSection"
-                                },
-                                {
-                                    "key": "OurProcessSection",
-                                    "component": "OurProcessSection"
-                                },
-                                {
-                                    "key": "WhyChooseUsSection",
-                                    "component": "WhyChooseUsSection"
-                                }
-                            ],
-                            "seo": {
-                                "title": "About Us - AutoFix",
-                                "description": "Learn more about our trusted car repair services.",
-                                "canonical": "/about"
-                            }
-                        },
-                        "missionVision": {
-                            "breadcrumb": {
-                                "title": "Mission & Vision",
-                                "paths": [
-                                    {
-                                        "label": "Home",
-                                        "href": "/"
-                                    },
-                                    {
-                                        "label": "Mission & Vision"
-                                    }
-                                ],
-                                "bgImage": "/img/banner/breadcrumb.png"
-                            },
-                            "components": [
-                                {
-                                    "key": "MissionSection",
-                                    "component": "MissionSection"
-                                },
-                                {
-                                    "key": "VisionSection",
-                                    "component": "VisionSection"
-                                }
-                            ],
-                            "seo": {
-                                "title": "Mission & Vision - AutoFix",
-                                "description": "Learn about our mission and vision for auto repair.",
-                                "canonical": "/mission-vision"
-                            }
-                        },
-                        "whyChooseUs": {
-                            "breadcrumb": {
-                                "title": "Why Choose Us",
-                                "paths": [
-                                    {
-                                        "label": "Home",
-                                        "href": "/"
-                                    },
-                                    {
-                                        "label": "Why Choose Us"
-                                    }
-                                ],
-                                "bgImage": "/img/banner/breadcrumb.png"
-                            },
-                            "components": [
-                                {
-                                    "key": "WhyChooseUsSection",
-                                    "component": "WhyChooseUsSection"
-                                },
-                                {
-                                    "key": "StatisticsSection",
-                                    "component": "StatisticsSection"
-                                }
-                            ],
-                            "seo": {
-                                "title": "Why Choose Us - AutoFix",
-                                "description": "Find out why thousands of car owners trust AutoFix for their repair needs.",
-                                "canonical": "/why-choose-us"
-                            }
-                        },
-                        "ourTeam": {
-                            "breadcrumb": {
-                                "title": "Our Teams",
-                                "paths": [
-                                    {
-                                        "label": "Home",
-                                        "href": "/"
-                                    },
-                                    {
-                                        "label": "Our Teams"
-                                    }
-                                ],
-                                "bgImage": "/img/banner/breadcrumb.png"
-                            },
-                            "components": [
-                                {
-                                    "key": "OurTeamSection",
-                                    "component": "OurTeamSection"
-                                }
-                            ],
-                            "seo": {
-                                "title": "Our Teams - AutoFix",
-                                "description": "Meet our expert team of mechanics and service advisors.",
-                                "canonical": "/our-team"
-                            }
-                        }
-                    },
-                    "sections": {
-                        "hero": {
-                            "bg_image": "/img/banner/1.png",
-                            "tags": [
-                                "Professional",
-                                "Reliable",
-                                "Affordable"
-                            ],
-                            "title_line1": "Trusted Care",
-                            "title_line2": "for",
-                            "title_highlight": "Every Drive",
-                            "description": "From routine maintenance to complex repairs, we keep your car running at its best.",
-                            "button_text": "Book A Service",
-                            "features": [
-                                {
-                                    "icon": "Wrench",
-                                    "text1": "Expert",
-                                    "text2": "Technicians"
-                                },
-                                {
-                                    "icon": "Settings",
-                                    "text1": "Genuine",
-                                    "text2": "Parts"
-                                },
-                                {
-                                    "icon": "CheckCircle2",
-                                    "text1": "Affordable",
-                                    "text2": "Pricing"
-                                },
-                                {
-                                    "icon": "Clock",
-                                    "text1": "Quick",
-                                    "text2": "Turnaround"
-                                }
-                            ],
-                            "stats": [
-                                {
-                                    "icon": "User",
-                                    "number": "10K+",
-                                    "text": "Happy Customers"
-                                },
-                                {
-                                    "icon": "Clock",
-                                    "number": "5+",
-                                    "text": "Years Experience"
-                                },
-                                {
-                                    "icon": "CheckCircle2",
-                                    "number": "All Major",
-                                    "text": "Car Brands"
-                                }
-                            ]
-                        },
-                        "about": {
-                            "image1": "/img/about/1.png",
-                            "image2": "/img/about/2.png",
-                            "experience": {
-                                "icon": "Wrench",
-                                "years": "58+",
-                                "text1": "Years of",
-                                "text2": "Experience"
-                            },
-                            "subtitle": "About Us",
-                            "title_line1": "Reliable Car Repairs",
-                            "title_line2": "with",
-                            "title_highlight": "AutoFix",
-                            "description": "At AutoFix, we are committed to keeping you on the road with safe, reliable, and high-performance vehicles. Our skilled technicians use advanced tools and genuine parts to deliver quality repairs and maintenance you can trust.",
-                            "stats": [
-                                {
-                                    "value": "98%",
-                                    "text1": "Customer",
-                                    "text2": "Satisfaction"
-                                },
-                                {
-                                    "value": "50+",
-                                    "text1": "Expert",
-                                    "text2": "Technicians"
-                                }
-                            ],
-                            "points": [
-                                "Genuine Parts & Quality Service",
-                                "Affordable & Transparent Pricing",
-                                "Complete Car Diagnostics",
-                                "Fast Turnaround Time"
-                            ],
-                            "ceo": {
-                                "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150&auto=format&fit=crop",
-                                "name": "David Miller",
-                                "role": "Founder & CEO"
-                            },
-                            "button_text": "ABOUT MORE"
-                        },
-                        "services": {
-                            "subtitle": "Latest Service",
-                            "title_line1": "Reliable Services for",
-                            "title_highlight": "Every Car",
-                            "description": "From routine maintenance to advanced repairs, AutoFix provides complete car care solutions to keep your vehicle running at its best.",
-                            "list": [
-                                {
-                                    "id": "01",
-                                    "title": "General Car Repair",
-                                    "desc": "Complete car repair solutions for all makes and models. We keep your car running smoothly.",
-                                    "icon": "Wrench",
-                                    "img": "/img/service/1.png"
-                                },
-                                {
-                                    "id": "02",
-                                    "title": "Brake Service",
-                                    "desc": "Ensure your safety with our professional brake inspection, repair and replacement services.",
-                                    "icon": "CheckCircle2",
-                                    "img": "/img/service/2.png"
-                                },
-                                {
-                                    "id": "03",
-                                    "title": "Engine Diagnostics",
-                                    "desc": "Advanced diagnostics to quickly identify and fix engine issues for better performance.",
-                                    "icon": "Activity",
-                                    "img": "/img/service/3.png"
-                                },
-                                {
-                                    "id": "04",
-                                    "title": "Oil Change Service",
-                                    "desc": "Keep your engine healthy with high-quality oil change and filter replacement.",
-                                    "icon": "Settings",
-                                    "img": "/img/service/4.png"
-                                },
-                                {
-                                    "id": "05",
-                                    "title": "Tire & Wheel Service",
-                                    "desc": "Complete tire rotation, balancing, alignment and replacement for a smooth and safe ride.",
-                                    "icon": "Wrench",
-                                    "img": "/img/service/1.png"
-                                }
-                            ]
-                        },
-                        "statistics": {
-                            "bg_image": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2000&auto=format&fit=crop",
-                            "side_image": "https://images.unsplash.com/photo-1504222490345-c075b6008014?q=80&w=800&auto=format&fit=crop",
-                            "subtitle": "// Statistics",
-                            "title_line1": "Learn more About",
-                            "title_line2": "Our Success",
-                            "list": [
-                                {
-                                    "icon": "FileText",
-                                    "value": "260+",
-                                    "label": "Total Project"
-                                },
-                                {
-                                    "icon": "Wrench",
-                                    "value": "399%",
-                                    "label": "Transparency"
-                                },
-                                {
-                                    "icon": "CheckCircle2",
-                                    "value": "456+",
-                                    "label": "Project Done"
-                                },
-                                {
-                                    "icon": "Activity",
-                                    "value": "125+",
-                                    "label": "Got Awards"
-                                }
-                            ]
-                        },
-                        "blog": {
-                            "subtitle": "Our Blog",
-                            "title_line1": "Latest News &",
-                            "title_highlight": "Car Care Tips",
-                            "description": "Stay informed with expert advice, maintenance tips, and the latest updates from AutoFix.",
-                            "list": [
-                                {
-                                    "id": 1,
-                                    "title": "Expert Advice To Keep Your Car Running Smoothly",
-                                    "desc": "Discover essential car maintenance tips to improve performance, increase lifespan, and avoid costly repairs.",
-                                    "date": "25",
-                                    "month": "Mar 2026",
-                                    "author": "Kavin Sharma",
-                                    "dateFull": "Mar 25, 2026",
-                                    "tag": "Maintenance Tips",
-                                    "img": "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=600&auto=format&fit=crop",
-                                    "authorImg": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop"
-                                },
-                                {
-                                    "id": 2,
-                                    "title": "Your Complete Tire Maintenance Guide",
-                                    "desc": "Learn how to check, rotate, and maintain your tires for better safety, fuel efficiency, and a smoother driving experience.",
-                                    "date": "18",
-                                    "month": "Aug 2026",
-                                    "author": "Priya Mishra",
-                                    "dateFull": "Aug 18, 2026",
-                                    "tag": "Car Care Guide",
-                                    "img": "https://images.unsplash.com/photo-1578844251758-2f71da64c96f?q=80&w=600&auto=format&fit=crop",
-                                    "authorImg": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop"
-                                },
-                                {
-                                    "id": 3,
-                                    "title": "Latest Trends In Car Repair & Diagnostics",
-                                    "desc": "Explore the newest technologies and trends in car repair services that are making vehicles smarter, safer, and more reliable.",
-                                    "date": "16",
-                                    "month": "Feb 2026",
-                                    "author": "Amit Verma",
-                                    "dateFull": "Feb 16, 2026",
-                                    "tag": "Repair Insights",
-                                    "img": "https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?q=80&w=600&auto=format&fit=crop",
-                                    "authorImg": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop"
-                                }
-                            ],
-                            "button_text": "View All Blog"
-                        },
-                        "process": {
-                            "bg_image": "/our-process-section-bg.png",
-                            "subtitle": "OUR PROCESS",
-                            "title_line1": "From Booking to a",
-                            "title_highlight": "Better Drive",
-                            "description": "A simple, transparent, and reliable process to keep your car in top condition.",
-                            "steps": [
-                                {
-                                    "id": "step1",
-                                    "number": "01",
-                                    "title_line1": "Book an",
-                                    "title_line2": "Appointment",
-                                    "desc": "Get in touch with us through call, website, or visit our service center to schedule your service.",
-                                    "icon": "Calendar",
-                                    "image": "/img/about/i1.png"
-                                },
-                                {
-                                    "id": "step2",
-                                    "number": "02",
-                                    "title_line1": "Inspection &",
-                                    "title_line2": "Diagnosis",
-                                    "desc": "Our expert performs a complete checkup and diagnosis the issue using advanced tools.",
-                                    "icon": "Search",
-                                    "image": "/img/about/i2.png"
-                                },
-                                {
-                                    "id": "step3",
-                                    "number": "03",
-                                    "title_line1": "Repair &",
-                                    "title_line2": "Service",
-                                    "desc": "We repair with genuine parts and follow manufacturer standards to ensure the best performance.",
-                                    "icon": "Wrench",
-                                    "image": "/img/about/i3.png"
-                                },
-                                {
-                                    "id": "step4",
-                                    "number": "04",
-                                    "title_line1": "Quality",
-                                    "title_line2": "Check",
-                                    "desc": "After service, our team runs a detailed quality check to ensure your car is in perfect condition.",
-                                    "icon": "CheckCircle2",
-                                    "image": "/img/about/i4.png"
-                                },
-                                {
-                                    "id": "step5",
-                                    "number": "05",
-                                    "title_line1": "Drive with",
-                                    "title_line2": "Confidence",
-                                    "desc": "Get back on the road with a safe, smoother, and better-performing car.",
-                                    "icon": "Car",
-                                    "image": "/img/about/i5.png"
-                                }
-                            ],
-                            "call_to_action": {
-                                "phone": "+91 98765 43210",
-                                "button_text": "Book A Service",
-                                "call_text": "Call Us Now"
-                            },
-                            "bottom_features": [
-                                {
-                                    "icon": "Users",
-                                    "text": "EXPERT TECHNICIANS"
-                                },
-                                {
-                                    "icon": "Shield",
-                                    "text": "GENUINE PARTS"
-                                },
-                                {
-                                    "icon": "Headphones",
-                                    "text": "CUSTOMER FOCUSED"
-                                },
-                                {
-                                    "icon": "ThumbsUp",
-                                    "text": "100% SATISFACTION"
-                                }
-                            ]
-                        },
-                        "whyChooseUs": {
-                            "subtitle": "WHY CHOOSE US",
-                            "title_line1": "Because Your Car Deserves",
-                            "title_highlight": "the Best",
-                            "description": "At AutoFix, we go beyond just repairs — we deliver reliable solutions, expert care, and a better driving experience. Here's why thousands of car owners trust us.",
-                            "features": [
-                                {
-                                    "id": "f1",
-                                    "icon": "Award",
-                                    "title": "Expert Technicians",
-                                    "desc": "Certified and experienced professionals."
-                                },
-                                {
-                                    "id": "f2",
-                                    "icon": "CheckCircle",
-                                    "title": "High-Quality Parts",
-                                    "desc": "We use genuine and high-grade parts."
-                                },
-                                {
-                                    "id": "f3",
-                                    "icon": "Percent",
-                                    "title": "Affordable Pricing",
-                                    "desc": "Premium service at competitive rates."
-                                },
-                                {
-                                    "id": "f4",
-                                    "icon": "Clock",
-                                    "title": "On-Time Service",
-                                    "desc": "We value your time and ensure quick turnaround."
-                                },
-                                {
-                                    "id": "f5",
-                                    "icon": "Users",
-                                    "title": "Customer Satisfaction",
-                                    "desc": "Thousands of happy customers trust us."
-                                },
-                                {
-                                    "id": "f6",
-                                    "icon": "Headphones",
-                                    "title": "24/7 Support",
-                                    "desc": "We're always here to help you."
-                                }
-                            ],
-                            "button_text": "Read More",
-                            "phone": "+91 98765 43210",
-                            "call_text": "Call Us Now",
-                            "before_image": "/img/about/demage.png",
-                            "after_image": "/img/about/after.png",
-                            "badge": {
-                                "text1": "Drive Better",
-                                "text2": "With",
-                                "text3": "AutoFix",
-                                "years": "10+"
-                            }
-                        },
-                        "mission": {
-                            "subtitle": "OUR MISSION",
-                            "title_highlight": "Our Mission",
-                            "title_line1": "is to Keep You Moving",
-                            "description": "Our mission is to provide reliable, transparent, and high-quality car service and repair solutions that ensure safety, performance, and peace of mind for every customer. We are committed to building long-term relationships through trust, expertise, and exceptional service.",
-                            "features": [
-                                {
-                                    "icon": "ShieldCheck",
-                                    "title": "Reliable Service",
-                                    "desc": "You can trust"
-                                },
-                                {
-                                    "icon": "Users",
-                                    "title": "Customer First",
-                                    "desc": "Always"
-                                },
-                                {
-                                    "icon": "Award",
-                                    "title": "Quality Always",
-                                    "desc": "In everything we do"
-                                }
-                            ],
-                            "image": "/img/about/mission.png",
-                            "badge_icon": "Target",
-                            "badge_text1": "Quality Service",
-                            "badge_text2": "Stronger Journeys"
-                        },
-                        "vision": {
-                            "subtitle": "OUR VISION",
-                            "title_highlight": "Our Vision",
-                            "title_line1": "for a Better Tomorrow",
-                            "description": "Our vision is to become the most trusted and preferred car service provider, recognized for innovation, customer satisfaction, and contribution to safer and smoother journeys. We aim to set new standards in the automotive service industry through continuous improvement and a passion for excellence.",
-                            "features": [
-                                {
-                                    "icon": "TrendingUp",
-                                    "title": "Industry Leader",
-                                    "desc": "Through innovation"
-                                },
-                                {
-                                    "icon": "Shield",
-                                    "title": "Safer Roads",
-                                    "desc": "For future generations"
-                                },
-                                {
-                                    "icon": "Leaf",
-                                    "title": "Sustainable Mobility",
-                                    "desc": "A greener tomorrow"
-                                }
-                            ],
-                            "image": "/img/about/vision.png"
-                        },
-                        "ourTeam": {
-                            "subtitle": "OUR TEAM",
-                            "title_line1": "Meet Our",
-                            "title_highlight": "Experts",
-                            "description": "Skilled. Experienced. Dedicated. Our team works hard to keep your vehicle running smoothly and safely.",
-                            "members": [
-                                {
-                                    "id": "t1_0",
-                                    "image": "/img/team/1.png",
-                                    "name": "Rohit Sharma",
-                                    "role": "Service Manager"
-                                },
-                                {
-                                    "id": "t2_0",
-                                    "image": "/img/team/2.png",
-                                    "name": "Amit Kumar",
-                                    "role": "Senior Mechanic"
-                                },
-                                {
-                                    "id": "t3_0",
-                                    "image": "/img/team/3.png",
-                                    "name": "Priya Singh",
-                                    "role": "Service Advisor"
-                                },
-                                {
-                                    "id": "t4_0",
-                                    "image": "/img/team/4.png",
-                                    "name": "Vikram Patel",
-                                    "role": "AC Specialist"
-                                },
-                                {
-                                    "id": "t5_0",
-                                    "image": "/img/team/5.png",
-                                    "name": "Neeraj Verma",
-                                    "role": "Diagnostic Technician"
-                                },
-                                {
-                                    "id": "t6_0",
-                                    "image": "/img/team/6.png",
-                                    "name": "Sandeep Yadav",
-                                    "role": "Tire & Wheel Specialist"
-                                },
-                                {
-                                    "id": "t7_0",
-                                    "image": "/img/team/7.png",
-                                    "name": "Manish Gupta",
-                                    "role": "Denting & Painting Expert"
-                                },
-                                {
-                                    "id": "t8_0",
-                                    "image": "/img/team/8.png",
-                                    "name": "Kavya Mehta",
-                                    "role": "Customer Support"
-                                },
-                                {
-                                    "id": "t1_1",
-                                    "image": "/img/team/1.png",
-                                    "name": "Rohit Sharma",
-                                    "role": "Service Manager"
-                                },
-                                {
-                                    "id": "t2_1",
-                                    "image": "/img/team/2.png",
-                                    "name": "Amit Kumar",
-                                    "role": "Senior Mechanic"
-                                },
-                                {
-                                    "id": "t3_1",
-                                    "image": "/img/team/3.png",
-                                    "name": "Priya Singh",
-                                    "role": "Service Advisor"
-                                },
-                                {
-                                    "id": "t4_1",
-                                    "image": "/img/team/4.png",
-                                    "name": "Vikram Patel",
-                                    "role": "AC Specialist"
-                                },
-                                {
-                                    "id": "t5_1",
-                                    "image": "/img/team/5.png",
-                                    "name": "Neeraj Verma",
-                                    "role": "Diagnostic Technician"
-                                },
-                                {
-                                    "id": "t6_1",
-                                    "image": "/img/team/6.png",
-                                    "name": "Sandeep Yadav",
-                                    "role": "Tire & Wheel Specialist"
-                                },
-                                {
-                                    "id": "t7_1",
-                                    "image": "/img/team/7.png",
-                                    "name": "Manish Gupta",
-                                    "role": "Denting & Painting Expert"
-                                },
-                                {
-                                    "id": "t8_1",
-                                    "image": "/img/team/8.png",
-                                    "name": "Kavya Mehta",
-                                    "role": "Customer Support"
-                                },
-                                {
-                                    "id": "t1_2",
-                                    "image": "/img/team/1.png",
-                                    "name": "Rohit Sharma",
-                                    "role": "Service Manager"
-                                },
-                                {
-                                    "id": "t2_2",
-                                    "image": "/img/team/2.png",
-                                    "name": "Amit Kumar",
-                                    "role": "Senior Mechanic"
-                                },
-                                {
-                                    "id": "t3_2",
-                                    "image": "/img/team/3.png",
-                                    "name": "Priya Singh",
-                                    "role": "Service Advisor"
-                                },
-                                {
-                                    "id": "t4_2",
-                                    "image": "/img/team/4.png",
-                                    "name": "Vikram Patel",
-                                    "role": "AC Specialist"
-                                },
-                                {
-                                    "id": "t5_2",
-                                    "image": "/img/team/5.png",
-                                    "name": "Neeraj Verma",
-                                    "role": "Diagnostic Technician"
-                                },
-                                {
-                                    "id": "t6_2",
-                                    "image": "/img/team/6.png",
-                                    "name": "Sandeep Yadav",
-                                    "role": "Tire & Wheel Specialist"
-                                },
-                                {
-                                    "id": "t7_2",
-                                    "image": "/img/team/7.png",
-                                    "name": "Manish Gupta",
-                                    "role": "Denting & Painting Expert"
-                                },
-                                {
-                                    "id": "t8_2",
-                                    "image": "/img/team/8.png",
-                                    "name": "Kavya Mehta",
-                                    "role": "Customer Support"
-                                },
-                                {
-                                    "id": "t1_3",
-                                    "image": "/img/team/1.png",
-                                    "name": "Rohit Sharma",
-                                    "role": "Service Manager"
-                                },
-                                {
-                                    "id": "t2_3",
-                                    "image": "/img/team/2.png",
-                                    "name": "Amit Kumar",
-                                    "role": "Senior Mechanic"
-                                },
-                                {
-                                    "id": "t3_3",
-                                    "image": "/img/team/3.png",
-                                    "name": "Priya Singh",
-                                    "role": "Service Advisor"
-                                },
-                                {
-                                    "id": "t4_3",
-                                    "image": "/img/team/4.png",
-                                    "name": "Vikram Patel",
-                                    "role": "AC Specialist"
-                                },
-                                {
-                                    "id": "t5_3",
-                                    "image": "/img/team/5.png",
-                                    "name": "Neeraj Verma",
-                                    "role": "Diagnostic Technician"
-                                },
-                                {
-                                    "id": "t6_3",
-                                    "image": "/img/team/6.png",
-                                    "name": "Sandeep Yadav",
-                                    "role": "Tire & Wheel Specialist"
-                                },
-                                {
-                                    "id": "t7_3",
-                                    "image": "/img/team/7.png",
-                                    "name": "Manish Gupta",
-                                    "role": "Denting & Painting Expert"
-                                },
-                                {
-                                    "id": "t8_3",
-                                    "image": "/img/team/8.png",
-                                    "name": "Kavya Mehta",
-                                    "role": "Customer Support"
-                                }
-                            ]
-                        }
-                    }
-                }
+    "Header": {
+      "logo_text1": "Auto",
+      "logo_text2": "Fix",
+      "logo_desc": "Car Repair Service",
+      "links": [
+        {
+          "name": "Home",
+          "href": "/",
+          "active": true
+        },
+        {
+          "name": "About Us",
+          "href": "/about",
+          "active": false,
+          "hasDropdown": true,
+          "dropdownLinks": [
+            {
+              "name": "About Us",
+              "href": "/about"
+            },
+            {
+              "name": "Why Choose Us",
+              "href": "/why-choose-us"
+            },
+            {
+              "name": "Mission & Vision",
+              "href": "/mission-vision"
             }
+          ]
+        },
+        {
+          "name": "Services",
+          "href": "/services",
+          "active": false
+        },
+        {
+          "name": "Car Brands",
+          "href": "/brands",
+          "active": false
+        },
+        {
+          "name": "Pages",
+          "href": "#",
+          "active": false,
+          "hasDropdown": true,
+          "dropdownLinks": [
+            {
+              "name": "Pricing",
+              "href": "/price"
+            },
+            {
+              "name": "Testimonials",
+              "href": "/testimonials"
+            },
+            {
+              "name": "Our Teams",
+              "href": "/our-team"
+            },
+            {
+              "name": "FAQ",
+              "href": "/faq"
+            }
+          ]
+        },
+        {
+          "name": "Gallery",
+          "href": "/gallery",
+          "active": false
+        },
+        {
+          "name": "Blog",
+          "href": "/blog",
+          "active": false
+        },
+        {
+          "name": "Contact",
+          "href": "/contact",
+          "active": false
         }
+      ],
+      "button_text": "Book A Service"
+    },
+    "Footer": {
+      "about": {
+        "desc": "At AutoFix, we are committed to keeping your vehicle safe, reliable, and running smoothly. Quality service, expert care, and your complete satisfaction are always our priority.",
+        "socials": [
+          {
+            "icon": "FaFacebook",
+            "href": "https://www.facebook.com"
+          },
+          {
+            "icon": "FaInstagram",
+            "href": "https://www.instagram.com"
+          },
+          {
+            "icon": "FaLinkedin",
+            "href": "https://www.linkedin.com"
+          },
+          {
+            "icon": "FaYoutube",
+            "href": "https://www.youtube.com"
+          }
+        ]
+      },
+      "quick_links": [
+        {
+          "name": "Home",
+          "href": "/"
+        },
+        {
+          "name": "About Us",
+          "href": "/about"
+        },
+        {
+          "name": "Our Services",
+          "href": "/services"
+        },
+        {
+          "name": "Car Brands",
+          "href": "/brands"
+        },
+        {
+          "name": "Pricing",
+          "href": "/price"
+        },
+        {
+          "name": "Gallery",
+          "href": "/gallery"
+        },
+        {
+          "name": "Blog",
+          "href": "/blog"
+        },
+        {
+          "name": "Contact Us",
+          "href": "/contact"
+        }
+      ],
+      "services": [
+        {
+          "name": "Engine Repair",
+          "href": "/service-details/engine-repair"
+        },
+        {
+          "name": "Oil Change & Filters",
+          "href": "/service-details/oil-change-filters"
+        },
+        {
+          "name": "Brake Service",
+          "href": "/service-details/brake-service"
+        },
+        {
+          "name": "A/C & Heating Repair",
+          "href": "/service-details/a-c-heating-repair"
+        },
+        {
+          "name": "Tire & Wheel Services",
+          "href": "/service-details/tire-wheel-services"
+        },
+        {
+          "name": "Battery Replacement",
+          "href": "/service-details/battery-replacement"
+        },
+        {
+          "name": "Diagnostics & Inspection",
+          "href": "/service-details/diagnostics-inspection"
+        },
+        {
+          "name": "General Car Repair",
+          "href": "/service-details/general-car-repair"
+        }
+      ],
+      "contact": {
+        "address_line1": "120 M G Road, Bengaluru,",
+        "address_line2": "Karnataka 560001",
+        "phone": "+1 0000000000",
+        "email": "info@xyz.com",
+        "working_hours": [
+          "Mon - Sat: 9:00 AM - 7:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "copyright": "Copyright © 2026. All rights reserved. Powered by Lestow",
+      "bottom_links": [
+        {
+          "name": "Terms & Conditions",
+          "href": "/terms-conditions"
+        },
+        {
+          "name": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "name": "Cancellation Policy",
+          "href": "/cancellation-policy"
+        },
+        {
+          "name": "Sitemap",
+          "href": "/sitemap"
+        }
+      ]
+    },
+    "seo": {
+      "siteName": "AutoFix",
+      "siteUrl": "https://www.autofix.com",
+      "defaultTitle": "AutoFix | Trusted Car Repair Service",
+      "defaultDescription": "From routine maintenance to complex repairs, we keep your car running at its best.",
+      "keywords": "AutoFix, car repair, online booking, service, maintenance",
+      "ogImage": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2000&auto=format&fit=crop",
+      "locale": "en_US"
     }
+  },
+  "categories": {
+    "AutoRepair": {
+      "templateComponents": {
+        "template-1": {
+          "pages": {
+            "home": {
+              "breadcrumb": {
+                "title": "Home",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  }
+                ],
+                "bgImage": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2000&auto=format&fit=crop"
+              },
+              "components": [
+                {
+                  "key": "HeroSection",
+                  "component": "HeroSection"
+                },
+                {
+                  "key": "AboutSection",
+                  "component": "AboutSection"
+                },
+                {
+                  "key": "ServicesSection",
+                  "component": "ServicesSection"
+                },
+                {
+                  "key": "StatisticsSection",
+                  "component": "StatisticsSection"
+                },
+                {
+                  "key": "BlogSection",
+                  "component": "BlogSection"
+                }
+              ],
+              "seo": {
+                "title": "AutoFix - Car Repair Service",
+                "description": "Trusted Care for Every Drive",
+                "keywords": "AutoFix, car repair, auto service, mechanic",
+                "canonical": "/"
+              }
+            },
+            "about": {
+              "breadcrumb": {
+                "title": "About Us",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "About Us"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "components": [
+                {
+                  "key": "AboutSection",
+                  "component": "AboutSection"
+                },
+                {
+                  "key": "StatisticsSection",
+                  "component": "StatisticsSection"
+                },
+                {
+                  "key": "OurProcessSection",
+                  "component": "OurProcessSection"
+                },
+                {
+                  "key": "WhyChooseUsSection",
+                  "component": "WhyChooseUsSection"
+                }
+              ],
+              "seo": {
+                "title": "About Us - AutoFix",
+                "description": "Learn more about our trusted car repair services.",
+                "canonical": "/about"
+              }
+            },
+            "missionVision": {
+              "breadcrumb": {
+                "title": "Mission & Vision",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Mission & Vision"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "components": [
+                {
+                  "key": "MissionSection",
+                  "component": "MissionSection"
+                },
+                {
+                  "key": "VisionSection",
+                  "component": "VisionSection"
+                }
+              ],
+              "seo": {
+                "title": "Mission & Vision - AutoFix",
+                "description": "Learn about our mission and vision for auto repair.",
+                "canonical": "/mission-vision"
+              }
+            },
+            "whyChooseUs": {
+              "breadcrumb": {
+                "title": "Why Choose Us",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Why Choose Us"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "components": [
+                {
+                  "key": "WhyChooseUsSection",
+                  "component": "WhyChooseUsSection"
+                },
+                {
+                  "key": "StatisticsSection",
+                  "component": "StatisticsSection"
+                }
+              ],
+              "seo": {
+                "title": "Why Choose Us - AutoFix",
+                "description": "Find out why thousands of car owners trust AutoFix for their repair needs.",
+                "canonical": "/why-choose-us"
+              }
+            },
+            "ourTeam": {
+              "breadcrumb": {
+                "title": "Our Teams",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Our Teams"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "components": [
+                {
+                  "key": "OurTeamSection",
+                  "component": "OurTeamSection"
+                }
+              ],
+              "seo": {
+                "title": "Our Teams - AutoFix",
+                "description": "Meet our expert team of mechanics and service advisors.",
+                "canonical": "/our-team"
+              }
+            },
+            "teamDetails": {
+              "breadcrumb": {
+                "title": "Team Details",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Team Details"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "components": [
+                {
+                  "key": "TeamDetailsSection",
+                  "component": "TeamDetailsSection"
+                }
+              ],
+              "seo": {
+                "title": "Team Details - AutoFix",
+                "description": "Learn more about our mechanic.",
+                "canonical": "/team-details"
+              }
+            },
+            "services": {
+              "breadcrumb": {
+                "title": "Our Services",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Our Services"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "components": [
+                {
+                  "key": "ServicesSection",
+                  "component": "ServicesSection"
+                }
+              ],
+              "seo": {
+                "title": "Our Services - AutoFix",
+                "description": "Explore our wide range of car repair services.",
+                "canonical": "/services"
+              }
+            },
+            "serviceDetails": {
+              "breadcrumb": {
+                "title": "Service Details",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Service Details"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "components": [
+                {
+                  "key": "ServiceDetailsSection",
+                  "component": "ServiceDetailsSection"
+                }
+              ],
+              "seo": {
+                "title": "Service Details - AutoFix",
+                "description": "Detailed view of our car repair service.",
+                "canonical": "/service-details"
+              }
+            },
+            "blog": {
+              "breadcrumb": {
+                "title": "Our Blog",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Our Blog"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "components": [
+                {
+                  "key": "BlogSection",
+                  "component": "BlogSection"
+                }
+              ],
+              "seo": {
+                "title": "Our Blog - AutoFix",
+                "description": "Read our latest articles and car maintenance tips.",
+                "canonical": "/blog"
+              }
+            },
+            "blogDetails": {
+              "breadcrumb": {
+                "title": "Blog Details",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Blog Details"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "components": [
+                {
+                  "key": "BlogDetailsSection",
+                  "component": "BlogDetailsSection"
+                }
+              ],
+              "seo": {
+                "title": "Blog Details - AutoFix",
+                "description": "Read this article in detail.",
+                "canonical": "/blog-details"
+              }
+            },
+            "contact": {
+              "breadcrumb": {
+                "title": "Contact Us",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Contact Us"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "components": [
+                {
+                  "key": "ContactSection",
+                  "component": "ContactSection"
+                }
+              ],
+              "seo": {
+                "title": "Contact Us - AutoFix",
+                "description": "Get in touch with AutoFix for your car repair needs.",
+                "canonical": "/contact"
+              }
+            },
+            "brands": {
+              "breadcrumb": {
+                "title": "Our Brands",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Our Brands"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "components": [
+                {
+                  "key": "BrandsSection",
+                  "component": "BrandsSection"
+                }
+              ],
+              "seo": {
+                "title": "Our Brands - AutoFix",
+                "description": "All car brands we service and repair.",
+                "canonical": "/brands"
+              }
+            },
+            "pricing": {
+              "breadcrumb": {
+                "title": "Price",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Price"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "components": [
+                {
+                  "key": "PricingSection",
+                  "component": "PricingSection"
+                }
+              ],
+              "seo": {
+                "title": "Price - AutoFix",
+                "description": "Transparent and affordable pricing for all your car care needs.",
+                "canonical": "/price"
+              }
+            },
+            "bookService": {
+              "breadcrumb": {
+                "title": "Book A Service",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Book A Service"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "components": [
+                {
+                  "key": "BookServiceSection",
+                  "component": "BookServiceSection"
+                }
+              ],
+              "seo": {
+                "title": "Book A Service - AutoFix",
+                "description": "Schedule your car service today."
+              }
+            },
+            "termsConditions": {
+              "breadcrumb": {
+                "title": "Terms & Conditions",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Terms & Conditions"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "content": {
+                "tagline": "TERMS AND CONDITIONS",
+                "title": "Terms and",
+                "titleRed": "Conditions",
+                "description": "Welcome to our website. By accessing or using our services, you agree to be bound by the following terms and conditions. Please read them carefully before using our website or booking our services.",
+                "list": [
+                  {
+                    "id": "01",
+                    "title": "Use of Our Services",
+                    "description": "Our services are intended for personal, non-commercial use only. You agree to provide accurate and complete information when booking a service or contacting us."
+                  },
+                  {
+                    "id": "02",
+                    "title": "Service Booking",
+                    "description": "All service requests are subject to availability. A booking is confirmed only after you receive a confirmation from our team via phone, email, or SMS."
+                  },
+                  {
+                    "id": "03",
+                    "title": "Pricing and Payment",
+                    "description": "All prices listed on our website are subject to change without prior notice. Payment can be made through available online or offline methods as informed during the booking process."
+                  },
+                  {
+                    "id": "04",
+                    "title": "Warranty and Liability",
+                    "description": "We provide a service warranty as per the terms mentioned at the time of service. We are not liable for any indirect, incidental, or consequential damages arising from the use of our services."
+                  },
+                  {
+                    "id": "05",
+                    "title": "Customer Responsibilities",
+                    "description": "You agree to provide accurate device/vehicle information and any relevant issues. You are responsible for backing up your data before service, as we are not liable for data loss."
+                  },
+                  {
+                    "id": "06",
+                    "title": "Third-Party Links",
+                    "description": "Our website may contain links to third-party websites. We are not responsible for the content, policies, or practices of any third-party sites."
+                  },
+                  {
+                    "id": "07",
+                    "title": "Changes to Terms",
+                    "description": "We reserve the right to update or modify these terms and conditions at any time. Any changes will be posted on this page with an updated effective date."
+                  },
+                  {
+                    "id": "08",
+                    "title": "Contact Us",
+                    "description": "If you have any questions about these terms and conditions, please contact us at info@xyz.com or call +1 0000000000."
+                  }
+                ]
+              }
+            },
+            "privacyPolicy": {
+              "breadcrumb": {
+                "title": "Privacy Policy",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Privacy Policy"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "content": {
+                "tagline": "PRIVACY POLICY",
+                "title": "Privacy",
+                "titleRed": "Policy",
+                "description": "Your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.",
+                "list": [
+                  {
+                    "id": "01",
+                    "title": "Information We Collect",
+                    "description": "We may collect personal information such as your name, email address, phone number, and vehicle details when you register, book a service, or contact us."
+                  },
+                  {
+                    "id": "02",
+                    "title": "How We Use Your Information",
+                    "description": "We use the information we collect to provide and maintain our services, notify you about changes, provide customer support, and gather analysis to improve our website."
+                  },
+                  {
+                    "id": "03",
+                    "title": "Information Sharing",
+                    "description": "We do not sell or rent your personal information to third parties. We may share information with trusted service providers who assist us in operating our website or conducting our business."
+                  },
+                  {
+                    "id": "04",
+                    "title": "Data Security",
+                    "description": "We implement reasonable security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction."
+                  },
+                  {
+                    "id": "05",
+                    "title": "Cookies and Tracking",
+                    "description": "Our website may use cookies and similar tracking technologies to enhance your experience and collect information about how you use our site."
+                  },
+                  {
+                    "id": "06",
+                    "title": "Third-Party Services",
+                    "description": "Our website may contain links to third-party websites or services that are not owned or controlled by us. We have no control over their privacy practices."
+                  },
+                  {
+                    "id": "07",
+                    "title": "Changes to Privacy Policy",
+                    "description": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page."
+                  },
+                  {
+                    "id": "08",
+                    "title": "Contact Us",
+                    "description": "If you have any questions about this Privacy Policy, please contact us at info@xyz.com or call +1 0000000000."
+                  }
+                ]
+              }
+            },
+            "cancellationPolicy": {
+              "breadcrumb": {
+                "title": "Cancellation Policy",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Cancellation Policy"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "content": {
+                "tagline": "CANCELLATION POLICY",
+                "title": "Cancellation",
+                "titleRed": "Policy",
+                "description": "We understand that plans can change. Our cancellation policy is designed to be fair to both our customers and our service technicians. Please review our policy below.",
+                "list": [
+                  {
+                    "id": "01",
+                    "title": "Cancellation Timeframe",
+                    "description": "You may cancel or reschedule your service appointment without penalty up to 24 hours before the scheduled time."
+                  },
+                  {
+                    "id": "02",
+                    "title": "Late Cancellations",
+                    "description": "Cancellations made less than 24 hours before the scheduled appointment may be subject to a cancellation fee."
+                  },
+                  {
+                    "id": "03",
+                    "title": "No-Shows",
+                    "description": "If you fail to be present for a scheduled service appointment without prior notice, you may be charged a no-show fee."
+                  },
+                  {
+                    "id": "04",
+                    "title": "Refund Process",
+                    "description": "If you are eligible for a refund due to a cancellation, the amount will be processed to your original payment method within 5-7 business days."
+                  },
+                  {
+                    "id": "05",
+                    "title": "Service Rescheduling",
+                    "description": "You can reschedule your appointment by contacting our support team or using the self-service portal on our website."
+                  },
+                  {
+                    "id": "06",
+                    "title": "Parts Ordering",
+                    "description": "If specific parts were ordered for your service prior to cancellation, you may be responsible for the cost of those parts or a restocking fee."
+                  },
+                  {
+                    "id": "07",
+                    "title": "Exceptions",
+                    "description": "We understand that emergencies happen. Exceptions to this policy may be made on a case-by-case basis at our discretion."
+                  },
+                  {
+                    "id": "08",
+                    "title": "Contact Us",
+                    "description": "To cancel or reschedule an appointment, or for any related questions, please contact us at info@xyz.com or call +1 0000000000."
+                  }
+                ]
+              }
+            },
+            "sitemap": {
+              "breadcrumb": {
+                "title": "Sitemap",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Sitemap",
+                    "href": "/sitemap"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "content": {
+                "tagline": "Sitemap",
+                "title": "Quick Access to",
+                "titleRed": "All Pages",
+                "description": "Find all the important pages of our website in one place. Navigate easily to explore our services, information and support.",
+                "sections": [
+                  {
+                    "icon": "Home",
+                    "title": "Main Pages",
+                    "links": [
+                      {
+                        "label": "Home",
+                        "url": "/"
+                      },
+                      {
+                        "label": "About Us",
+                        "url": "/about"
+                      },
+                      {
+                        "label": "Why Choose Us",
+                        "url": "/about"
+                      },
+                      {
+                        "label": "Mission & Vision",
+                        "url": "/about"
+                      },
+                      {
+                        "label": "Our Team",
+                        "url": "/team"
+                      },
+                      {
+                        "label": "Team Details",
+                        "url": "/team-details/1"
+                      }
+                    ]
+                  },
+                  {
+                    "icon": "Settings",
+                    "title": "Services",
+                    "links": [
+                      {
+                        "label": "Services",
+                        "url": "/services"
+                      },
+                      {
+                        "label": "Services Details",
+                        "url": "/service-details/1"
+                      },
+                      {
+                        "label": "Car Brands We Service",
+                        "url": "/services"
+                      },
+                      {
+                        "label": "Price",
+                        "url": "/price"
+                      },
+                      {
+                        "label": "Book A Service",
+                        "url": "/book-service"
+                      }
+                    ]
+                  },
+                  {
+                    "icon": "Image",
+                    "title": "Media & Stories",
+                    "links": [
+                      {
+                        "label": "Gallery",
+                        "url": "/gallery"
+                      },
+                      {
+                        "label": "Testimonials",
+                        "url": "/about"
+                      },
+                      {
+                        "label": "Blog",
+                        "url": "/blog"
+                      },
+                      {
+                        "label": "Blog Details",
+                        "url": "/blog-details/1"
+                      }
+                    ]
+                  },
+                  {
+                    "icon": "Info",
+                    "title": "Help & Support",
+                    "links": [
+                      {
+                        "label": "FAQ",
+                        "url": "/faq"
+                      },
+                      {
+                        "label": "Terms & Conditions",
+                        "url": "/terms"
+                      },
+                      {
+                        "label": "Refund / Cancellation Policy",
+                        "url": "/cancellation-policy"
+                      },
+                      {
+                        "label": "Sitemap",
+                        "url": "/sitemap"
+                      },
+                      {
+                        "label": "404 Error",
+                        "url": "/404"
+                      }
+                    ]
+                  },
+                  {
+                    "icon": "PhoneCall",
+                    "title": "Get in Touch",
+                    "links": [
+                      {
+                        "label": "Contact Us",
+                        "url": "/contact"
+                      }
+                    ]
+                  },
+                  {
+                    "icon": "Users",
+                    "title": "Our Company",
+                    "links": [
+                      {
+                        "label": "About Us",
+                        "url": "/about"
+                      },
+                      {
+                        "label": "Mission & Vision",
+                        "url": "/about"
+                      },
+                      {
+                        "label": "Our Team",
+                        "url": "/team"
+                      }
+                    ]
+                  },
+                  {
+                    "icon": "Car",
+                    "title": "Service Options",
+                    "links": [
+                      {
+                        "label": "Services",
+                        "url": "/services"
+                      },
+                      {
+                        "label": "Car Brands We Service",
+                        "url": "/services"
+                      },
+                      {
+                        "label": "Price",
+                        "url": "/price"
+                      },
+                      {
+                        "label": "Book A Service",
+                        "url": "/book-service"
+                      }
+                    ]
+                  },
+                  {
+                    "icon": "FileText",
+                    "title": "Legal & Policies",
+                    "links": [
+                      {
+                        "label": "Terms & Conditions",
+                        "url": "/terms"
+                      },
+                      {
+                        "label": "Refund / Cancellation Policy",
+                        "url": "/cancellation-policy"
+                      },
+                      {
+                        "label": "Sitemap",
+                        "url": "/sitemap"
+                      },
+                      {
+                        "label": "404 Error",
+                        "url": "/404"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "sections": {
+            "serviceDetails": {
+              "breadcrumb": {
+                "title": "Service detail",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Service Detail"
+                  }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "mainImage": "https://images.unsplash.com/photo-1507722301886-f0270a4a0c87?q=80&w=800&auto=format&fit=crop",
+              "subtitle": "OUR SERVICE",
+              "title1": "Brake",
+              "title2": "Service",
+              "quote": "Safe Braking for a Safer Tomorrow",
+              "description": "Your brakes are one of the most important safety systems in your vehicle. At AutoFix, we provide complete brake inspection, repair, and replacement services to ensure maximum safety, performance, and peace of mind on every drive.",
+              "benefits": [
+                {
+                  "icon": "ShieldCheck",
+                  "title": "Enhanced Safety"
+                },
+                {
+                  "icon": "Gauge",
+                  "title": "Better Performance"
+                },
+                {
+                  "icon": "Settings",
+                  "title": "Longer Lifespan"
+                },
+                {
+                  "icon": "IndianRupee",
+                  "title": "Cost Effective"
+                }
+              ],
+              "overview": {
+                "title": "Service Overview",
+                "description": "Our brake service includes a thorough inspection of brake pads, rotors, calipers, brake fluid, and complete braking system. We identify wear and tear, fix issues, and replace parts if needed, using high-quality components to deliver reliable braking performance."
+              },
+              "included": {
+                "title": "What's Included?",
+                "list": [
+                  "Brake pad inspection and replacement",
+                  "Disc rotor inspection and resurfacing/replacement",
+                  "Brake caliper check and servicing",
+                  "Brake fluid level check and replacement",
+                  "Complete braking system diagnostics",
+                  "Test drive for performance assurance"
+                ],
+                "image": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=600&auto=format&fit=crop",
+                "badge": {
+                  "text1": "Drive Safe",
+                  "text2": "with Reliable Brakes"
+                }
+              },
+              "sidebar": {
+                "servicesTitle": "Other Services",
+                "helpTitle": "Need Help?\\nTalk to Our Experts",
+                "phone": "+1 0000000000",
+                "hours": "Mon - Sat : 9:00 AM - 6:00 PM",
+                "buttonText": "Book This Service"
+              }
+            },
+            "hero": {
+              "bg_image": "/img/banner/1.png",
+              "tags": [
+                "Professional",
+                "Reliable",
+                "Affordable"
+              ],
+              "title_line1": "Trusted Care",
+              "title_line2": "for",
+              "title_highlight": "Every Drive",
+              "description": "From routine maintenance to complex repairs, we keep your car running at its best.",
+              "button_text": "Book A Service",
+              "features": [
+                {
+                  "icon": "Wrench",
+                  "text1": "Expert",
+                  "text2": "Technicians"
+                },
+                {
+                  "icon": "Settings",
+                  "text1": "Genuine",
+                  "text2": "Parts"
+                },
+                {
+                  "icon": "CheckCircle2",
+                  "text1": "Affordable",
+                  "text2": "Pricing"
+                },
+                {
+                  "icon": "Clock",
+                  "text1": "Quick",
+                  "text2": "Turnaround"
+                }
+              ],
+              "stats": [
+                {
+                  "icon": "User",
+                  "number": "10K+",
+                  "text": "Happy Customers"
+                },
+                {
+                  "icon": "Clock",
+                  "number": "5+",
+                  "text": "Years Experience"
+                },
+                {
+                  "icon": "CheckCircle2",
+                  "number": "All Major",
+                  "text": "Car Brands"
+                }
+              ]
+            },
+            "about": {
+              "image1": "/img/about/1.png",
+              "image2": "/img/about/2.png",
+              "experience": {
+                "icon": "Wrench",
+                "years": "58+",
+                "text1": "Years of",
+                "text2": "Experience"
+              },
+              "subtitle": "About Us",
+              "title_line1": "Reliable Car Repairs",
+              "title_line2": "with",
+              "title_highlight": "AutoFix",
+              "description": "At AutoFix, we are committed to keeping you on the road with safe, reliable, and high-performance vehicles. Our skilled technicians use advanced tools and genuine parts to deliver quality repairs and maintenance you can trust.",
+              "stats": [
+                {
+                  "value": "98%",
+                  "text1": "Customer",
+                  "text2": "Satisfaction"
+                },
+                {
+                  "value": "50+",
+                  "text1": "Expert",
+                  "text2": "Technicians"
+                }
+              ],
+              "points": [
+                "Genuine Parts & Quality Service",
+                "Affordable & Transparent Pricing",
+                "Complete Car Diagnostics",
+                "Fast Turnaround Time"
+              ],
+              "ceo": {
+                "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150&auto=format&fit=crop",
+                "name": "David Miller",
+                "role": "Founder & CEO"
+              },
+              "button_text": "ABOUT MORE"
+            },
+            "services": {
+              "subtitle": "Latest Service",
+              "title_line1": "Reliable Services for",
+              "title_highlight": "Every Car",
+              "description": "From routine maintenance to advanced repairs, AutoFix provides complete car care solutions to keep your vehicle running at its best.",
+              "list": [
+                {
+                  "id": "01",
+                  "title": "General Car Repair",
+                  "desc": "Complete car repair solutions for all makes and models. We keep your car running smoothly.",
+                  "icon": "Wrench",
+                  "img": "/img/services/1.png"
+                },
+                {
+                  "id": "02",
+                  "title": "Brake Service",
+                  "desc": "Ensure your safety with our professional brake inspection, repair and replacement services.",
+                  "icon": "CheckCircle2",
+                  "img": "/img/services/2.png"
+                },
+                {
+                  "id": "03",
+                  "title": "Engine Diagnostics",
+                  "desc": "Advanced diagnostics to quickly identify and fix engine issues for better performance.",
+                  "icon": "Activity",
+                  "img": "/img/services/3.png"
+                },
+                {
+                  "id": "04",
+                  "title": "Oil Change Service",
+                  "desc": "Keep your engine healthy with high-quality oil change and filter replacement.",
+                  "icon": "Settings",
+                  "img": "/img/services/4.png"
+                },
+                {
+                  "id": "05",
+                  "title": "AC Service",
+                  "desc": "Stay cool and comfortable with our complete AC inspection, cleaning and repair service.",
+                  "icon": "Snowflake",
+                  "img": "/img/services/5.png"
+                },
+                {
+                  "id": "06",
+                  "title": "Tyre Replacement",
+                  "desc": "Get the right tyres for better grip, safer driving and a smoother journey.",
+                  "icon": "LifeBuoy",
+                  "img": "/img/services/6.png"
+                },
+                {
+                  "id": "07",
+                  "title": "Battery Replacement",
+                  "desc": "Reliable batteries for a hassle-free start. Testing, replacement and warranty support.",
+                  "icon": "Battery",
+                  "img": "/img/services/7.png"
+                },
+                {
+                  "id": "08",
+                  "title": "Suspension Repair",
+                  "desc": "Smooth and stable rides with our expert suspension inspection and repair services.",
+                  "icon": "Wrench",
+                  "img": "/img/services/8.png"
+                }
+              ]
+            },
+            "statistics": {
+              "bg_image": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2000&auto=format&fit=crop",
+              "side_image": "https://images.unsplash.com/photo-1504222490345-c075b6008014?q=80&w=800&auto=format&fit=crop",
+              "subtitle": "// Statistics",
+              "title_line1": "Learn more About",
+              "title_line2": "Our Success",
+              "list": [
+                {
+                  "icon": "FileText",
+                  "value": "260+",
+                  "label": "Total Project"
+                },
+                {
+                  "icon": "Wrench",
+                  "value": "399%",
+                  "label": "Transparency"
+                },
+                {
+                  "icon": "CheckCircle2",
+                  "value": "456+",
+                  "label": "Project Done"
+                },
+                {
+                  "icon": "Activity",
+                  "value": "125+",
+                  "label": "Got Awards"
+                }
+              ]
+            },
+            "blog": {
+              "breadcrumb": {
+                "title": "Our Blogs",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Our Blogs"
+                  }
+                ],
+                "bgImage": "/img/banner/1.png"
+              },
+              "subtitle": "OUR BLOG",
+              "title_line1": "Latest Car Repair",
+              "title_highlight": "News & Tips",
+              "description": "Stay informed with expert advice, maintenance tips, and the latest updates from our car repair experts.",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "5 Essential Car Maintenance Tips Every Driver Should Know",
+                  "desc": "Regular maintenance keeps your car running smoothly, improves fuel efficiency, and helps avoid costly repairs. Here are 5 essential tips every driver should follow.",
+                  "date": "12",
+                  "month": "Sep 2025",
+                  "author": "Amit Sharma",
+                  "dateFull": "Sep 12, 2025",
+                  "tag": "Maintenance Tips",
+                  "img": "/img/blog/1.png",
+                  "authorImg": "/img/team/1.png",
+                  "intro": "Regular car maintenance is the key to a smooth, safe, and trouble-free driving experience. Many car owners often ignore routine servicing, which can lead to costly repairs and unexpected breakdowns. In this blog, we share five essential car maintenance tips that will help you keep your vehicle in top condition and extend its life on the road.",
+                  "contentSections": [
+                    {
+                      "title": "1. Keep Your Engine Oil Clean and Updated",
+                      "paragraph": "Engine oil lubricates the moving parts of your car's engine, reduces friction, and prevents overheating. Check your engine oil regularly and change it as recommended by your car manufacturer. Using the right grade of oil ensures better performance and longer engine life.",
+                      "image": "/img/services/2.png",
+                      "imagePosition": "right"
+                    },
+                    {
+                      "title": "2. Check and Maintain Your Tires",
+                      "paragraph": "Your tires are the only contact point between your car and the road. Regularly check tire pressure, tread depth, and look for any signs of uneven wear or damage. Properly maintained tires improve fuel efficiency, ensure better grip, and keep you safe while driving.",
+                      "image": "/img/services/4.png",
+                      "imagePosition": "right"
+                    }
+                  ],
+                  "quote": {
+                    "text": "A well-maintained car not only saves money but also gives you peace of mind on every journey.",
+                    "author": "Rohit Sharma"
+                  }
+                },
+                {
+                  "id": 2,
+                  "title": "How to Check and Maintain Your Car Tyres",
+                  "desc": "Tyres are the only connection between your car and the road. Learn how to check tyre pressure, tread depth, and overall condition to ensure safety and better performance.",
+                  "date": "08",
+                  "month": "Sep 2025",
+                  "author": "Neha Sharma",
+                  "dateFull": "Sep 08, 2025",
+                  "tag": "Car Care Guide",
+                  "img": "/img/blog/2.png",
+                  "authorImg": "/img/team/2.png",
+                  "intro": "Proper wheel alignment is crucial for vehicle safety and performance. When your wheels are out of alignment, it can cause uneven tire wear, poor handling, and even reduce fuel efficiency. If you feel your car pulling to one side, it is time to pay attention.",
+                  "contentSections": [
+                    {
+                      "title": "1. Uneven Tire Wear",
+                      "paragraph": "Take a close look at your tires. If you notice that the tread is wearing down much faster on one side than the other, poor wheel alignment is a likely culprit. Catching this early can save you from having to replace tires prematurely.",
+                      "image": "/img/services/3.png",
+                      "imagePosition": "right"
+                    },
+                    {
+                      "title": "2. Vehicle Pulling to One Side",
+                      "paragraph": "Does your car drift to the left or right when you are driving on a straight, flat road? If you have to fight the steering wheel to keep your car going straight, your wheels definitely need to be realigned.",
+                      "image": "/img/services/1.png",
+                      "imagePosition": "right"
+                    }
+                  ],
+                  "quote": {
+                    "text": "Good alignment is the foundation of a smooth, safe ride and long-lasting tires.",
+                    "author": "Vikram Singh"
+                  }
+                },
+                {
+                  "id": 3,
+                  "title": "Common Car Problems and How to Fix Them",
+                  "desc": "From engine noise to warning lights, learn about the most common car problems and simple solutions to keep your vehicle in top shape.",
+                  "date": "03",
+                  "month": "Sep 2025",
+                  "author": "Rohit Verma",
+                  "dateFull": "Sep 03, 2025",
+                  "tag": "Repair Insights",
+                  "img": "/img/blog/3.png",
+                  "authorImg": "/img/team/3.png",
+                  "intro": "Changing your engine oil is one of the most fundamental yet misunderstood aspects of car maintenance. While the old rule of thumb was every 3,000 miles, modern engines and synthetic oils have changed the game completely.",
+                  "contentSections": [
+                    {
+                      "title": "1. Check the Owner Manual",
+                      "paragraph": "Always start with your vehicle manufacturer recommendations. Most modern cars can safely go 5,000 to 7,500 miles between oil changes, and some using full synthetic oil can even stretch up to 10,000 miles under normal driving conditions.",
+                      "image": "/img/services/2.png",
+                      "imagePosition": "right"
+                    },
+                    {
+                      "title": "2. Consider Your Driving Habits",
+                      "paragraph": "If you frequently drive in stop-and-go traffic, tow heavy loads, or drive in extreme temperatures, you fall under the severe driving category. In such cases, you will need to change your oil more frequently to protect your engine.",
+                      "image": "/img/services/6.png",
+                      "imagePosition": "right"
+                    }
+                  ],
+                  "quote": {
+                    "text": "Fresh engine oil is the lifeblood of your vehicle. Never delay a scheduled oil change.",
+                    "author": "Priya Patel"
+                  }
+                },
+                {
+                  "id": 4,
+                  "title": "When & Why You Should Change Your Engine Oil",
+                  "desc": "Engine oil keeps your engine healthy and running smoothly. Find out the right time, signs of old oil, and the benefits of a timely oil change.",
+                  "date": "28",
+                  "month": "Aug 2025",
+                  "author": "Karan Patel",
+                  "dateFull": "Aug 28, 2025",
+                  "tag": "Car Care Guide",
+                  "img": "/img/blog/4.png",
+                  "authorImg": "/img/team/4.png",
+                  "intro": "Your car braking system is its most important safety feature. Brake pads naturally wear down over time due to friction, and driving with worn-out pads is a major hazard. Knowing when to replace them can prevent accidents and costly rotor damage.",
+                  "contentSections": [
+                    {
+                      "title": "1. Listen for Squealing Noises",
+                      "paragraph": "Most brake pads come with built-in wear indicators. These are small metal tabs that scrape against the rotor when the pads get too thin, producing a high-pitched squealing sound. If you hear this, it is time for a replacement.",
+                      "image": "/img/services/5.png",
+                      "imagePosition": "right"
+                    },
+                    {
+                      "title": "2. Reduced Braking Performance",
+                      "paragraph": "If your brake pedal feels spongy, or if it takes longer than usual to come to a complete stop, your brake pads might be severely worn. Do not ignore these warning signs, as failing brakes can lead to catastrophic accidents.",
+                      "image": "/img/services/4.png",
+                      "imagePosition": "right"
+                    }
+                  ],
+                  "quote": {
+                    "text": "Never compromise on brake maintenance. Your safety and the safety of others depends on it.",
+                    "author": "Ravi Kumar"
+                  }
+                },
+                {
+                  "id": 5,
+                  "title": "Signs Your Car Battery Needs Replacement",
+                  "desc": "A weak battery can leave you stranded. Know the warning signs, average lifespan, and how to choose the right battery for your vehicle.",
+                  "date": "21",
+                  "month": "Aug 2025",
+                  "author": "Priya Mehta",
+                  "dateFull": "Aug 21, 2025",
+                  "tag": "Maintenance Tips",
+                  "img": "/img/blog/5.png",
+                  "authorImg": "/img/team/5.png",
+                  "intro": "There are few things more frustrating than turning your key in the ignition and hearing nothing but a click. Car battery issues are incredibly common, especially during extreme winter or summer months. Here is a quick guide to troubleshooting common battery problems.",
+                  "contentSections": [
+                    {
+                      "title": "1. The Engine Cranks but Will Not Start",
+                      "paragraph": "If the engine cranks slowly or does not start at all, the battery might not have enough charge. This could be due to leaving the lights on, a failing alternator, or an old battery that can no longer hold a charge.",
+                      "image": "/img/services/6.png",
+                      "imagePosition": "right"
+                    },
+                    {
+                      "title": "2. Check for Corrosion",
+                      "paragraph": "Pop the hood and inspect the battery terminals. If you see a white, ashy substance building up around the connectors, it is corrosion. This can prevent electrical current from flowing properly. Cleaning the terminals with a wire brush can often solve the issue.",
+                      "image": "/img/services/2.png",
+                      "imagePosition": "right"
+                    }
+                  ],
+                  "quote": {
+                    "text": "Regularly testing your battery and keeping the terminals clean will ensure your car starts every time.",
+                    "author": "Anjali Desai"
+                  }
+                },
+                {
+                  "id": 6,
+                  "title": "How to Choose the Right Car Repair Service",
+                  "desc": "Not all garages are the same. Learn what to look for in a reliable car repair service, from skilled technicians to genuine parts and transparent pricing.",
+                  "date": "16",
+                  "month": "Aug 2025",
+                  "author": "Vikrem Singh",
+                  "dateFull": "Aug 16, 2025",
+                  "tag": "Car Repair Tips",
+                  "img": "/img/blog/6.png",
+                  "authorImg": "/img/team/6.png",
+                  "intro": "Automotive maintenance is evolving rapidly. Staying updated with the best practices for your specific car model will ensure longevity and reliable performance.",
+                  "contentSections": [
+                    {
+                      "title": "1. Regular Inspections",
+                      "paragraph": "A visual inspection every month can catch a lot of minor issues before they turn into major repair bills. Look under the hood and check your fluid levels.",
+                      "image": "/img/services/3.png",
+                      "imagePosition": "right"
+                    }
+                  ],
+                  "quote": {
+                    "text": "Prevention is always better and cheaper than cure when it comes to cars.",
+                    "author": "Sanjay Verma"
+                  }
+                }
+              ],
+              "button_text": "View All Blog"
+            },
+            "process": {
+              "bg_image": "/our-process-section-bg.png",
+              "subtitle": "OUR PROCESS",
+              "title_line1": "From Booking to a",
+              "title_highlight": "Better Drive",
+              "description": "A simple, transparent, and reliable process to keep your car in top condition.",
+              "steps": [
+                {
+                  "id": "step1",
+                  "number": "01",
+                  "title_line1": "Book an",
+                  "title_line2": "Appointment",
+                  "desc": "Get in touch with us through call, website, or visit our service center to schedule your service.",
+                  "icon": "Calendar",
+                  "image": "/img/about/i1.png"
+                },
+                {
+                  "id": "step2",
+                  "number": "02",
+                  "title_line1": "Inspection &",
+                  "title_line2": "Diagnosis",
+                  "desc": "Our expert performs a complete checkup and diagnosis the issue using advanced tools.",
+                  "icon": "Search",
+                  "image": "/img/about/i2.png"
+                },
+                {
+                  "id": "step3",
+                  "number": "03",
+                  "title_line1": "Repair &",
+                  "title_line2": "Service",
+                  "desc": "We repair with genuine parts and follow manufacturer standards to ensure the best performance.",
+                  "icon": "Wrench",
+                  "image": "/img/about/i3.png"
+                },
+                {
+                  "id": "step4",
+                  "number": "04",
+                  "title_line1": "Quality",
+                  "title_line2": "Check",
+                  "desc": "After service, our team runs a detailed quality check to ensure your car is in perfect condition.",
+                  "icon": "CheckCircle2",
+                  "image": "/img/about/i4.png"
+                },
+                {
+                  "id": "step5",
+                  "number": "05",
+                  "title_line1": "Drive with",
+                  "title_line2": "Confidence",
+                  "desc": "Get back on the road with a safe, smoother, and better-performing car.",
+                  "icon": "Car",
+                  "image": "/img/about/i5.png"
+                }
+              ],
+              "call_to_action": {
+                "phone": "+1 0000000000",
+                "button_text": "Book A Service",
+                "call_text": "Call Us Now"
+              },
+              "bottom_features": [
+                {
+                  "icon": "Users",
+                  "text": "EXPERT TECHNICIANS"
+                },
+                {
+                  "icon": "Shield",
+                  "text": "GENUINE PARTS"
+                },
+                {
+                  "icon": "Headphones",
+                  "text": "CUSTOMER FOCUSED"
+                },
+                {
+                  "icon": "ThumbsUp",
+                  "text": "100% SATISFACTION"
+                }
+              ]
+            },
+            "whyChooseUs": {
+              "subtitle": "WHY CHOOSE US",
+              "title_line1": "Because Your Car Deserves",
+              "title_highlight": "the Best",
+              "description": "At AutoFix, we go beyond just repairs — we deliver reliable solutions, expert care, and a better driving experience. Here's why thousands of car owners trust us.",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "Award",
+                  "title": "Expert Technicians",
+                  "desc": "Certified and experienced professionals."
+                },
+                {
+                  "id": "f2",
+                  "icon": "CheckCircle",
+                  "title": "High-Quality Parts",
+                  "desc": "We use genuine and high-grade parts."
+                },
+                {
+                  "id": "f3",
+                  "icon": "Percent",
+                  "title": "Affordable Pricing",
+                  "desc": "Premium service at competitive rates."
+                },
+                {
+                  "id": "f4",
+                  "icon": "Clock",
+                  "title": "On-Time Service",
+                  "desc": "We value your time and ensure quick turnaround."
+                },
+                {
+                  "id": "f5",
+                  "icon": "Users",
+                  "title": "Customer Satisfaction",
+                  "desc": "Thousands of happy customers trust us."
+                },
+                {
+                  "id": "f6",
+                  "icon": "Headphones",
+                  "title": "24/7 Support",
+                  "desc": "We're always here to help you."
+                }
+              ],
+              "button_text": "Read More",
+              "phone": "+1 0000000000",
+              "call_text": "Call Us Now",
+              "before_image": "/img/about/demage.png",
+              "after_image": "/img/about/after.png",
+              "badge": {
+                "text1": "Drive Better",
+                "text2": "With",
+                "text3": "AutoFix",
+                "years": "10+"
+              }
+            },
+            "mission": {
+              "subtitle": "OUR MISSION",
+              "title_highlight": "Our Mission",
+              "title_line1": "is to Keep You Moving",
+              "description": "Our mission is to provide reliable, transparent, and high-quality car service and repair solutions that ensure safety, performance, and peace of mind for every customer. We are committed to building long-term relationships through trust, expertise, and exceptional service.",
+              "features": [
+                {
+                  "icon": "ShieldCheck",
+                  "title": "Reliable Service",
+                  "desc": "You can trust"
+                },
+                {
+                  "icon": "Users",
+                  "title": "Customer First",
+                  "desc": "Always"
+                },
+                {
+                  "icon": "Award",
+                  "title": "Quality Always",
+                  "desc": "In everything we do"
+                }
+              ],
+              "image": "/img/about/mission.png",
+              "badge_icon": "Target",
+              "badge_text1": "Quality Service",
+              "badge_text2": "Stronger Journeys"
+            },
+            "vision": {
+              "subtitle": "OUR VISION",
+              "title_highlight": "Our Vision",
+              "title_line1": "for a Better Tomorrow",
+              "description": "Our vision is to become the most trusted and preferred car service provider, recognized for innovation, customer satisfaction, and contribution to safer and smoother journeys. We aim to set new standards in the automotive service industry through continuous improvement and a passion for excellence.",
+              "features": [
+                {
+                  "icon": "TrendingUp",
+                  "title": "Industry Leader",
+                  "desc": "Through innovation"
+                },
+                {
+                  "icon": "Shield",
+                  "title": "Safer Roads",
+                  "desc": "For future generations"
+                },
+                {
+                  "icon": "Leaf",
+                  "title": "Sustainable Mobility",
+                  "desc": "A greener tomorrow"
+                }
+              ],
+              "image": "/img/about/vision.png"
+            },
+            "ourTeam": {
+              "subtitle": "OUR TEAM",
+              "title_line1": "Meet Our",
+              "title_highlight": "Experts",
+              "description": "Skilled. Experienced. Dedicated. Our team works hard to keep your vehicle running smoothly and safely.",
+              "members": [
+                {
+                  "id": "t1_0",
+                  "image": "/img/team/1.png",
+                  "name": "Rohit Sharma",
+                  "role": "Service Manager"
+                },
+                {
+                  "id": "t2_0",
+                  "image": "/img/team/2.png",
+                  "name": "Amit Kumar",
+                  "role": "Senior Mechanic"
+                },
+                {
+                  "id": "t3_0",
+                  "image": "/img/team/3.png",
+                  "name": "Priya Singh",
+                  "role": "Service Advisor"
+                },
+                {
+                  "id": "t4_0",
+                  "image": "/img/team/4.png",
+                  "name": "Vikram Patel",
+                  "role": "AC Specialist"
+                },
+                {
+                  "id": "t5_0",
+                  "image": "/img/team/5.png",
+                  "name": "Neeraj Verma",
+                  "role": "Diagnostic Technician"
+                },
+                {
+                  "id": "t6_0",
+                  "image": "/img/team/6.png",
+                  "name": "Sandeep Yadav",
+                  "role": "Tire & Wheel Specialist"
+                },
+                {
+                  "id": "t7_0",
+                  "image": "/img/team/7.png",
+                  "name": "Manish Gupta",
+                  "role": "Denting & Painting Expert"
+                },
+                {
+                  "id": "t8_0",
+                  "image": "/img/team/8.png",
+                  "name": "Kavya Mehta",
+                  "role": "Customer Support"
+                },
+                {
+                  "id": "t1_1",
+                  "image": "/img/team/1.png",
+                  "name": "Rohit Sharma",
+                  "role": "Service Manager"
+                },
+                {
+                  "id": "t2_1",
+                  "image": "/img/team/2.png",
+                  "name": "Amit Kumar",
+                  "role": "Senior Mechanic"
+                },
+                {
+                  "id": "t3_1",
+                  "image": "/img/team/3.png",
+                  "name": "Priya Singh",
+                  "role": "Service Advisor"
+                },
+                {
+                  "id": "t4_1",
+                  "image": "/img/team/4.png",
+                  "name": "Vikram Patel",
+                  "role": "AC Specialist"
+                },
+                {
+                  "id": "t5_1",
+                  "image": "/img/team/5.png",
+                  "name": "Neeraj Verma",
+                  "role": "Diagnostic Technician"
+                },
+                {
+                  "id": "t6_1",
+                  "image": "/img/team/6.png",
+                  "name": "Sandeep Yadav",
+                  "role": "Tire & Wheel Specialist"
+                },
+                {
+                  "id": "t7_1",
+                  "image": "/img/team/7.png",
+                  "name": "Manish Gupta",
+                  "role": "Denting & Painting Expert"
+                },
+                {
+                  "id": "t8_1",
+                  "image": "/img/team/8.png",
+                  "name": "Kavya Mehta",
+                  "role": "Customer Support"
+                },
+                {
+                  "id": "t1_2",
+                  "image": "/img/team/1.png",
+                  "name": "Rohit Sharma",
+                  "role": "Service Manager"
+                },
+                {
+                  "id": "t2_2",
+                  "image": "/img/team/2.png",
+                  "name": "Amit Kumar",
+                  "role": "Senior Mechanic"
+                },
+                {
+                  "id": "t3_2",
+                  "image": "/img/team/3.png",
+                  "name": "Priya Singh",
+                  "role": "Service Advisor"
+                },
+                {
+                  "id": "t4_2",
+                  "image": "/img/team/4.png",
+                  "name": "Vikram Patel",
+                  "role": "AC Specialist"
+                },
+                {
+                  "id": "t5_2",
+                  "image": "/img/team/5.png",
+                  "name": "Neeraj Verma",
+                  "role": "Diagnostic Technician"
+                },
+                {
+                  "id": "t6_2",
+                  "image": "/img/team/6.png",
+                  "name": "Sandeep Yadav",
+                  "role": "Tire & Wheel Specialist"
+                },
+                {
+                  "id": "t7_2",
+                  "image": "/img/team/7.png",
+                  "name": "Manish Gupta",
+                  "role": "Denting & Painting Expert"
+                },
+                {
+                  "id": "t8_2",
+                  "image": "/img/team/8.png",
+                  "name": "Kavya Mehta",
+                  "role": "Customer Support"
+                },
+                {
+                  "id": "t1_3",
+                  "image": "/img/team/1.png",
+                  "name": "Rohit Sharma",
+                  "role": "Service Manager"
+                },
+                {
+                  "id": "t2_3",
+                  "image": "/img/team/2.png",
+                  "name": "Amit Kumar",
+                  "role": "Senior Mechanic"
+                },
+                {
+                  "id": "t3_3",
+                  "image": "/img/team/3.png",
+                  "name": "Priya Singh",
+                  "role": "Service Advisor"
+                },
+                {
+                  "id": "t4_3",
+                  "image": "/img/team/4.png",
+                  "name": "Vikram Patel",
+                  "role": "AC Specialist"
+                },
+                {
+                  "id": "t5_3",
+                  "image": "/img/team/5.png",
+                  "name": "Neeraj Verma",
+                  "role": "Diagnostic Technician"
+                },
+                {
+                  "id": "t6_3",
+                  "image": "/img/team/6.png",
+                  "name": "Sandeep Yadav",
+                  "role": "Tire & Wheel Specialist"
+                },
+                {
+                  "id": "t7_3",
+                  "image": "/img/team/7.png",
+                  "name": "Manish Gupta",
+                  "role": "Denting & Painting Expert"
+                },
+                {
+                  "id": "t8_3",
+                  "image": "/img/team/8.png",
+                  "name": "Kavya Mehta",
+                  "role": "Customer Support"
+                }
+              ]
+            },
+            "contact": {
+              "subtitle": "Get In Touch",
+              "title_highlight": "Connect",
+              "title_line1": "With Us",
+              "description": "We are here to help you with any questions or concerns you may have about your vehicle.",
+              "contact_info": {
+                "address": "120 M G Road, Bengaluru, Karnataka 560001",
+                "phone": "+1 0000000000",
+                "email": "info@xyz.com",
+                "working_hours": "Mon - Sat: 9:00 AM - 7:00 PM"
+              }
+            },
+            "teamDetails": {
+              "sidebar": {
+                "title": "Expert Mechanic",
+                "contactTitle": "Contact Information",
+                "phone": "+1 0000000000",
+                "email": "mechanic@autofix.com"
+              },
+              "aboutTitle": "About Me",
+              "skillsTitle": "Professional Skills",
+              "skills": [
+                {
+                  "name": "Engine Diagnostics",
+                  "percentage": 95
+                },
+                {
+                  "name": "Transmission Repair",
+                  "percentage": 88
+                },
+                {
+                  "name": "Brake Systems",
+                  "percentage": 92
+                }
+              ]
+            },
+            "blogDetails": {
+              "sidebar": {
+                "searchTitle": "Search",
+                "categoriesTitle": "Categories",
+                "categories": [
+                  "Auto Repair",
+                  "Maintenance",
+                  "Tips & Tricks",
+                  "News"
+                ],
+                "recentPostsTitle": "Recent Posts",
+                "tagsTitle": "Tags",
+                "tags": [
+                  "Engine",
+                  "Brakes",
+                  "Oil Change",
+                  "Tires"
+                ],
+                "assistanceBox": {
+                  "bgImage": "/img/banner/1.png",
+                  "title": "Need Car Repair Assistance?",
+                  "desc": "Our experts are here to help you keep your car in top condition.",
+                  "callText": "Call Us Anytime",
+                  "phone": "+1 123 456 7890",
+                  "buttonText": "Contact Us",
+                  "buttonLink": "/contact"
+                }
+              },
+              "breadcrumb": {
+                "title": "Blog Details",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Blog Details"
+                  }
+                ],
+                "bgImage": "/img/banner/1.png"
+              }
+            },
+            "brands": {
+              "subtitle": "CAR BRANDS",
+              "title_line1": "All Car Brands",
+              "title_highlight": "We Service",
+              "description": "We provide expert repair and maintenance services for a wide range of car brands. Find your car brand below.",
+              "searchPlaceholder": "Search your car brand...",
+              "searchButtonText": "Search",
+              "brandsList": [
+                {
+                  "name": "Maruti Suzuki",
+                  "logo": "/img/brand/maruti-suzuki.png"
+                },
+                {
+                  "name": "Hyundai",
+                  "logo": "/img/brand/hyundai.png"
+                },
+                {
+                  "name": "Tata",
+                  "logo": "/img/brand/tata.png"
+                },
+                {
+                  "name": "Mahindra",
+                  "logo": "/img/brand/mahindra.png"
+                },
+                {
+                  "name": "Toyota",
+                  "logo": "/img/brand/toyota.png"
+                },
+                {
+                  "name": "Honda",
+                  "logo": "/img/brand/honda.png"
+                },
+                {
+                  "name": "Kia",
+                  "logo": "/img/brand/kia.png"
+                },
+                {
+                  "name": "Renault",
+                  "logo": "/img/brand/renault.png"
+                },
+                {
+                  "name": "Nissan",
+                  "logo": "/img/brand/nissan.png"
+                },
+                {
+                  "name": "Volkswagen",
+                  "logo": "/img/brand/volkswagen.png"
+                },
+                {
+                  "name": "Skoda",
+                  "logo": "/img/brand/skoda.png"
+                },
+                {
+                  "name": "MG",
+                  "logo": "/img/brand/mg.png"
+                },
+                {
+                  "name": "Ford",
+                  "logo": "/img/brand/ford.png"
+                },
+                {
+                  "name": "Chevrolet",
+                  "logo": "/img/brand/chevrolet.png"
+                },
+                {
+                  "name": "Jeep",
+                  "logo": "/img/brand/jeep.png"
+                },
+                {
+                  "name": "BMW",
+                  "logo": "/img/brand/bmw.png"
+                },
+                {
+                  "name": "Mercedes-Benz",
+                  "logo": "/img/brand/mercedes-benz.png"
+                },
+                {
+                  "name": "Audi",
+                  "logo": "/img/brand/audi.png"
+                },
+                {
+                  "name": "Land Rover",
+                  "logo": "/img/brand/land-rover.png"
+                },
+                {
+                  "name": "Volvo",
+                  "logo": "/img/brand/volvo.png"
+                },
+                {
+                  "name": "Citroën",
+                  "logo": "/img/brand/citroen.png"
+                },
+                {
+                  "name": "Isuzu",
+                  "logo": "/img/brand/isuzu.png"
+                },
+                {
+                  "name": "Lexus",
+                  "logo": "/img/brand/lexus.png"
+                },
+                {
+                  "name": "Porsche",
+                  "logo": "/img/brand/porsche.png"
+                }
+              ]
+            },
+            "pricing": {
+              "subtitle": "OUR PRICING",
+              "title_line1": "Car Service &",
+              "title_highlight": "Repair Prices",
+              "description": "Transparent and affordable pricing for all your car care needs. Quality service at the best value.",
+              "starting_at_text": "Starting at",
+              "onwards_text": "Onwards",
+              "pricingList": [
+                {
+                  "image": "/img/price/1.png",
+                  "iconName": "Activity",
+                  "title": "Engine Oil Change",
+                  "description": "Keep your engine smooth and efficient.",
+                  "price": "₹499"
+                },
+                {
+                  "image": "/img/price/2.png",
+                  "iconName": "Activity",
+                  "title": "Brake Service",
+                  "description": "Ensure your safety with reliable braking.",
+                  "price": "₹1,499"
+                },
+                {
+                  "image": "/img/price/3.png",
+                  "iconName": "Activity",
+                  "title": "Tire Replacement",
+                  "description": "Better grip, safer and smoother journeys.",
+                  "price": "₹1,999"
+                },
+                {
+                  "image": "/img/price/4.png",
+                  "iconName": "Battery",
+                  "title": "Battery Replacement",
+                  "description": "Reliable power for a hassle-free drive.",
+                  "price": "₹3,499"
+                },
+                {
+                  "image": "/img/price/5.png",
+                  "iconName": "Snowflake",
+                  "title": "AC Service",
+                  "description": "Stay cool and comfortable all year round.",
+                  "price": "₹1,499"
+                },
+                {
+                  "image": "/img/price/6.png",
+                  "iconName": "Activity",
+                  "title": "Car Diagnostics",
+                  "description": "Quick and accurate problem detection.",
+                  "price": "₹799"
+                },
+                {
+                  "image": "/img/price/7.png",
+                  "iconName": "Wrench",
+                  "title": "Suspension Repair",
+                  "description": "A smoother and safer driving experience.",
+                  "price": "₹2,499"
+                },
+                {
+                  "image": "/img/price/8.png",
+                  "iconName": "Wrench",
+                  "title": "Clutch Repair",
+                  "description": "Smooth gear shifting for a better drive.",
+                  "price": "₹3,999"
+                },
+                {
+                  "image": "/img/price/9.png",
+                  "iconName": "Activity",
+                  "title": "Denting & Painting",
+                  "description": "Restore your car's original look.",
+                  "price": "₹4,999"
+                },
+                {
+                  "image": "/img/price/10.png",
+                  "iconName": "CheckCircle2",
+                  "title": "Wheel Alignment",
+                  "description": "Improves stability and tyre life.",
+                  "price": "₹799"
+                },
+                {
+                  "image": "/img/price/1.png",
+                  "iconName": "CheckCircle2",
+                  "title": "Car Wash & Cleaning",
+                  "description": "A fresh and clean ride every time.",
+                  "price": "₹499"
+                },
+                {
+                  "image": "/img/price/2.png",
+                  "iconName": "Wrench",
+                  "title": "General Service",
+                  "description": "Complete care for better performance.",
+                  "price": "₹2,999"
+                }
+              ]
+            },
+            "bookService": {
+              "subtitle": "BOOK A SERVICE",
+              "title_line1": "Schedule Your",
+              "title_highlight": "Car Service",
+              "title_line2": "Today",
+              "description": "Fill out the form below and our team will get in touch with you to confirm your appointment.",
+              "form": {
+                "step1": {
+                  "number": "1",
+                  "title": "Your Information",
+                  "desc": "Let us know who you are.",
+                  "fields": [
+                    {
+                      "name": "fullName",
+                      "label": "Full Name",
+                      "placeholder": "Enter your full name",
+                      "icon": "User",
+                      "required": true,
+                      "type": "text"
+                    },
+                    {
+                      "name": "phone",
+                      "label": "Phone Number",
+                      "placeholder": "Enter your phone number",
+                      "icon": "Phone",
+                      "required": true,
+                      "type": "text"
+                    },
+                    {
+                      "name": "email",
+                      "label": "Email Address",
+                      "placeholder": "Enter your email address",
+                      "icon": "Mail",
+                      "required": true,
+                      "type": "email"
+                    },
+                    {
+                      "name": "city",
+                      "label": "City",
+                      "placeholder": "Enter your city",
+                      "icon": "MapPin",
+                      "required": true,
+                      "type": "text"
+                    }
+                  ]
+                },
+                "step2": {
+                  "number": "2",
+                  "title": "Vehicle Information",
+                  "desc": "Let us know your vehicle.",
+                  "fields": [
+                    {
+                      "name": "carBrand",
+                      "label": "Car Brand",
+                      "icon": "Car",
+                      "required": true,
+                      "type": "select",
+                      "options": [
+                        {
+                          "value": "",
+                          "label": "Select Brand"
+                        },
+                        {
+                          "value": "toyota",
+                          "label": "Toyota"
+                        },
+                        {
+                          "value": "honda",
+                          "label": "Honda"
+                        },
+                        {
+                          "value": "maruti",
+                          "label": "Maruti Suzuki"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "carModel",
+                      "label": "Car Model",
+                      "icon": "LayoutGrid",
+                      "required": true,
+                      "type": "select",
+                      "options": [
+                        {
+                          "value": "",
+                          "label": "Select Model"
+                        },
+                        {
+                          "value": "corolla",
+                          "label": "Corolla"
+                        },
+                        {
+                          "value": "civic",
+                          "label": "Civic"
+                        },
+                        {
+                          "value": "swift",
+                          "label": "Swift"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "year",
+                      "label": "Year",
+                      "icon": "Calendar",
+                      "required": true,
+                      "type": "select",
+                      "options": [
+                        {
+                          "value": "",
+                          "label": "Select Year"
+                        },
+                        {
+                          "value": "2024",
+                          "label": "2024"
+                        },
+                        {
+                          "value": "2023",
+                          "label": "2023"
+                        },
+                        {
+                          "value": "2022",
+                          "label": "2022"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "regNumber",
+                      "label": "Registration Number",
+                      "placeholder": "E.g. KA01AB1234",
+                      "icon": "FileText",
+                      "optionalText": "(Optional)",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "step3": {
+                  "number": "3",
+                  "title": "Service Details",
+                  "desc": "Choose the service you need.",
+                  "fields": [
+                    {
+                      "name": "serviceType",
+                      "label": "Service Type",
+                      "icon": "Wrench",
+                      "required": true,
+                      "type": "select",
+                      "options": [
+                        {
+                          "value": "",
+                          "label": "Select Service"
+                        },
+                        {
+                          "value": "general",
+                          "label": "General Service"
+                        },
+                        {
+                          "value": "oil",
+                          "label": "Oil Change"
+                        },
+                        {
+                          "value": "brake",
+                          "label": "Brake Repair"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "prefDate",
+                      "label": "Preferred Date",
+                      "placeholder": "dd-mm-yyyy",
+                      "icon": "Calendar",
+                      "required": true,
+                      "type": "text"
+                    },
+                    {
+                      "name": "prefTime",
+                      "label": "Preferred Time",
+                      "placeholder": "Select Time",
+                      "icon": "Clock",
+                      "required": true,
+                      "type": "text"
+                    },
+                    {
+                      "name": "additionalInfo",
+                      "label": "Additional Information",
+                      "placeholder": "Let us know any specific issue or request...",
+                      "icon": "Edit3",
+                      "optionalText": "(Optional)",
+                      "type": "textarea",
+                      "fullWidth": true
+                    }
+                  ]
+                },
+                "submitText": "Book A Service",
+                "securityText": "Your information is safe with us. We respect your privacy."
+              },
+              "sidebar": {
+                "imageCard": {
+                  "image": "/img/price/1.png",
+                  "text1": "Drive Safe\nStay Ahead",
+                  "text2": "Reliable Service\nFor A Smoother\nTomorrow"
+                },
+                "features": {
+                  "title": "Why Choose Our Service?",
+                  "list": [
+                    {
+                      "icon": "ShieldCheck",
+                      "title": "Expert Technicians",
+                      "desc": "Skilled & certified professionals"
+                    },
+                    {
+                      "icon": "Tag",
+                      "title": "Transparent Pricing",
+                      "desc": "No hidden costs"
+                    },
+                    {
+                      "icon": "Settings",
+                      "title": "Genuine Parts",
+                      "desc": "100% authentic and reliable"
+                    },
+                    {
+                      "icon": "ThumbsUp",
+                      "title": "Quality Assurance",
+                      "desc": "We ensure your complete satisfaction"
+                    },
+                    {
+                      "icon": "Clock",
+                      "title": "Quick Turnaround",
+                      "desc": "On-time delivery, minimal downtime"
+                    },
+                    {
+                      "icon": "Headphones",
+                      "title": "24/7 Support",
+                      "desc": "Always here to help you"
+                    }
+                  ]
+                },
+                "contactBox": {
+                  "bgImage": "/img/banner/2.png",
+                  "phoneTitle": "Need Help?",
+                  "phoneSub": "Call Our Service Advisor",
+                  "phone": "+1 123 456 7890",
+                  "emailTitle": "Or Email Us",
+                  "email": "info@xyz.com",
+                  "signature": "We Keep\nYou Moving"
+                }
+              }
+            },
+            "gallery": {
+              "breadcrumb": {
+                "title": "Our Gallery",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Our Gallery"
+                  }
+                ],
+                "bgImage": "/img/banner/1.png"
+              },
+              "subtitle": "GALLERY",
+              "title_line1": "Our Work in",
+              "title_highlight": "Action",
+              "description": "Take a look at our service center, expert team, and the vehicles we care for.",
+              "photoTabLabel": "Photo Gallery",
+              "videoTabLabel": "Video Gallery",
+              "photosTitle": "Photo Gallery",
+              "videosTitle": "Video Gallery",
+              "photos": [
+                {
+                  "image": "/img/gallery/photo/1.png",
+                  "title": "Engine Repair"
+                },
+                {
+                  "image": "/img/gallery/photo/2.png",
+                  "title": "Brake Service"
+                },
+                {
+                  "image": "/img/gallery/photo/3.png",
+                  "title": "Tire Service"
+                },
+                {
+                  "image": "/img/gallery/photo/4.png",
+                  "title": "Car Diagnostics"
+                },
+                {
+                  "image": "/img/gallery/photo/5.png",
+                  "title": "Oil Change"
+                },
+                {
+                  "image": "/img/gallery/photo/6.png",
+                  "title": "AC Service"
+                },
+                {
+                  "image": "/img/gallery/photo/7.png",
+                  "title": "Car Detailing"
+                },
+                {
+                  "image": "/img/gallery/photo/8.png",
+                  "title": "Service Center"
+                }
+              ],
+              "videos": [
+                {
+                  "image": "/img/gallery/video/7.png",
+                  "videoUrl": "#",
+                  "duration": "02:45",
+                  "title": "Engine Repair Process",
+                  "desc": "Watch how we diagnose and fix engine issues."
+                },
+                {
+                  "image": "/img/gallery/video/8.png",
+                  "videoUrl": "#",
+                  "duration": "01:30",
+                  "title": "Brake Pad Replacement",
+                  "desc": "Step-by-step brake service at our workshop."
+                },
+                {
+                  "image": "/img/gallery/video/9.png",
+                  "videoUrl": "#",
+                  "duration": "01:50",
+                  "title": "Oil Change Service",
+                  "desc": "Quick and professional oil change process."
+                },
+                {
+                  "image": "/img/gallery/video/10.png",
+                  "videoUrl": "#",
+                  "duration": "02:20",
+                  "title": "Car AC Servicing",
+                  "desc": "Keep your cabin cool and comfortable."
+                }
+              ]
+            },
+            "testimonials": {
+              "breadcrumb": {
+                "title": "Our Testimonials",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Our Testimonials"
+                  }
+                ],
+                "bgImage": "/img/banner/1.png"
+              },
+              "subtitle": "TESTIMONIALS",
+              "title_line1": "What Our",
+              "title_highlight": "Customers Say",
+              "description": "Real experiences from car owners who trust us for reliable service and expert care.",
+              "items": [
+                {
+                  "id": "1",
+                  "carImage": "/img/testimonails/1.png",
+                  "avatar": "/img/team/1.png",
+                  "rating": 5,
+                  "quote": "Excellent service! My car was making weird noises, and the team quickly diagnosed and fixed the issue. Very professional and trustworthy. Highly recommended!",
+                  "author": "Rohit Sharma",
+                  "location": "Bengaluru, KA",
+                  "carModel": "Honda City"
+                },
+                {
+                  "id": "2",
+                  "carImage": "/img/testimonails/2.png",
+                  "avatar": "/img/team/2.png",
+                  "rating": 5,
+                  "quote": "I've been coming here for regular servicing, and they never disappoint. Great customer support, transparent pricing, and quality work. My car always feels like new!",
+                  "author": "Priya Mehta",
+                  "location": "Delhi, DL",
+                  "carModel": "Hyundai i20"
+                },
+                {
+                  "id": "3",
+                  "carImage": "/img/testimonails/3.png",
+                  "avatar": "/img/team/3.png",
+                  "rating": 5,
+                  "quote": "Quick and hassle-free service. They replaced my brake pads and explained everything clearly. Honest advice and skilled technicians. Will definitely visit again!",
+                  "author": "Amit Verma",
+                  "location": "Noida, UP",
+                  "carModel": "Toyota Innova"
+                },
+                {
+                  "id": "4",
+                  "carImage": "/img/testimonails/4.png",
+                  "avatar": "/img/team/4.png",
+                  "rating": 5,
+                  "quote": "Very professional and polite staff. They handled my car service smoothly and delivered it on time. I really appreciate their attention to detail. Great experience!",
+                  "author": "Neha Kapoor",
+                  "location": "Mumbai, MH",
+                  "carModel": "Maruti Swift"
+                },
+                {
+                  "id": "5",
+                  "carImage": "/img/testimonails/5.png",
+                  "avatar": "/img/team/5.png",
+                  "rating": 5,
+                  "quote": "The team is knowledgeable and friendly. They fixed my AC issue within hours, and now it's working perfectly. Fair pricing and excellent service!",
+                  "author": "Karan Patel",
+                  "location": "Ahmedabad, GJ",
+                  "carModel": "Kia Seltos"
+                },
+                {
+                  "id": "6",
+                  "carImage": "/img/testimonails/6.png",
+                  "avatar": "/img/team/6.png",
+                  "rating": 5,
+                  "quote": "I had a wonderful experience! From booking to delivery, everything was smooth. My car runs much better now. Highly recommend their service to all car owners.",
+                  "author": "Sneha Iyer",
+                  "location": "Chennai, TN",
+                  "carModel": "Tata Nexon"
+                }
+              ]
+            },
+            "faq": {
+              "breadcrumb": {
+                "title": "Our Faq",
+                "bgImage": "/img/banner/breadcrumb.png",
+                "paths": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Our Faq"
+                  }
+                ]
+              },
+              "sidebar": {
+                "title": "Need Assistance?",
+                "description": "Our support team is always ready to help you. Get in touch with us for any queries or further information.",
+                "contacts": [
+                  {
+                    "icon": "Phone",
+                    "title": "Call Us",
+                    "detail": "+1 0000000000",
+                    "subDetail": "Mon - Sat: 9:00 AM - 7:00 PM"
+                  },
+                  {
+                    "icon": "Mail",
+                    "title": "Email Us",
+                    "detail": "info@xyz.com",
+                    "subDetail": "We reply within 24 hours"
+                  },
+                  {
+                    "icon": "MapPin",
+                    "title": "Visit Us",
+                    "detail": "123 MG Road, Bengaluru, Karnataka 560001",
+                    "subDetail": ""
+                  }
+                ],
+                "extraHelp": {
+                  "title": "Still Have Questions?",
+                  "description": "Our team is here to help you get back on the road.",
+                  "buttonText": "Contact Our Team",
+                  "buttonLink": "/contact"
+                },
+                "bottomImage": "/img/service/1.png"
+              },
+              "content": {
+                "tagline": "GENERAL QUESTIONS",
+                "titleBlue": "FA",
+                "titleRed": "Qs",
+                "rightText": "FIND ANSWERS\nTO COMMON QUERIES",
+                "list": [
+                  {
+                    "id": 1,
+                    "question": "What types of car services do you offer?",
+                    "answer": "We offer a complete range of car services including general maintenance, engine repair, brake service, AC repair, electrical diagnostics, battery replacement, tyre services, car detailing, and more. Our expert technicians ensure your vehicle gets the best care."
+                  },
+                  {
+                    "id": 2,
+                    "question": "How can I book a service?",
+                    "answer": "You can book a service directly through our website by clicking on 'Book a Service', or you can call our customer support helpline to schedule an appointment."
+                  },
+                  {
+                    "id": 3,
+                    "question": "Do you use genuine spare parts?",
+                    "answer": "Yes, we only use OEM (Original Equipment Manufacturer) and OES (Original Equipment Supplier) genuine spare parts to ensure the highest quality and longevity for your vehicle."
+                  },
+                  {
+                    "id": 4,
+                    "question": "How long does a typical service take?",
+                    "answer": "A standard general service usually takes about 4 to 6 hours. However, major repairs or specific component replacements may take longer depending on the availability of parts and the complexity of the issue."
+                  },
+                  {
+                    "id": 5,
+                    "question": "Do you provide a warranty on repairs?",
+                    "answer": "Yes, we provide a standard warranty on all our repair works and spare parts. The duration of the warranty varies depending on the specific part and service."
+                  },
+                  {
+                    "id": 6,
+                    "question": "Can I get a service estimate before booking?",
+                    "answer": "Absolutely! You can request a free estimate on our website or by contacting our support team with details of your car's issues."
+                  },
+                  {
+                    "id": 7,
+                    "question": "Do you service all car brands?",
+                    "answer": "Yes, our expert mechanics are trained to service and repair all major car brands and models, from hatchbacks to luxury sedans and SUVs."
+                  },
+                  {
+                    "id": 8,
+                    "question": "Is pickup and drop available?",
+                    "answer": "Yes, we offer convenient door-step pickup and drop services for your vehicle across the city to save you time and hassle."
+                  },
+                  {
+                    "id": 9,
+                    "question": "What payment methods do you accept?",
+                    "answer": "We accept all major payment methods including Credit/Debit Cards, UPI, Net Banking, and Cash."
+                  },
+                  {
+                    "id": 10,
+                    "question": "How can I contact customer support?",
+                    "answer": "You can reach our customer support via phone, email, or through the contact form on our website. Our team is available from Monday to Saturday, 9:00 AM to 7:00 PM."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
