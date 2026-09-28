@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Caveat } from "next/font/google";
 import "./globals.css";
 import TopBar from "@/components/section/TopBar/page";
 import Header from "@/components/section/Header/page";
@@ -15,6 +15,11 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const caveat = Caveat({
+  variable: "--font-caveat",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   title: "AutoFix - Car Repair Service",
   description: "Trusted Care for Every Drive",
@@ -26,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+    <html lang="en" className={`${inter.variable} ${caveat.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans">
         <TopBar data={siteData.common.Topbar} />
         <Header data={siteData.common.Header} />

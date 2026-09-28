@@ -83,8 +83,14 @@ export default function FaqSection({ data }: { data: FaqData }) {
                 className="object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 font-serif text-[32px] text-white leading-tight italic font-bold">
-                Your Car <br/> Our Priority
+              <div className="absolute bottom-10 left-8 font-caveat text-[42px] text-white leading-[1.1] -rotate-[8deg] transform origin-bottom-left select-none">
+                <div className="relative inline-block z-10">
+                  <span className="block ml-4">Your Car</span>
+                  <span className="block -mt-1">Our Priority</span>
+                  <svg className="absolute -bottom-3 left-0 w-[110%] h-[20px] text-[#e62020] -z-10" viewBox="0 0 100 20" preserveAspectRatio="none">
+                    <path d="M2,18 Q40,-2 98,6" stroke="currentColor" strokeWidth="4" fill="none" strokeLinecap="round" />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
