@@ -6,11 +6,14 @@ import { SiteData } from '@/components/type';
 
 export default function TestimonialsPage() {
   const siteData = data as unknown as SiteData;
+  const testimonialsPageData = siteData.categories.AutoRepair.templateComponents["template-1"].pages.testimonials;
   const testimonialsData = siteData.categories.AutoRepair.templateComponents["template-1"].sections.testimonials;
 
   return (
     <main className="min-h-screen bg-[#f8fafc]">
-      <Breadcrumb data={testimonialsData.breadcrumb} />
+      {testimonialsPageData?.breadcrumb && (
+        <Breadcrumb data={testimonialsPageData.breadcrumb} />
+      )}
       <TestimonialsSection data={testimonialsData} />
     </main>
   );

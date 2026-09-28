@@ -1027,6 +1027,60 @@
                   }
                 ]
               }
+            },
+            "faq": {
+              "breadcrumb": {
+                "title": "FAQ",
+                "paths": [
+                  { "label": "Home", "href": "/" },
+                  { "label": "FAQ" }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "components": [
+                { "key": "FaqSection", "component": "FaqSection" }
+              ],
+              "seo": {
+                "title": "FAQ - AutoFix",
+                "description": "Find answers to frequently asked questions.",
+                "canonical": "/faq"
+              }
+            },
+            "gallery": {
+              "breadcrumb": {
+                "title": "Gallery",
+                "paths": [
+                  { "label": "Home", "href": "/" },
+                  { "label": "Gallery" }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "components": [
+                { "key": "GallerySection", "component": "GallerySection" }
+              ],
+              "seo": {
+                "title": "Gallery - AutoFix",
+                "description": "View our work gallery.",
+                "canonical": "/gallery"
+              }
+            },
+            "testimonials": {
+              "breadcrumb": {
+                "title": "Testimonials",
+                "paths": [
+                  { "label": "Home", "href": "/" },
+                  { "label": "Testimonials" }
+                ],
+                "bgImage": "/img/banner/breadcrumb.png"
+              },
+              "components": [
+                { "key": "TestimonialsSection", "component": "TestimonialsSection" }
+              ],
+              "seo": {
+                "title": "Testimonials - AutoFix",
+                "description": "Read what our customers have to say about us.",
+                "canonical": "/testimonials"
+              }
             }
           },
           "sections": {
@@ -2602,7 +2656,9 @@
                   "buttonText": "Contact Our Team",
                   "buttonLink": "/contact"
                 },
-                "bottomImage": "/img/services/1.png"
+                "bottomImage": "/img/services/1.png",
+                "imageTextLine1": "Your Car",
+                "imageTextLine2": "Our Priority"
               },
               "content": {
                 "tagline": "GENERAL QUESTIONS",

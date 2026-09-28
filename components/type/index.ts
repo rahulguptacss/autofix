@@ -548,6 +548,7 @@ export interface Template1 {
     testimonials?: PageData;
     gallery?: PageData;
     sitemap?: SitemapData;
+    faq?: PageData;
   };
   sections: TemplateSections;
 }
@@ -641,6 +642,8 @@ export interface FaqData {
       buttonLink: string;
     };
     bottomImage: string;
+    imageTextLine1?: string;
+    imageTextLine2?: string;
   };
   content: {
     tagline: string;
