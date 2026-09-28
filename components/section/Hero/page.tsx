@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Wrench, Settings, ShieldCheck, Clock, ArrowRight, Users, Star, Car } from 'lucide-react';
 import { HeroData } from '@/components/type';
+import Link from 'next/link';
 import React, { useEffect, useRef } from 'react';
 import { animate, useInView, motion } from 'framer-motion';
 
@@ -127,15 +128,17 @@ export default function HeroSection({ data }: { data: HeroData }) {
           {/* Features and Button Container */}
           <div className="flex flex-col md:flex-col md:items-start">
             {/* Button */}
-            <motion.button 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
-              className="bg-[#e62020] hover:bg-red-700 text-white font-semibold py-3.5 px-7 rounded-md flex items-center justify-center space-x-2 transition-colors w-full md:w-auto order-1 md:order-2 mb-6 md:mb-0"
-            >
-              <span>{data.button_text || 'Book A Service'}</span>
-               <ArrowRight size={18} strokeWidth={2.5} />
-            </motion.button>
+            <Link href="/book-service" className="w-full md:w-auto order-1 md:order-2 mb-6 md:mb-0">
+              <motion.button 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+                className="bg-[#e62020] hover:bg-red-700 text-white font-semibold py-3.5 px-7 rounded-md flex items-center justify-center space-x-2 transition-colors w-full"
+              >
+                <span>{data.button_text || 'Book A Service'}</span>
+                 <ArrowRight size={18} strokeWidth={2.5} />
+              </motion.button>
+            </Link>
 
             {/* Feature Boxes */}
             <div className="flex justify-between md:justify-start flex-wrap gap-1 sm:gap-2 md:gap-3 order-2 md:order-1 mb-0 md:mb-6 w-full md:w-auto">

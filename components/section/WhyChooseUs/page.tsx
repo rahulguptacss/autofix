@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import * as LucideIcons from 'lucide-react';
+import Link from 'next/link';
 import { WhyChooseUsData } from '@/components/type';
 
 const getIcon = (iconName: string) => {
@@ -11,7 +12,7 @@ const getIcon = (iconName: string) => {
   return Icon ? <Icon size={24} /> : null;
 };
 
-export default function WhyChooseUsSection({ data }: { data: WhyChooseUsData }) {
+export default function WhyChooseUsSection({ data, hideButton = false }: { data: WhyChooseUsData, hideButton?: boolean }) {
   const [sliderPos, setSliderPos] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -95,10 +96,14 @@ export default function WhyChooseUsSection({ data }: { data: WhyChooseUsData }) 
               transition={{ delay: 0.6, duration: 0.5 }}
               className="relative flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:gap-10"
             >
-              <button className="flex shrink-0 items-center gap-2 rounded-[6px] bg-[#e62020] px-7 py-3.5 text-[14px] font-extrabold text-white transition hover:bg-red-700">
-                <span>{data.button_text}</span>
-                <LucideIcons.ArrowRight size={18} strokeWidth={2.5} />
-              </button>
+              {!hideButton && (
+                <Link href="/about" className="shrink-0">
+                  <button className="flex w-full items-center gap-2 rounded-[6px] bg-[#e62020] px-7 py-3.5 text-[14px] font-extrabold text-white transition hover:bg-red-700">
+                    <span>{data.button_text}</span>
+                    <LucideIcons.ArrowRight size={18} strokeWidth={2.5} />
+                  </button>
+                </Link>
+              )}
               
               <div className="flex shrink-0 items-center gap-4">
                 <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#e62020] text-white">

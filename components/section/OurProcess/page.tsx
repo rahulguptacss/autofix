@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import * as LucideIcons from 'lucide-react';
+import Link from 'next/link';
 import { ProcessData } from '@/components/type';
 
 const getIcon = (name: string, size = 22) => {
@@ -184,10 +185,12 @@ export default function OurProcessSection({ data }: { data: ProcessData }) {
 
                 <div className="mx-4 hidden h-9 w-px bg-[#66707d] sm:block" />
 
-                <button className="flex shrink-0 items-center gap-2 rounded-[6px] bg-[#e62020] px-5 py-3 text-[13px] font-extrabold text-white transition hover:bg-red-700">
-                  <span>{data.call_to_action.button_text}</span>
-                  <LucideIcons.ArrowRight size={18} strokeWidth={2.5} />
-                </button>
+                <Link href="/contact" className="shrink-0">
+                  <button className="flex w-full items-center gap-2 rounded-[6px] bg-[#e62020] px-5 py-3 text-[13px] font-extrabold text-white transition hover:bg-red-700">
+                    <span>{data.call_to_action.button_text}</span>
+                    <LucideIcons.ArrowRight size={18} strokeWidth={2.5} />
+                  </button>
+                </Link>
               </div>
             </div>
 

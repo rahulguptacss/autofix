@@ -170,7 +170,7 @@ export default function ContactSection() {
                   </motion.div>
                   
                   <motion.div variants={fadeInUp} className="relative group">
-                    <input type="tel" placeholder="Phone*" onInput={(e) => { e.currentTarget.value = e.currentTarget.value.replace(/[^0-9]/g, ''); }} className="w-full bg-white text-[#556070] text-[14px] md:text-[15px] font-medium rounded-[8px] py-3.5 md:py-4 pl-12 pr-4 outline-none border border-gray-200 focus:border-[#e62020] focus:shadow-sm transition-all" />
+                    <input type="number" placeholder="Phone*" onInput={(e) => { e.currentTarget.value = e.currentTarget.value.replace(/[^0-9]/g, ''); }} className="w-full bg-white text-[#556070] text-[14px] md:text-[15px] font-medium rounded-[8px] py-3.5 md:py-4 pl-12 pr-4 outline-none border border-gray-200 focus:border-[#e62020] focus:shadow-sm transition-all [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
                     <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-[#082142] opacity-60 group-focus-within:opacity-100 group-focus-within:text-[#e62020] transition-colors" size={18} />
                   </motion.div>
                   

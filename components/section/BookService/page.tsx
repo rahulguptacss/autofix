@@ -36,6 +36,54 @@ const getIcon = (iconName: string, size: number = 20, className: string = '', st
   }
 };
 
+const CustomSelect = ({ field }: { field: FormField }) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+  const [selected, setSelected] = React.useState('');
+  const dropdownRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  return (
+    <div className="relative" ref={dropdownRef}>
+      <input type="hidden" name={field.name} value={selected} />
+      <div 
+        className={`w-full pl-11 pr-10 py-3 bg-white border ${isOpen ? 'border-[#e62020] ring-1 ring-[#e62020]' : 'border-[#edf1f5]'} rounded-[8px] text-[15px] ${selected ? 'text-[#0b121d]' : 'text-[#697386]'} cursor-pointer transition-colors flex items-center justify-between`}
+        onClick={() => setIsOpen(!isOpen)}
+        tabIndex={0}
+      >
+        <span className="truncate">{selected || field.placeholder || 'Select Option'}</span>
+        <svg className={`w-4 h-4 text-[#0b121d] transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+      </div>
+      
+      {isOpen && (
+        <div className="absolute z-20 w-full mt-2 bg-white border border-[#edf1f5] rounded-[8px] shadow-xl max-h-60 overflow-y-auto py-2">
+          {field.options?.map((opt, i) => (
+            <div 
+              key={i} 
+              className={`px-4 py-2.5 text-[15px] cursor-pointer transition-colors flex items-center justify-between ${selected === opt.label ? 'bg-[#e62020]/5 text-[#e62020] font-bold' : 'text-[#556070] hover:bg-[#fafbfc] hover:text-[#0b121d]'}`}
+              onClick={() => {
+                setSelected(opt.label);
+                setIsOpen(false);
+              }}
+            >
+              <span>{opt.label}</span>
+              {selected === opt.label && <svg className="w-4 h-4 text-[#e62020]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
 const renderField = (field: FormField) => {
   return (
     <div key={field.name} className={`relative ${field.fullWidth ? 'col-span-full mb-8' : ''}`}>
@@ -49,20 +97,29 @@ const renderField = (field: FormField) => {
         </div>
         
         {field.type === 'select' ? (
-          <>
-            <select className="w-full pl-11 pr-10 py-3 bg-white border border-[#edf1f5] rounded-[8px] text-[15px] text-[#697386] appearance-none focus:outline-none focus:border-[#e62020] focus:ring-1 focus:ring-[#e62020] transition-colors">
-              {field.options?.map((opt, i: number) => (
-                <option key={i} value={opt.value}>{opt.label}</option>
-              ))}
-            </select>
-            <div className="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
-              <svg className="w-4 h-4 text-[#0b121d]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-            </div>
-          </>
+          <CustomSelect field={field} />
         ) : field.type === 'textarea' ? (
           <textarea rows={4} placeholder={field.placeholder} className="w-full pl-11 pr-4 py-3 bg-white border border-[#edf1f5] rounded-[8px] text-[15px] focus:outline-none focus:border-[#e62020] focus:ring-1 focus:ring-[#e62020] transition-colors resize-none"></textarea>
         ) : (
-          <input type={field.type || 'text'} placeholder={field.placeholder} onInput={(e) => { if (field.type === 'tel') e.currentTarget.value = e.currentTarget.value.replace(/[^0-9]/g, ''); }} className="w-full pl-11 pr-4 py-3 bg-white border border-[#edf1f5] rounded-[8px] text-[15px] focus:outline-none focus:border-[#e62020] focus:ring-1 focus:ring-[#e62020] transition-colors" />
+          <input 
+            type={(() => {
+              const name = (field.name || '').toLowerCase();
+              const label = (field.label || '').toLowerCase();
+              if (field.type === 'tel' || name.includes('phone') || label.includes('phone')) return 'number';
+              if (field.type === 'date' || name.includes('date') || label.includes('date')) return 'date';
+              if (field.type === 'time' || name.includes('time') || label.includes('time')) return 'time';
+              return field.type || 'text';
+            })()} 
+            placeholder={field.placeholder} 
+            onInput={(e) => { 
+              const name = (field.name || '').toLowerCase();
+              const label = (field.label || '').toLowerCase();
+              if (field.type === 'tel' || field.type === 'number' || name.includes('phone') || label.includes('phone')) {
+                e.currentTarget.value = e.currentTarget.value.replace(/[^0-9]/g, ''); 
+              }
+            }} 
+            className="w-full pl-11 pr-4 py-3 bg-white border border-[#edf1f5] rounded-[8px] text-[15px] focus:outline-none focus:border-[#e62020] focus:ring-1 focus:ring-[#e62020] transition-colors [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" 
+          />
         )}
       </div>
     </div>

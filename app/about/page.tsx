@@ -31,12 +31,12 @@ export default function AboutPage() {
         since we know the exact order.
       */}
       <div className="pt-16 pb-8 bg-white">
-         <AboutSection data={sectionsData.about} />
+         <AboutSection data={sectionsData.about} hideButton={true} />
       </div>
       
       <StatisticsSection data={sectionsData.statistics} />
       <OurProcessSection data={sectionsData.process} />
-      <WhyChooseUsSection data={sectionsData.whyChooseUs} />
+      <WhyChooseUsSection data={sectionsData.whyChooseUs} hideButton={true} />
     </>
   );
 }

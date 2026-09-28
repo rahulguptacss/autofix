@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Check, ArrowRight, Star } from 'lucide-react';
 import { AboutData } from '@/components/type';
+import Link from 'next/link';
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -52,7 +53,7 @@ const CircularProgress = ({ percentage, children }: { percentage: number, childr
   );
 };
 
-export default function AboutSection({ data }: { data: AboutData }) {
+export default function AboutSection({ data, hideButton = false }: { data: AboutData, hideButton?: boolean }) {
   return (
     <section className="py-12 lg:py-16 bg-white overflow-hidden relative">
       {/* Optional Tire background image for the right side */}
@@ -227,12 +228,16 @@ export default function AboutSection({ data }: { data: AboutData }) {
                transition={{ duration: 0.5, delay: 0.5 }}
                className="flex flex-row flex-nowrap items-center justify-between border-t border-gray-200 pt-8 gap-2 w-full"
              >
-                <button className="bg-[#e62020] hover:bg-red-700 text-white font-bold py-2 sm:py-2.5 pl-3 sm:pl-5 pr-1 sm:pr-2 rounded-full flex items-center justify-between space-x-2 sm:space-x-5 transition-colors group shrink-0">
-                  <span className="text-[10px] sm:text-[12px] tracking-wide whitespace-nowrap uppercase">{data.button_text || 'ABOUT MORE'}</span>
-                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-black rounded-full flex items-center justify-center group-hover:bg-gray-800 transition-colors shrink-0">
-                     <ArrowRight size={12} strokeWidth={2.5} className="text-white sm:w-3.5 sm:h-3.5" />
-                  </div>
-                </button>
+                {!hideButton && (
+                  <Link href="/about" className="shrink-0">
+                    <button className="bg-[#e62020] hover:bg-red-700 text-white font-bold py-2 sm:py-2.5 pl-3 sm:pl-5 pr-1 sm:pr-2 rounded-full flex items-center justify-between space-x-2 sm:space-x-5 transition-colors group w-full">
+                      <span className="text-[10px] sm:text-[12px] tracking-wide whitespace-nowrap uppercase">{data.button_text || 'ABOUT MORE'}</span>
+                      <div className="w-6 h-6 sm:w-8 sm:h-8 bg-black rounded-full flex items-center justify-center group-hover:bg-gray-800 transition-colors shrink-0">
+                         <ArrowRight size={12} strokeWidth={2.5} className="text-white sm:w-3.5 sm:h-3.5" />
+                      </div>
+                    </button>
+                  </Link>
+                )}
                 
                 <div className="flex items-center space-x-2 sm:space-x-4 shrink-0">
                   <div className="flex -space-x-2 sm:-space-x-3">

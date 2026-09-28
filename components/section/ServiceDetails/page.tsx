@@ -228,10 +228,12 @@ export default function ServiceDetailsSection({ data, otherServices }: { data: a
                   </div>
                 </div>
                 
-                <button className="w-full bg-[#e62020] text-white font-bold py-4 rounded-[6px] hover:bg-white hover:text-[#e62020] transition-colors duration-300 flex items-center justify-center space-x-2 group/btn">
-                  <span>{data.sidebar.buttonText}</span>
-                  <ArrowRight size={18} className="group-hover/btn:translate-x-1 transition-transform" strokeWidth={2.5} />
-                </button>
+                <Link href="/book-service" className="w-full">
+                  <button className="w-full bg-[#e62020] text-white font-bold py-4 rounded-[6px] hover:bg-white hover:text-[#e62020] transition-colors duration-300 flex items-center justify-center space-x-2 group/btn">
+                    <span>{data.sidebar.buttonText}</span>
+                    <ArrowRight size={18} className="group-hover/btn:translate-x-1 transition-transform" strokeWidth={2.5} />
+                  </button>
+                </Link>
               </div>
             </motion.div>
             

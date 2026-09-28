@@ -105,10 +105,12 @@ export default function BlogSection({ data }: { data: BlogData }) {
         </div>
         
         <div className="text-center">
-          <button className="bg-primary hover:bg-red-700 text-white font-bold py-3 px-8 rounded flex items-center space-x-2 transition-colors mx-auto">
-            <span>{data.button_text || 'View All Blog'}</span>
-            <ArrowRight size={18} />
-          </button>
+          <Link href="/blog" className="inline-flex mx-auto">
+            <button className="bg-primary hover:bg-red-700 text-white font-bold py-3 px-8 rounded flex items-center space-x-2 transition-colors w-full">
+              <span>{data.button_text || 'View All Blog'}</span>
+              <ArrowRight size={18} />
+            </button>
+          </Link>
         </div>
       </div>
     </section>
