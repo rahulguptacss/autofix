@@ -30,9 +30,7 @@ export default function AboutPage() {
         Actually for simplicity and exact match with the screenshot, we can render them directly here 
         since we know the exact order.
       */}
-      <div className="pt-16 pb-8 bg-white">
-         <AboutSection data={sectionsData.about} hideButton={true} />
-      </div>
+      <AboutSection data={sectionsData.about} hideButton={true} />
       
       <StatisticsSection data={sectionsData.statistics} />
       <OurProcessSection data={sectionsData.process} />

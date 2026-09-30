@@ -10,6 +10,11 @@ export default function GallerySection({ data }: { data: GalleryData }) {
   const [activeTab, setActiveTab] = useState<'photo' | 'video'>('photo');
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+  const [visiblePhotos, setVisiblePhotos] = useState(8);
+  const [visibleVideos, setVisibleVideos] = useState(8);
+
+  const loadMorePhotos = () => setVisiblePhotos(prev => prev + 4);
+  const loadMoreVideos = () => setVisibleVideos(prev => prev + 4);
 
   const handleScroll = (id: string) => {
     const el = document.getElementById(id);
@@ -100,7 +105,7 @@ export default function GallerySection({ data }: { data: GalleryData }) {
           </motion.div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
-            {data.photos.map((photo, i) => (
+            {data.photos.slice(0, visiblePhotos).map((photo, i) => (
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -126,6 +131,18 @@ export default function GallerySection({ data }: { data: GalleryData }) {
               </motion.div>
             ))}
           </div>
+          
+          {visiblePhotos < data.photos.length && (
+            <div className="flex justify-center mt-12">
+              <button 
+                onClick={loadMorePhotos}
+                className="bg-[#0b121d] text-white hover:bg-[#e62020] hover:shadow-[0_10px_25px_rgba(230,32,32,0.35)] font-bold text-[15px] py-4 px-10 rounded-full transition-all duration-300 flex items-center justify-center group hover:-translate-y-1"
+              >
+                Load More
+                <svg className="w-4 h-4 ml-2.5 transition-transform duration-300 group-hover:translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7"></path></svg>
+              </button>
+            </div>
+          )}
         </div>
         )}
 
@@ -143,7 +160,7 @@ export default function GallerySection({ data }: { data: GalleryData }) {
           </motion.div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
-            {data.videos.map((video, i) => (
+            {data.videos.slice(0, visibleVideos).map((video, i) => (
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -173,6 +190,18 @@ export default function GallerySection({ data }: { data: GalleryData }) {
               </motion.div>
             ))}
           </div>
+          
+          {visibleVideos < data.videos.length && (
+            <div className="flex justify-center mt-12">
+              <button 
+                onClick={loadMoreVideos}
+                className="bg-[#0b121d] text-white hover:bg-[#e62020] hover:shadow-[0_10px_25px_rgba(230,32,32,0.35)] font-bold text-[15px] py-4 px-10 rounded-full transition-all duration-300 flex items-center justify-center group hover:-translate-y-1"
+              >
+                Load More
+                <svg className="w-4 h-4 ml-2.5 transition-transform duration-300 group-hover:translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7"></path></svg>
+              </button>
+            </div>
+          )}
         </div>
         )}
 

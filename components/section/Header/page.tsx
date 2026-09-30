@@ -111,6 +111,7 @@ function DesktopNavItem({ link, pathname }: { link: NavLink, pathname: string })
     >
       <Link
         href={link.href}
+        onClick={(e) => link.hasDropdown && e.preventDefault()}
         className={`flex items-center relative py-2 transition-colors ${
           isActive || isHovered ? 'text-[#e62020]' : 'text-[#1a1f2c]'
         }`}

@@ -3,7 +3,30 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { MissionData, MissionFeature } from "@/components/type";
-import { ShieldCheck, Users, Award, Target, CheckCircle } from "lucide-react";
+import { ShieldCheck, Users, Award, Target, CheckCircle, Star } from "lucide-react";
+
+const QualityAwardIcon = ({ size, className }: { size: number; className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2.2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    {/* Ribbons */}
+    <path d="M7 18.5l-1.5 4.5 2.5-1.5 2.5 1.5 1-4" />
+    <path d="M17 18.5l1.5 4.5-2.5-1.5-2.5 1.5-1-4" />
+    {/* Rosette */}
+    <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" fill="#ffeceb" />
+    {/* Star */}
+    <path d="M12 7.5l1.2 2.5 2.8.4-2 2 .5 2.8-2.5-1.3-2.5 1.3.5-2.8-2-2 2.8-.4z" fill="currentColor" stroke="none" />
+  </svg>
+);
 
 export default function MissionSection({ data }: { data: MissionData }) {
   const getIcon = (iconName: string) => {
@@ -14,6 +37,8 @@ export default function MissionSection({ data }: { data: MissionData }) {
         return <Users size={32} className="text-[#e62020]" />;
       case "Award":
         return <Award size={32} className="text-[#e62020]" />;
+      case "Star":
+        return <QualityAwardIcon size={34} className="text-[#e62020]" />;
       default:
         return <CheckCircle size={32} className="text-[#e62020]" />;
     }

@@ -1,8 +1,8 @@
 {
   "common": {
     "Topbar": {
-      "address": "120 M G Road, Bengaluru, Karnataka 560001",
-      "phone": "+1 0000000000",
+      "address": "123 Main Street, New York, NY 10001, USA",
+      "phone": "+1 00000000000",
       "email": "info@xyz.com",
       "social_title": "Follow Us",
       "socials": [
@@ -37,7 +37,7 @@
         },
         {
           "name": "About Us",
-          "href": "/about",
+          "href": "#",
           "active": false,
           "hasDropdown": true,
           "dropdownLinks": [
@@ -198,16 +198,16 @@
         }
       ],
       "contact": {
-        "address_line1": "120 M G Road, Bengaluru,",
-        "address_line2": "Karnataka 560001",
-        "phone": "+1 0000000000",
+        "address_line1": "123 Main Street, New York,",
+        "address_line2": "NY 10001, USA",
+        "phone": "+1 00000000000",
         "email": "info@xyz.com",
         "working_hours": [
           "Mon - Sat: 9:00 AM - 7:00 PM",
           "Sunday: Closed"
         ]
       },
-      "copyright": "Copyright © 2026. All rights reserved. Powered by Lestow",
+      "copyright": "Copyright Â© 2026. All rights reserved. Powered by Lestow",
       "bottom_links": [
         {
           "name": "Terms & Conditions",
@@ -697,7 +697,7 @@
                   {
                     "id": "08",
                     "title": "Contact Us",
-                    "description": "If you have any questions about these terms and conditions, please contact us at info@xyz.com or call +1 0000000000."
+                    "description": "If you have any questions about these terms and conditions, please contact us at info@xyz.com or call +1 00000000000."
                   }
                 ]
               }
@@ -760,7 +760,7 @@
                   {
                     "id": "08",
                     "title": "Contact Us",
-                    "description": "If you have any questions about this Privacy Policy, please contact us at info@xyz.com or call +1 0000000000."
+                    "description": "If you have any questions about this Privacy Policy, please contact us at info@xyz.com or call +1 00000000000."
                   }
                 ]
               }
@@ -823,7 +823,7 @@
                   {
                     "id": "08",
                     "title": "Contact Us",
-                    "description": "To cancel or reschedule an appointment, or for any related questions, please contact us at info@xyz.com or call +1 0000000000."
+                    "description": "To cancel or reschedule an appointment, or for any related questions, please contact us at info@xyz.com or call +1 00000000000."
                   }
                 ]
               }
@@ -1032,13 +1032,21 @@
               "breadcrumb": {
                 "title": "FAQ",
                 "paths": [
-                  { "label": "Home", "href": "/" },
-                  { "label": "FAQ" }
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "FAQ"
+                  }
                 ],
                 "bgImage": "/img/banner/breadcrumb.png"
               },
               "components": [
-                { "key": "FaqSection", "component": "FaqSection" }
+                {
+                  "key": "FaqSection",
+                  "component": "FaqSection"
+                }
               ],
               "seo": {
                 "title": "FAQ - AutoFix",
@@ -1050,13 +1058,21 @@
               "breadcrumb": {
                 "title": "Gallery",
                 "paths": [
-                  { "label": "Home", "href": "/" },
-                  { "label": "Gallery" }
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Gallery"
+                  }
                 ],
                 "bgImage": "/img/banner/breadcrumb.png"
               },
               "components": [
-                { "key": "GallerySection", "component": "GallerySection" }
+                {
+                  "key": "GallerySection",
+                  "component": "GallerySection"
+                }
               ],
               "seo": {
                 "title": "Gallery - AutoFix",
@@ -1068,13 +1084,21 @@
               "breadcrumb": {
                 "title": "Testimonials",
                 "paths": [
-                  { "label": "Home", "href": "/" },
-                  { "label": "Testimonials" }
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "Testimonials"
+                  }
                 ],
                 "bgImage": "/img/banner/breadcrumb.png"
               },
               "components": [
-                { "key": "TestimonialsSection", "component": "TestimonialsSection" }
+                {
+                  "key": "TestimonialsSection",
+                  "component": "TestimonialsSection"
+                }
               ],
               "seo": {
                 "title": "Testimonials - AutoFix",
@@ -1145,7 +1169,7 @@
               "sidebar": {
                 "servicesTitle": "Other Services",
                 "helpTitle": "Need Help?\\nTalk to Our Experts",
-                "phone": "+1 0000000000",
+                "phone": "+1 00000000000",
                 "hours": "Mon - Sat : 9:00 AM - 6:00 PM",
                 "buttonText": "Book This Service"
               }
@@ -1590,7 +1614,7 @@
                 }
               ],
               "call_to_action": {
-                "phone": "+1 0000000000",
+                "phone": "+1 00000000000",
                 "button_text": "Book A Service",
                 "call_text": "Call Us Now"
               },
@@ -1617,7 +1641,7 @@
               "subtitle": "WHY CHOOSE US",
               "title_line1": "Because Your Car Deserves",
               "title_highlight": "the Best",
-              "description": "At AutoFix, we go beyond just repairs — we deliver reliable solutions, expert care, and a better driving experience. Here's why thousands of car owners trust us.",
+              "description": "At AutoFix, we go beyond just repairs â€” we deliver reliable solutions, expert care, and a better driving experience. Here's why thousands of car owners trust us.",
               "features": [
                 {
                   "id": "f1",
@@ -1657,7 +1681,7 @@
                 }
               ],
               "button_text": "Read More",
-              "phone": "+1 0000000000",
+              "phone": "+1 00000000000",
               "call_text": "Call Us Now",
               "before_image": "/img/about/demage.png",
               "after_image": "/img/about/after.png",
@@ -1685,7 +1709,7 @@
                   "desc": "Always"
                 },
                 {
-                  "icon": "Award",
+                  "icon": "Star",
                   "title": "Quality Always",
                   "desc": "In everything we do"
                 }
@@ -1925,8 +1949,8 @@
               "title_line1": "With Us",
               "description": "We are here to help you with any questions or concerns you may have about your vehicle.",
               "contact_info": {
-                "address": "120 M G Road, Bengaluru, Karnataka 560001",
-                "phone": "+1 0000000000",
+                "address": "123 Main Street, New York, NY 10001, USA",
+                "phone": "+1 00000000000",
                 "email": "info@xyz.com",
                 "working_hours": "Mon - Sat: 9:00 AM - 7:00 PM"
               }
@@ -1935,7 +1959,7 @@
               "sidebar": {
                 "title": "Expert Mechanic",
                 "contactTitle": "Contact Information",
-                "phone": "+1 0000000000",
+                "phone": "+1 00000000000",
                 "email": "mechanic@autofix.com"
               },
               "aboutTitle": "About Me",
@@ -2086,7 +2110,7 @@
                   "logo": "/img/brand/volvo.png"
                 },
                 {
-                  "name": "Citroën",
+                  "name": "CitroÃ«n",
                   "logo": "/img/brand/citroen.png"
                 },
                 {
@@ -2116,84 +2140,84 @@
                   "iconName": "Activity",
                   "title": "Engine Oil Change",
                   "description": "Keep your engine smooth and efficient.",
-                  "price": "₹499"
+                  "price": "â‚¹499"
                 },
                 {
                   "image": "/img/price/2.png",
                   "iconName": "Activity",
                   "title": "Brake Service",
                   "description": "Ensure your safety with reliable braking.",
-                  "price": "₹1,499"
+                  "price": "â‚¹1,499"
                 },
                 {
                   "image": "/img/price/3.png",
                   "iconName": "Activity",
                   "title": "Tire Replacement",
                   "description": "Better grip, safer and smoother journeys.",
-                  "price": "₹1,999"
+                  "price": "â‚¹1,999"
                 },
                 {
                   "image": "/img/price/4.png",
                   "iconName": "Battery",
                   "title": "Battery Replacement",
                   "description": "Reliable power for a hassle-free drive.",
-                  "price": "₹3,499"
+                  "price": "â‚¹3,499"
                 },
                 {
                   "image": "/img/price/5.png",
                   "iconName": "Snowflake",
                   "title": "AC Service",
                   "description": "Stay cool and comfortable all year round.",
-                  "price": "₹1,499"
+                  "price": "â‚¹1,499"
                 },
                 {
                   "image": "/img/price/6.png",
                   "iconName": "Activity",
                   "title": "Car Diagnostics",
                   "description": "Quick and accurate problem detection.",
-                  "price": "₹799"
+                  "price": "â‚¹799"
                 },
                 {
                   "image": "/img/price/7.png",
                   "iconName": "Wrench",
                   "title": "Suspension Repair",
                   "description": "A smoother and safer driving experience.",
-                  "price": "₹2,499"
+                  "price": "â‚¹2,499"
                 },
                 {
                   "image": "/img/price/8.png",
                   "iconName": "Wrench",
                   "title": "Clutch Repair",
                   "description": "Smooth gear shifting for a better drive.",
-                  "price": "₹3,999"
+                  "price": "â‚¹3,999"
                 },
                 {
                   "image": "/img/price/9.png",
                   "iconName": "Activity",
                   "title": "Denting & Painting",
                   "description": "Restore your car's original look.",
-                  "price": "₹4,999"
+                  "price": "â‚¹4,999"
                 },
                 {
                   "image": "/img/price/10.png",
                   "iconName": "CheckCircle2",
                   "title": "Wheel Alignment",
                   "description": "Improves stability and tyre life.",
-                  "price": "₹799"
+                  "price": "â‚¹799"
                 },
                 {
                   "image": "/img/price/1.png",
                   "iconName": "CheckCircle2",
                   "title": "Car Wash & Cleaning",
                   "description": "A fresh and clean ride every time.",
-                  "price": "₹499"
+                  "price": "â‚¹499"
                 },
                 {
                   "image": "/img/price/2.png",
                   "iconName": "Wrench",
                   "title": "General Service",
                   "description": "Complete care for better performance.",
-                  "price": "₹2,999"
+                  "price": "â‚¹2,999"
                 }
               ]
             },
@@ -2499,9 +2523,81 @@
                 {
                   "image": "/img/gallery/photo/8.png",
                   "title": "Service Center"
+                },
+                {
+                  "image": "/img/gallery/photo/1.png",
+                  "title": "Engine Repair"
+                },
+                {
+                  "image": "/img/gallery/photo/2.png",
+                  "title": "Brake Service"
+                },
+                {
+                  "image": "/img/gallery/photo/3.png",
+                  "title": "Tire Service"
+                },
+                {
+                  "image": "/img/gallery/photo/4.png",
+                  "title": "Car Diagnostics"
                 }
               ],
               "videos": [
+                {
+                  "image": "/img/gallery/video/7.png",
+                  "videoUrl": "#",
+                  "duration": "02:45",
+                  "title": "Engine Repair Process",
+                  "desc": "Watch how we diagnose and fix engine issues."
+                },
+                {
+                  "image": "/img/gallery/video/8.png",
+                  "videoUrl": "#",
+                  "duration": "01:30",
+                  "title": "Brake Pad Replacement",
+                  "desc": "Step-by-step brake service at our workshop."
+                },
+                {
+                  "image": "/img/gallery/video/9.png",
+                  "videoUrl": "#",
+                  "duration": "01:50",
+                  "title": "Oil Change Service",
+                  "desc": "Quick and professional oil change process."
+                },
+                {
+                  "image": "/img/gallery/video/10.png",
+                  "videoUrl": "#",
+                  "duration": "02:20",
+                  "title": "Car AC Servicing",
+                  "desc": "Keep your cabin cool and comfortable."
+                },
+                {
+                  "image": "/img/gallery/video/7.png",
+                  "videoUrl": "#",
+                  "duration": "02:45",
+                  "title": "Engine Repair Process",
+                  "desc": "Watch how we diagnose and fix engine issues."
+                },
+                {
+                  "image": "/img/gallery/video/8.png",
+                  "videoUrl": "#",
+                  "duration": "01:30",
+                  "title": "Brake Pad Replacement",
+                  "desc": "Step-by-step brake service at our workshop."
+                },
+                {
+                  "image": "/img/gallery/video/9.png",
+                  "videoUrl": "#",
+                  "duration": "01:50",
+                  "title": "Oil Change Service",
+                  "desc": "Quick and professional oil change process."
+                },
+                {
+                  "image": "/img/gallery/video/10.png",
+                  "videoUrl": "#",
+                  "duration": "02:20",
+                  "title": "Car AC Servicing",
+                  "desc": "Keep your cabin cool and comfortable."
+                },
                 {
                   "image": "/img/gallery/video/7.png",
                   "videoUrl": "#",
@@ -2634,7 +2730,7 @@
                   {
                     "icon": "Phone",
                     "title": "Call Us",
-                    "detail": "+1 0000000000",
+                    "detail": "+1 00000000000",
                     "subDetail": "Mon - Sat: 9:00 AM - 7:00 PM"
                   },
                   {
@@ -2646,7 +2742,7 @@
                   {
                     "icon": "MapPin",
                     "title": "Visit Us",
-                    "detail": "123 MG Road, Bengaluru, Karnataka 560001",
+                    "detail": "123 MG Road, Bengaluru, NY 10001, USA",
                     "subDetail": ""
                   }
                 ],

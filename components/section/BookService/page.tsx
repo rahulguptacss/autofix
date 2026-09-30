@@ -251,7 +251,7 @@ export default function BookServiceSection({ data }: { data: BookServiceData }) 
           </div>
 
           {/* Right Sidebar Section */}
-          <div className="w-full lg:w-[40%]">
+          <div className="w-full lg:w-[40%] flex flex-col h-full">
             
             {/* Image Card */}
             <motion.div 
@@ -293,10 +293,10 @@ export default function BookServiceSection({ data }: { data: BookServiceData }) 
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
-              className="bg-[#f1f7fd] rounded-[16px] p-8 mb-8"
+              className="bg-[#f1f7fd] rounded-[16px] py-10 px-8 mb-8"
             >
-              <h3 className="text-[22px] font-extrabold text-[#051c41] mb-6 tracking-tight">{data.sidebar.features.title}</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-7">
+              <h3 className="text-[22px] font-extrabold text-[#051c41] mb-8 tracking-tight">{data.sidebar.features.title}</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8">
                 {data.sidebar.features.list.map((feature, i) => (
                   <div key={i} className="flex items-start space-x-3 group cursor-pointer">
                     <div className="text-[#051c41] flex items-center justify-center shrink-0 mt-0.5 transition-all duration-300 group-hover:scale-110 group-hover:text-[#e62020]">
@@ -317,7 +317,7 @@ export default function BookServiceSection({ data }: { data: BookServiceData }) 
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.6 }}
-              className="relative w-full rounded-[16px] overflow-hidden shadow-lg bg-[#071630]"
+              className="relative w-full rounded-[16px] overflow-hidden shadow-lg bg-[#071630] mt-auto"
             >
               <Image src="/img/about/bookbottom.png" alt="Contact" fill className="object-cover opacity-50 mix-blend-luminosity" />
               <div className="absolute inset-0 bg-[#071630]/80"></div>

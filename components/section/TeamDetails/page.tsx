@@ -34,10 +34,10 @@ export default function TeamDetailsSection({ member }: TeamDetailsProps) {
   const image = member?.image || "/img/team/2.png";
 
   return (
-    <section className="py-12 md:py-24 bg-white relative">
+    <section className="py-12 lg:py-16 bg-white relative">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Row 1: 3 Columns Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mb-12 lg:mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mb-12 lg:mb-16">
           
           {/* Column 1: Image */}
           <motion.div 
@@ -189,7 +189,7 @@ export default function TeamDetailsSection({ member }: TeamDetailsProps) {
         </div>
 
         {/* Row 2: About & Image */}
-        <div className="border border-gray-100 rounded-[10px] p-5 lg:p-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 lg:mb-20 shadow-[0_4px_30px_rgba(0,0,0,0.03)]">
+        <div className="border border-gray-100 rounded-[10px] p-5 lg:p-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 lg:mb-16 shadow-[0_4px_30px_rgba(0,0,0,0.03)]">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}

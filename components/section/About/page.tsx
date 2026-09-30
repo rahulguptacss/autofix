@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Check, ArrowRight, Star } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
 import { AboutData } from '@/components/type';
 import Link from 'next/link';
 import React from 'react';
@@ -102,23 +102,7 @@ export default function AboutSection({ data, hideButton = false }: { data: About
                />
              </motion.div>
              
-             {/* Experience Box */}
-             <motion.div 
-               initial={{ opacity: 0, scale: 0.9 }}
-               whileInView={{ opacity: 1, scale: 1 }}
-               viewport={{ once: true }}
-               transition={{ duration: 0.6, delay: 0.4 }}
-               className="absolute bottom-[15px] sm:bottom-[20px] lg:bottom-0 right-0 sm:right-4 lg:right-[-20px] w-[55%] sm:w-[280px] lg:w-[300px] bg-[#e62020] rounded-xl sm:rounded-2xl flex items-center p-2.5 sm:p-4 text-white space-x-2 sm:space-x-4 shadow-2xl z-20 cursor-pointer hover:-translate-y-2 transition-transform duration-300"
-             >
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center shrink-0 shadow-inner">
-                   {/* Play Triangle */}
-                   <div className="w-0 h-0 border-t-[5px] sm:border-t-[6px] border-t-transparent border-l-[8px] sm:border-l-[10px] border-l-black border-b-[5px] sm:border-b-[6px] border-b-transparent ml-1"></div>
-                </div>
-                <div className="flex items-end space-x-1 sm:space-x-2">
-                   <span className="text-[28px] sm:text-[36px] font-extrabold leading-[0.9] tracking-tight">{data.experience.years}</span>
-                   <span className="text-[10px] sm:text-[12px] font-semibold leading-[1.2] mb-0.5">{data.experience.text1}<br/>{data.experience.text2}</span>
-                </div>
-             </motion.div>
+
           </div>
 
           {/* Right Column: Content */}
@@ -230,28 +214,15 @@ export default function AboutSection({ data, hideButton = false }: { data: About
              >
                 {!hideButton && (
                   <Link href="/about" className="shrink-0">
-                    <button className="bg-[#e62020] hover:bg-red-700 text-white font-bold py-2 sm:py-2.5 pl-3 sm:pl-5 pr-1 sm:pr-2 rounded-full flex items-center justify-between space-x-2 sm:space-x-5 transition-colors group w-full">
+                    <div className="bg-[#e62020] hover:bg-red-700 text-white font-bold py-2 sm:py-2.5 pl-3 sm:pl-5 pr-1 sm:pr-2 rounded-full flex items-center justify-between space-x-2 sm:space-x-5 transition-colors group w-full cursor-pointer">
                       <span className="text-[10px] sm:text-[12px] tracking-wide whitespace-nowrap uppercase">{data.button_text || 'ABOUT MORE'}</span>
                       <div className="w-6 h-6 sm:w-8 sm:h-8 bg-black rounded-full flex items-center justify-center group-hover:bg-gray-800 transition-colors shrink-0">
                          <ArrowRight size={12} strokeWidth={2.5} className="text-white sm:w-3.5 sm:h-3.5" />
                       </div>
-                    </button>
+                    </div>
                   </Link>
                 )}
-                
-                <div className="flex items-center space-x-2 sm:space-x-4 shrink-0">
-                  <div className="flex -space-x-2 sm:-space-x-3">
-                    <Image src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=150&auto=format&fit=crop" width={40} height={40} className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white shadow-sm object-cover" alt="Review 1"/>
-                    <Image src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop" width={40} height={40} className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white shadow-sm object-cover" alt="Review 2"/>
-                    <Image src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=150&auto=format&fit=crop" width={40} height={40} className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white shadow-sm object-cover" alt="Review 3"/>
-                  </div>
-                  <div>
-                    <div className="flex space-x-0.5 sm:space-x-1 text-[#e62020]">
-                       {[1,2,3,4,5].map(i => <Star key={i} size={11} className="sm:w-[13px] sm:h-[13px]" fill="currentColor" />)}
-                    </div>
-                    <div className="text-[10px] sm:text-[13px] font-semibold text-gray-700 mt-0.5 sm:mt-1 whitespace-nowrap">4.9 (2.5k+ Reviews)</div>
-                  </div>
-                </div>
+
              </motion.div>
 
           </div>

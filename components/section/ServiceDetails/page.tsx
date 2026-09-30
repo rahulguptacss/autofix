@@ -147,96 +147,98 @@ export default function ServiceDetailsSection({ data, otherServices }: { data: a
           </div>
 
           {/* Sidebar (Right) */}
-          <div className="lg:col-span-4 space-y-8 lg:sticky lg:top-24 lg:self-start">
-            
-            {/* Other Services List */}
-            <motion.div 
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="rounded-[10px] overflow-hidden bg-white shadow-[0_0_20px_rgba(0,0,0,0.03)] border border-gray-100"
-            >
-              <div className="bg-[#f4f7fc] px-6 py-5">
-                <h3 className="text-xl md:text-[22px] font-extrabold text-[#0b121d]">
-                  {data.sidebar.servicesTitle}
-                </h3>
-              </div>
+          <div className="lg:col-span-4">
+            <div className="space-y-8 lg:sticky lg:top-28">
               
-              <ul className="flex flex-col">
-                {otherServices.map((service, index) => (
-                  <li key={index} className="border-b border-gray-100 last:border-b-0">
-                    <Link 
-                      href={`/service-details/${slugify(service.title)}`} 
-                      className={`flex items-center justify-between p-3 px-5 hover:bg-gray-50 transition-colors group ${
-                        slugify(service.title) === slugify(data.title1 + ' ' + (data.title2 || '')) ? 'bg-gray-50' : ''
-                      }`}
-                    >
-                      <div className="flex items-center space-x-3">
-                        <div className="w-[54px] h-[40px] rounded-[4px] relative overflow-hidden flex-shrink-0 shadow-sm border border-gray-200">
-                          <Image src={service.img} alt={service.title} fill className="object-cover" />
-                        </div>
-                        <span className="font-bold text-[15px] text-[#0b121d]">
-                          {service.title}
-                        </span>
-                      </div>
-                      <ArrowRight size={18} className="text-[#e62020] group-hover:translate-x-1 transition-transform" strokeWidth={2.5} />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              
-              <div className="border-t border-gray-100 p-5 flex justify-center">
-                <Link href="/services" className="flex items-center space-x-2 text-[#e62020] font-bold text-[15px] hover:text-[#0b121d] transition-colors group">
-                  <span>View All Services</span>
-                  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" strokeWidth={2.5} />
-                </Link>
-              </div>
-            </motion.div>
-
-            {/* Need Help Box */}
-            <motion.div 
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="bg-[#0b121d] rounded-[10px] p-8 relative overflow-hidden group flex flex-col"
-            >
-              {/* Background Image / Overlay */}
-              <div 
-                className="absolute inset-0 z-0 opacity-25"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=800&auto=format&fit=crop')`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'bottom'
-                }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-b from-[#0b121d] via-[#0b121d]/90 to-[#0b121d]/40 z-0"></div>
-              
-              <div className="relative z-10 text-left">
-                <h3 className="text-white text-[24px] md:text-[28px] font-extrabold whitespace-pre-line leading-tight">
-                  {data.sidebar.helpTitle}
-                </h3>
-                <div className="w-12 h-[2px] bg-[#e62020] mt-4 mb-8"></div>
-                
-                <div className="flex items-center space-x-4 mb-8">
-                  <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center text-[#0b121d] flex-shrink-0">
-                    <PhoneCall size={22} className="fill-current" />
-                  </div>
-                  <div className="text-left">
-                    <p className="text-white font-bold text-[19px] leading-tight mb-1">{data.sidebar.phone}</p>
-                    <p className="text-gray-200 text-[13px]">{data.sidebar.hours}</p>
-                  </div>
+              {/* Other Services List */}
+              <motion.div 
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="rounded-[10px] overflow-hidden bg-white shadow-[0_0_20px_rgba(0,0,0,0.03)] border border-gray-100"
+              >
+                <div className="bg-[#f4f7fc] px-6 py-5">
+                  <h3 className="text-xl md:text-[22px] font-extrabold text-[#0b121d]">
+                    {data.sidebar.servicesTitle}
+                  </h3>
                 </div>
                 
-                <Link href="/book-service" className="w-full">
-                  <button className="w-full bg-[#e62020] text-white font-bold py-4 rounded-[6px] hover:bg-white hover:text-[#e62020] transition-colors duration-300 flex items-center justify-center space-x-2 group/btn">
-                    <span>{data.sidebar.buttonText}</span>
-                    <ArrowRight size={18} className="group-hover/btn:translate-x-1 transition-transform" strokeWidth={2.5} />
-                  </button>
-                </Link>
-              </div>
-            </motion.div>
-            
+                <ul className="flex flex-col">
+                  {otherServices.map((service, index) => (
+                    <li key={index} className="border-b border-gray-100 last:border-b-0">
+                      <Link 
+                        href={`/service-details/${slugify(service.title)}`} 
+                        className={`flex items-center justify-between p-3 px-5 hover:bg-gray-50 transition-colors group ${
+                          slugify(service.title) === slugify(data.title1 + ' ' + (data.title2 || '')) ? 'bg-gray-50' : ''
+                        }`}
+                      >
+                        <div className="flex items-center space-x-3">
+                          <div className="w-[72px] h-[52px] rounded-[4px] relative overflow-hidden flex-shrink-0 shadow-sm border border-gray-200">
+                            <Image src={service.img} alt={service.title} fill className="object-cover" />
+                          </div>
+                          <span className="font-bold text-[15px] text-[#0b121d]">
+                            {service.title}
+                          </span>
+                        </div>
+                        <ArrowRight size={18} className="text-[#e62020] group-hover:translate-x-1 transition-transform" strokeWidth={2.5} />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                
+                <div className="border-t border-gray-100 p-5 flex justify-center">
+                  <Link href="/services" className="flex items-center space-x-2 text-[#e62020] font-bold text-[15px] hover:text-[#0b121d] transition-colors group">
+                    <span>View All Services</span>
+                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" strokeWidth={2.5} />
+                  </Link>
+                </div>
+              </motion.div>
+
+              {/* Need Help Box */}
+              <motion.div 
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="bg-[#0b121d] rounded-[10px] p-8 relative overflow-hidden group flex flex-col"
+              >
+                {/* Background Image / Overlay */}
+                <div 
+                  className="absolute inset-0 z-0 opacity-25"
+                  style={{
+                    backgroundImage: `url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=800&auto=format&fit=crop')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'bottom'
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#0b121d] via-[#0b121d]/90 to-[#0b121d]/40 z-0"></div>
+                
+                <div className="relative z-10 text-left">
+                  <h3 className="text-white text-[24px] md:text-[28px] font-extrabold whitespace-pre-line leading-tight">
+                    {data.sidebar.helpTitle}
+                  </h3>
+                  <div className="w-12 h-[2px] bg-[#e62020] mt-4 mb-8"></div>
+                  
+                  <div className="flex items-center space-x-4 mb-8">
+                    <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center text-[#0b121d] flex-shrink-0">
+                      <PhoneCall size={22} className="fill-current" />
+                    </div>
+                    <div className="text-left">
+                      <p className="text-white font-bold text-[19px] leading-tight mb-1">{data.sidebar.phone}</p>
+                      <p className="text-gray-200 text-[13px]">{data.sidebar.hours}</p>
+                    </div>
+                  </div>
+                  
+                  <Link href="/book-service" className="w-full">
+                    <button className="w-full bg-[#e62020] text-white font-bold py-4 rounded-[6px] hover:bg-white hover:text-[#e62020] transition-colors duration-300 flex items-center justify-center space-x-2 group/btn">
+                      <span>{data.sidebar.buttonText}</span>
+                      <ArrowRight size={18} className="group-hover/btn:translate-x-1 transition-transform" strokeWidth={2.5} />
+                    </button>
+                  </Link>
+                </div>
+              </motion.div>
+              
+            </div>
           </div>
 
         </div>

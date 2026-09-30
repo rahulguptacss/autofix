@@ -63,7 +63,7 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-extrabold text-[#082142] text-[15px] mb-1">Our Location</h4>
                     <p className="text-[#556070] text-[13px] md:text-[14px] font-medium leading-[1.5]">
-                      123 MG Road, Bengaluru,<br/>Karnataka 560001
+                      123 Main Street,<br/>New York, NY 10001
                     </p>
                   </div>
                 </motion.div>
@@ -76,7 +76,7 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-extrabold text-[#082142] text-[15px] mb-1">Call Us</h4>
                     <p className="text-[#556070] text-[13px] md:text-[14px] font-medium leading-[1.5]">
-                      +1 0000000000<br/>+91 91234 56789
+                      +1 00000000000<br/>+1 00000000000
                     </p>
                   </div>
                 </motion.div>
@@ -118,7 +118,7 @@ export default function ContactSection() {
               viewport={{ once: true, margin: "-100px" }}
             >
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.896172671609!2d77.6049283152019!3d12.978438190851833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167e7c9f8ef5%3A0x6b9d628f8042456!2sM.G.%20Road%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1687595604085!5m2!1sen!2sin" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.183948633718!2d-73.98773192346914!3d40.75797863479427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1714400000000!5m2!1sen!2sus" 
                 className="w-full h-full border-0" 
                 allowFullScreen={true} 
                 loading="lazy" 
@@ -263,7 +263,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <div className="text-white text-[12px] md:text-[13.5px] font-medium opacity-90 mb-0.5 md:mb-1">Need Immediate Help?</div>
-                    <div className="text-white text-[20px] md:text-[24px] font-black leading-none tracking-tight">+1 0000000000</div>
+                    <div className="text-white text-[20px] md:text-[24px] font-black leading-none tracking-tight">+1 00000000000</div>
                   </div>
                 </motion.div>
               </div>

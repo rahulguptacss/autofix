@@ -7,27 +7,16 @@ import { Search, ChevronLeft, ChevronRight } from 'lucide-react';
 import { BrandsData } from '@/components/type';
 
 export default function BrandsSection({ data }: { data: BrandsData }) {
-  const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 15;
   
-  // Filter brands based on search
-  const filteredBrands = data.brandsList.filter(brand => 
-    brand.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
-  const totalPages = Math.ceil(filteredBrands.length / itemsPerPage);
+  const totalPages = Math.ceil(data.brandsList.length / itemsPerPage);
   
   // Calculate displayed items
-  const paginatedBrands = filteredBrands.slice(
+  const paginatedBrands = data.brandsList.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
-
-  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(e.target.value);
-    setCurrentPage(1); // Reset to first page on search
-  };
 
   return (
     <section className="py-8 md:py-12 bg-[#fafbfc]">
@@ -73,29 +62,6 @@ export default function BrandsSection({ data }: { data: BrandsData }) {
           </motion.p>
         </div>
 
-        {/* Search Bar */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3 }}
-          className="max-w-3xl mx-auto mb-16 relative flex shadow-[0_5px_30px_rgba(0,0,0,0.05)] rounded-[6px] overflow-hidden bg-white"
-        >
-          <div className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">
-            <Search size={20} />
-          </div>
-          <input 
-            type="text" 
-            placeholder={data.searchPlaceholder}
-            value={searchTerm}
-            onChange={handleSearchChange}
-            className="flex-grow py-4 pl-12 pr-4 border border-transparent focus:outline-none focus:border-gray-200 text-[#0b121d]"
-          />
-          <button className="bg-[#e62020] hover:bg-[#d01c1c] text-white font-bold px-6 md:px-10 py-4 transition-colors">
-            {data.searchButtonText}
-          </button>
-        </motion.div>
-
         {/* Brands Grid */}
         <motion.div 
           layout
@@ -112,7 +78,7 @@ export default function BrandsSection({ data }: { data: BrandsData }) {
                 key={brand.name}
                 className="bg-white border border-[#edf1f5] shadow-sm rounded-[12px] px-6 py-4 flex flex-col items-center justify-center cursor-pointer hover:border-[#e62020] hover:shadow-[0_10px_30px_rgba(230,32,32,0.1)] transition-all duration-300 group"
               >
-                <div className="w-[140px] h-[95px] relative mb-2 flex items-center justify-center">
+                <div className="w-[160px] h-[120px] relative mb-2 flex items-center justify-center">
                   <div className="absolute inset-0 flex items-center justify-center font-bold text-gray-200 opacity-50">
                     <span className="text-[12px]">{brand.name.slice(0, 3).toUpperCase()}</span>
                   </div>
@@ -135,9 +101,9 @@ export default function BrandsSection({ data }: { data: BrandsData }) {
         </motion.div>
 
         {/* No Results state */}
-        {filteredBrands.length === 0 && (
+        {data.brandsList.length === 0 && (
           <div className="text-center py-20 text-gray-500 font-medium">
-            No car brands found matching your search.
+            No car brands found.
           </div>
         )}
 
@@ -181,7 +147,7 @@ export default function BrandsSection({ data }: { data: BrandsData }) {
               </button>
             </div>
             <p className="text-[13px] text-gray-500 font-medium">
-              Showing {(currentPage - 1) * itemsPerPage + 1}-{Math.min(currentPage * itemsPerPage, filteredBrands.length)} of {filteredBrands.length} car brands
+              Showing {(currentPage - 1) * itemsPerPage + 1}-{Math.min(currentPage * itemsPerPage, data.brandsList.length)} of {data.brandsList.length} car brands
             </p>
           </motion.div>
         )}
