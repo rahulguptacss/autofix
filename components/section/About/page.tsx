@@ -55,7 +55,7 @@ const CircularProgress = ({ percentage, children }: { percentage: number, childr
 
 export default function AboutSection({ data, hideButton = false }: { data: AboutData, hideButton?: boolean }) {
   return (
-    <section className="py-12 lg:py-16 bg-white overflow-hidden relative">
+    <section className="py-8 lg:py-12 bg-white overflow-hidden relative">
       {/* Optional Tire background image for the right side */}
       <div className="absolute right-[-10%] bottom-[-5%] w-[500px] h-[500px] opacity-[0.04] pointer-events-none z-0">
          <Image src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=600&auto=format&fit=crop" alt="Background Texture" fill className="object-cover rounded-full" style={{ mixBlendMode: 'multiply' }} />
@@ -65,7 +65,7 @@ export default function AboutSection({ data, hideButton = false }: { data: About
         <div className="flex flex-col lg:flex-row gap-2 sm:gap-8 lg:gap-16 items-center">
           
           {/* Left Column: Images Grid */}
-          <div className="w-full lg:w-1/2 relative min-h-[420px] sm:min-h-[550px] lg:min-h-[650px] flex items-start lg:items-center justify-center lg:justify-start pt-4 lg:pt-0">
+          <div className="w-full lg:w-1/2 relative min-h-[420px] sm:min-h-[550px] lg:min-h-[550px] flex items-start lg:items-center justify-center lg:justify-start pt-4 lg:pt-0">
              {/* Red Vertical Pills */}
              <div className="absolute top-[20%] left-0 w-2 h-20 sm:w-2.5 sm:h-24 bg-[#e62020] rounded-full"></div>
              <div className="absolute top-[10%] left-3 sm:left-4 w-2 h-32 sm:w-2.5 sm:h-40 bg-[#e62020] rounded-full"></div>
@@ -76,7 +76,7 @@ export default function AboutSection({ data, hideButton = false }: { data: About
                whileInView={{ opacity: 1, x: 0 }}
                viewport={{ once: true }}
                transition={{ duration: 0.6 }}
-               className="relative ml-8 sm:ml-12 lg:ml-12 mb-16 sm:mb-24 rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden w-[90%] lg:w-[85%] h-[350px] sm:h-[400px] lg:h-[500px] shadow-sm"
+               className="relative ml-8 sm:ml-12 lg:ml-12 mb-8 sm:mb-12 lg:mb-16 rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden w-[90%] lg:w-[85%] h-[350px] sm:h-[400px] lg:h-[450px] shadow-sm"
              >
                <Image
                  src={data.image1}
@@ -168,7 +168,7 @@ export default function AboutSection({ data, hideButton = false }: { data: About
              </motion.div>
 
              {/* Points & CEO Card Area */}
-             <div className="relative mb-6">
+             <div className="relative mb-0">
                 <motion.div 
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -186,44 +186,26 @@ export default function AboutSection({ data, hideButton = false }: { data: About
                   ))}
                 </motion.div>
                 
-                {/* CEO Card */}
-                <motion.div 
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.6 }}
-                  className="mt-8 lg:mt-0 lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 bg-[#f4f4f4] rounded-xl p-4 pr-10 flex items-center space-x-4 shadow-sm z-10 w-fit"
-                >
-                  <div className="w-14 h-14 rounded-full overflow-hidden border-[3px] border-[#e62020] shrink-0">
-                    <Image src={data.ceo.image} width={60} height={60} alt={data.ceo.name} className="object-cover w-full h-full"/>
-                  </div>
-                  <div>
-                    <div className="font-bold text-[#0b121d] text-[16px]">{data.ceo.name}</div>
-                    <div className="text-gray-500 text-[13px]">{data.ceo.role}</div>
-                  </div>
-                </motion.div>
-             </div>
-
-             {/* Bottom Action Area */}
-             <motion.div 
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
-               transition={{ duration: 0.5, delay: 0.5 }}
-               className="flex flex-row flex-nowrap items-center justify-between border-t border-gray-200 pt-8 gap-2 w-full"
-             >
+                {/* About More Button */}
                 {!hideButton && (
-                  <Link href="/about" className="shrink-0">
-                    <div className="bg-[#e62020] hover:bg-red-700 text-white font-bold py-2 sm:py-2.5 pl-3 sm:pl-5 pr-1 sm:pr-2 rounded-full flex items-center justify-between space-x-2 sm:space-x-5 transition-colors group w-full cursor-pointer">
-                      <span className="text-[10px] sm:text-[12px] tracking-wide whitespace-nowrap uppercase">{data.button_text || 'ABOUT MORE'}</span>
-                      <div className="w-6 h-6 sm:w-8 sm:h-8 bg-black rounded-full flex items-center justify-center group-hover:bg-gray-800 transition-colors shrink-0">
-                         <ArrowRight size={12} strokeWidth={2.5} className="text-white sm:w-3.5 sm:h-3.5" />
+                  <motion.div 
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
+                    className="mt-8 lg:mt-0 lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 z-10 w-fit"
+                  >
+                    <Link href="/about" className="shrink-0">
+                      <div className="bg-[#e62020] hover:bg-red-700 text-white font-bold py-2 sm:py-2.5 pl-3 sm:pl-5 pr-1 sm:pr-2 rounded-full flex items-center justify-between space-x-2 sm:space-x-5 transition-colors group w-full cursor-pointer shadow-md">
+                        <span className="text-[10px] sm:text-[12px] tracking-wide whitespace-nowrap uppercase">{data.button_text || 'ABOUT MORE'}</span>
+                        <div className="w-6 h-6 sm:w-8 sm:h-8 bg-black rounded-full flex items-center justify-center group-hover:bg-gray-800 transition-colors shrink-0">
+                           <ArrowRight size={12} strokeWidth={2.5} className="text-white sm:w-3.5 sm:h-3.5" />
+                        </div>
                       </div>
-                    </div>
-                  </Link>
+                    </Link>
+                  </motion.div>
                 )}
-
-             </motion.div>
+             </div>
 
           </div>
         </div>

@@ -32,6 +32,7 @@ export default function TeamDetailsSection({ member }: TeamDetailsProps) {
   const firstName = name.split(' ')[0];
   const role = member?.role || "Senior Mechanic";
   const image = member?.image || "/img/team/2.png";
+  const email = `${name.toLowerCase().replace(/\s+/g, '.')}@xyz.com`;
 
   return (
     <section className="py-12 lg:py-16 bg-white relative">
@@ -88,7 +89,7 @@ export default function TeamDetailsSection({ member }: TeamDetailsProps) {
                 <div className="w-10 h-10 rounded-full bg-[#e62020] text-white flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-[#cc1b1b] transition-all duration-300 shadow-sm">
                   <Mail size={18} />
                 </div>
-                <span className="text-[#0b121d] font-bold text-[15px] group-hover:text-[#e62020] transition-colors duration-300">amit.kumar@autofix.in</span>
+                <span className="text-[#0b121d] font-bold text-[15px] group-hover:text-[#e62020] transition-colors duration-300">{email}</span>
               </li>
               <li className="flex items-center gap-4 group cursor-default">
                 <div className="w-10 h-10 rounded-full bg-[#e62020] text-white flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-[#cc1b1b] transition-all duration-300 shadow-sm">
