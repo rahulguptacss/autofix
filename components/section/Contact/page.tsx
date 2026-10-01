@@ -5,9 +5,9 @@ import { motion, Variants } from 'framer-motion';
 import { 
   MapPin, Phone, Mail, Globe, User, MessageSquare, PenLine, 
   ArrowRight, Zap, Users, ShieldCheck, Clock, HeadphonesIcon
-} from 'lucide-react';
+} from 'lucide-react';import { ContactData, FormField } from '@/components/type';
 
-export default function ContactSection() {
+export default function ContactSection({ data }: { data: ContactData }) {
   const fadeInUp: Variants = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
@@ -54,7 +54,7 @@ export default function ContactSection() {
                 We&apos;ll get back to you as soon as possible.
               </motion.p>
               
-              <motion.div variants={staggerContainer} className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
+                <motion.div variants={staggerContainer} className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
                 {/* Location */}
                 <motion.div variants={fadeInUp} className="border border-gray-200/80 rounded-[10px] px-4 py-4 flex items-center gap-4 bg-white hover:border-[#e62020]/30 transition-colors hover:shadow-md cursor-pointer group">
                   <div className="w-[60px] h-[60px] md:w-[64px] md:h-[64px] bg-[#e62020] rounded-full flex items-center justify-center flex-shrink-0 border-[6px] border-[#e62020]/15 group-hover:scale-110 transition-transform duration-300">
@@ -63,7 +63,12 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-extrabold text-[#082142] text-[15px] mb-1">Our Location</h4>
                     <p className="text-[#556070] text-[13px] md:text-[14px] font-medium leading-[1.5]">
-                      123 Main Street,<br/>New York, NY 10001
+                      {data.contact_info.address.split(',').map((line, i) => (
+                        <React.Fragment key={i}>
+                          {line.trim()}{i < data.contact_info.address.split(',').length - 1 && ','}
+                          {i === 0 && <br/>}
+                        </React.Fragment>
+                      ))}
                     </p>
                   </div>
                 </motion.div>
@@ -76,7 +81,7 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-extrabold text-[#082142] text-[15px] mb-1">Call Us</h4>
                     <p className="text-[#556070] text-[13px] md:text-[14px] font-medium leading-[1.5]">
-                      +1 00000000000<br/>+1 00000000000
+                      {data.contact_info.phone}
                     </p>
                   </div>
                 </motion.div>
@@ -89,7 +94,7 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-extrabold text-[#082142] text-[15px] mb-1">Email Us</h4>
                     <p className="text-[#556070] text-[13px] md:text-[14px] font-medium leading-[1.5]">
-                      info@xyz.com<br/>info@autofix.com
+                      {data.contact_info.email}
                     </p>
                   </div>
                 </motion.div>
@@ -100,9 +105,9 @@ export default function ContactSection() {
                     <Globe size={22} className="text-white" strokeWidth={2} />
                   </div>
                   <div>
-                    <h4 className="font-extrabold text-[#082142] text-[15px] mb-1">Visit Our Website</h4>
+                    <h4 className="font-extrabold text-[#082142] text-[15px] mb-1">Working Hours</h4>
                     <p className="text-[#556070] text-[13px] md:text-[14px] font-medium leading-[1.5]">
-                      www.autofix.com
+                      {data.contact_info.working_hours}
                     </p>
                   </div>
                 </motion.div>
@@ -146,47 +151,36 @@ export default function ContactSection() {
               <div className="relative z-10">
                 <motion.div variants={fadeInUp} className="flex items-center gap-3 mb-4">
                   <span className="w-8 h-[2px] bg-[#e62020]"></span>
-                  <span className="text-[#0b121d] font-extrabold text-[12px] md:text-[13px] uppercase tracking-[1.5px]">SEND US A MESSAGE</span>
+                  <span className="text-[#0b121d] font-extrabold text-[12px] md:text-[13px] uppercase tracking-[1.5px]">{data.form.subtitle}</span>
                 </motion.div>
                 
                 <motion.h2 variants={fadeInUp} className="text-[28px] sm:text-[36px] md:text-[44px] font-black leading-[1.1] mb-3 tracking-[-1px]">
-                  <span className="text-[#082142]">Let&apos;s Get in </span>
-                  <span className="text-[#e62020]">Touch</span>
+                  <span className="text-[#082142]">{data.form.title_line1}</span>
+                  <span className="text-[#e62020]">{data.form.title_highlight}</span>
                 </motion.h2>
                 
                 <motion.p variants={fadeInUp} className="text-[#556070] text-[14px] md:text-[15px] mb-8 font-medium">
-                  Your email address will not be published. Required fields are marked *
+                  {data.form.description}
                 </motion.p>
 
                 <motion.form variants={staggerContainer} className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
-                  <motion.div variants={fadeInUp} className="relative group">
-                    <input type="text" placeholder="Your Name*" className="w-full bg-white text-[#556070] text-[14px] md:text-[15px] font-medium rounded-[8px] py-3.5 md:py-4 pl-12 pr-4 outline-none border border-gray-200 focus:border-[#e62020] focus:shadow-sm transition-all" />
-                    <User className="absolute left-4 top-1/2 -translate-y-1/2 text-[#082142] opacity-60 group-focus-within:opacity-100 group-focus-within:text-[#e62020] transition-colors" size={18} />
-                  </motion.div>
-                  
-                  <motion.div variants={fadeInUp} className="relative group">
-                    <input type="email" placeholder="Your Email*" className="w-full bg-white text-[#556070] text-[14px] md:text-[15px] font-medium rounded-[8px] py-3.5 md:py-4 pl-12 pr-4 outline-none border border-gray-200 focus:border-[#e62020] focus:shadow-sm transition-all" />
-                    <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-[#082142] opacity-60 group-focus-within:opacity-100 group-focus-within:text-[#e62020] transition-colors" size={18} />
-                  </motion.div>
-                  
-                  <motion.div variants={fadeInUp} className="relative group">
-                    <input type="number" placeholder="Phone*" onInput={(e) => { e.currentTarget.value = e.currentTarget.value.replace(/[^0-9]/g, ''); }} className="w-full bg-white text-[#556070] text-[14px] md:text-[15px] font-medium rounded-[8px] py-3.5 md:py-4 pl-12 pr-4 outline-none border border-gray-200 focus:border-[#e62020] focus:shadow-sm transition-all [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
-                    <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-[#082142] opacity-60 group-focus-within:opacity-100 group-focus-within:text-[#e62020] transition-colors" size={18} />
-                  </motion.div>
-                  
-                  <motion.div variants={fadeInUp} className="relative group">
-                    <input type="text" placeholder="Subject*" className="w-full bg-white text-[#556070] text-[14px] md:text-[15px] font-medium rounded-[8px] py-3.5 md:py-4 pl-12 pr-4 outline-none border border-gray-200 focus:border-[#e62020] focus:shadow-sm transition-all" />
-                    <MessageSquare className="absolute left-4 top-1/2 -translate-y-1/2 text-[#082142] opacity-60 group-focus-within:opacity-100 group-focus-within:text-[#e62020] transition-colors" size={18} />
-                  </motion.div>
-                  
-                  <motion.div variants={fadeInUp} className="relative col-span-1 md:col-span-2 group">
-                    <textarea placeholder="Your Message*" rows={4} className="w-full bg-white text-[#556070] text-[14px] md:text-[15px] font-medium rounded-[8px] py-3.5 md:py-4 pl-12 pr-4 outline-none border border-gray-200 focus:border-[#e62020] focus:shadow-sm transition-all resize-none"></textarea>
-                    <PenLine className="absolute left-4 top-4 md:top-5 text-[#082142] opacity-60 group-focus-within:opacity-100 group-focus-within:text-[#e62020] transition-colors" size={18} />
-                  </motion.div>
+                  {data.form.fields.map((field: FormField, idx: number) => {
+                    const IconComponent = field.icon === 'User' ? User : field.icon === 'Mail' ? Mail : field.icon === 'Phone' ? Phone : field.icon === 'MessageSquare' ? MessageSquare : field.icon === 'PenLine' ? PenLine : User;
+                    return (
+                      <motion.div key={idx} variants={fadeInUp} className={`relative group ${field.type === 'textarea' ? 'col-span-1 md:col-span-2' : ''}`}>
+                        {field.type === 'textarea' ? (
+                          <textarea placeholder={field.placeholder} rows={4} className="w-full bg-white text-[#556070] text-[14px] md:text-[15px] font-medium rounded-[8px] py-3.5 md:py-4 pl-12 pr-4 outline-none border border-gray-200 focus:border-[#e62020] focus:shadow-sm transition-all resize-none"></textarea>
+                        ) : (
+                          <input type={field.type === 'number' ? 'number' : field.type} placeholder={field.placeholder} onInput={field.type === 'number' ? (e) => { e.currentTarget.value = e.currentTarget.value.replace(/[^0-9]/g, ''); } : undefined} className={`w-full bg-white text-[#556070] text-[14px] md:text-[15px] font-medium rounded-[8px] py-3.5 md:py-4 pl-12 pr-4 outline-none border border-gray-200 focus:border-[#e62020] focus:shadow-sm transition-all ${field.type === 'number' ? '[&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none' : ''}`} />
+                        )}
+                        <IconComponent className={`absolute left-4 ${field.type === 'textarea' ? 'top-4 md:top-5' : 'top-1/2 -translate-y-1/2'} text-[#082142] opacity-60 group-focus-within:opacity-100 group-focus-within:text-[#e62020] transition-colors`} size={18} />
+                      </motion.div>
+                    );
+                  })}
 
                   <motion.div variants={fadeInUp} className="col-span-1 md:col-span-2 mt-2 md:mt-4">
                     <button type="submit" className="bg-[#e62020] hover:bg-[#082142] text-white py-1.5 md:py-2 pl-6 md:pl-8 pr-1.5 md:pr-2 rounded-full font-bold transition-all duration-300 flex items-center justify-between gap-4 md:gap-6 w-max group shadow-lg hover:shadow-xl hover:-translate-y-1">
-                      <span className="text-[15px] md:text-[16px] tracking-wide">Send Message</span>
+                      <span className="text-[15px] md:text-[16px] tracking-wide">{data.form.submitText}</span>
                       <div className="w-[38px] h-[38px] md:w-[46px] md:h-[46px] rounded-full bg-[#082142] flex items-center justify-center flex-shrink-0 group-hover:bg-[#e62020] transition-colors">
                         <ArrowRight size={18} strokeWidth={2.5} className="text-white group-hover:translate-x-1 transition-transform" />
                       </div>
@@ -263,7 +257,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <div className="text-white text-[12px] md:text-[13.5px] font-medium opacity-90 mb-0.5 md:mb-1">Need Immediate Help?</div>
-                    <div className="text-white text-[20px] md:text-[24px] font-black leading-none tracking-tight">+1 00000000000</div>
+                    <div className="text-white text-[20px] md:text-[24px] font-black leading-none tracking-tight">{data.contact_info.phone}</div>
                   </div>
                 </motion.div>
               </div>

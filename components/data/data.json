@@ -1953,6 +1953,50 @@
                 "phone": "+1 00000000000",
                 "email": "info@xyz.com",
                 "working_hours": "Mon - Sat: 9:00 AM - 7:00 PM"
+              },
+              "form": {
+                "subtitle": "SEND US A MESSAGE",
+                "title_line1": "Let's Get in ",
+                "title_highlight": "Touch",
+                "description": "Your email address will not be published. Required fields are marked *",
+                "submitText": "Send Message",
+                "fields": [
+                  {
+                    "name": "fullName",
+                    "label": "Your Name*",
+                    "placeholder": "Your Name*",
+                    "icon": "User",
+                    "type": "text"
+                  },
+                  {
+                    "name": "email",
+                    "label": "Your Email*",
+                    "placeholder": "Your Email*",
+                    "icon": "Mail",
+                    "type": "email"
+                  },
+                  {
+                    "name": "phone",
+                    "label": "Phone*",
+                    "placeholder": "Phone*",
+                    "icon": "Phone",
+                    "type": "number"
+                  },
+                  {
+                    "name": "subject",
+                    "label": "Subject*",
+                    "placeholder": "Subject*",
+                    "icon": "MessageSquare",
+                    "type": "text"
+                  },
+                  {
+                    "name": "message",
+                    "label": "Your Message*",
+                    "placeholder": "Your Message*",
+                    "icon": "PenLine",
+                    "type": "textarea"
+                  }
+                ]
               }
             },
             "teamDetails": {

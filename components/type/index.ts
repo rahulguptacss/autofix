@@ -315,12 +315,22 @@ export interface ContactInfo {
   working_hours: string;
 }
 
+export interface ContactForm {
+  subtitle: string;
+  title_line1: string;
+  title_highlight: string;
+  description: string;
+  fields: FormField[];
+  submitText: string;
+}
+
 export interface ContactData {
   subtitle: string;
   title_highlight: string;
   title_line1: string;
   description: string;
   contact_info: ContactInfo;
+  form: ContactForm;
 }
 
 export interface TeamDetailsSkill {
@@ -529,6 +539,23 @@ export interface TemplateSections {
   faq?: FaqData;
 }
 
+export interface PolicyListItem {
+  id: string;
+  title: string;
+  description: string;
+}
+
+export interface PolicyPageData {
+  breadcrumb: BreadcrumbData;
+  content: {
+    tagline: string;
+    title: string;
+    titleRed: string;
+    description: string;
+    list: PolicyListItem[];
+  };
+}
+
 export interface Template1 {
   pages: {
     home: PageData;
@@ -549,6 +576,9 @@ export interface Template1 {
     gallery?: PageData;
     sitemap?: SitemapData;
     faq?: PageData;
+    termsConditions?: PolicyPageData;
+    privacyPolicy?: PolicyPageData;
+    cancellationPolicy?: PolicyPageData;
   };
   sections: TemplateSections;
 }
